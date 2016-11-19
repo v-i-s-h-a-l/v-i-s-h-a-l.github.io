@@ -1,8 +1,14 @@
 ---
-layout: default
-title: Vishal Singh, future entreprneur
+layout: archive
+author_profile: true
 ---
-<div class="blurb">
-	<h1>Hola! Vishal Singh from India.</h1>
-	<p>I'm from Jhunjhunu, Rajasthan, India <a href="/about">Read more about my life...</a></p>
-</div><!-- /.blurb -->
+
+{% include base_path %}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+
+{% for post in paginator.posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+{% include paginator.html %}
