@@ -1,4 +1,4 @@
 name: Vishal Singh
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-theme: front-cover
+theme: minima
