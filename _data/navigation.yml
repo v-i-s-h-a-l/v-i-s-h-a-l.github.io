@@ -1,0 +1,10 @@
+# main links links
+main:
+  - title: "Posts"
+    url: /year-archive/
+
+  - title: "Books"
+    url: /books-archive/
+
+  - title: "Photography"
+    url: /photography-archive/
