@@ -11,9 +11,9 @@ title                    : "Vishal Singh"
 title_separator          : "-"
 name                     : "Vishal Singh"
 description              : "In the beginning..."
-url                      : "https://v-i-s-h-a-l.gihub.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://v-i-s-h-a-l.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
-repository               : "v-i-s-h-a-l/v-i-s-h-a-l.gihub.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "v-i-s-h-a-l/v-i-s-h-a-l.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
