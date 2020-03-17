@@ -24,6 +24,8 @@ To get started lets craete a script that takes an input name and prints "Hello \
     ```
     Save and return to terminal window.
 3. Type `swift Greet.swift <name>` and press enter.
+<img src="https://github.com/v-i-s-h-a-l/v-i-s-h-a-l.github.io/images/posts/18-03-2020-swift-scripting/SS1.png"
+alt=""/>
 ## Using Swift Package Manager (SwiftPM) to create an executable product or swift script
 
 ## Installing your script: creating a command line tool
