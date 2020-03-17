@@ -22,3 +22,7 @@ As a programmer who primarily works with swift, scripting in swift itself would 
 # Using Swift Package Manager (SwiftPM) to create an executable product or swift script
 
 # Example: "vcommit"
+
+# References and thanks to
+John Sundell's talk: https://www.youtube.com/watch?v=KntiH9E4TGQ
+https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/
