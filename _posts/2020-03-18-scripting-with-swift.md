@@ -12,7 +12,8 @@ Basically, all scripting languages are programming languages. The theoretical di
 As a programmer who primarily works with swift, scripting in swift itself would mean:
 1. less context switching, less hurdles to overcome (e.g. if they had to use python script, then they might have to understand how to divide/join arrays. But if this needs to be done in swift then they might already be familiar with it or would be easier to learn)
 2. Getting to use libraries that one has already worked with, for example, Foundation, URLSession, Files etc.
-3. One can also use shared code between the scripts and the application itself, i.e. using one's own custom libraries. 
+3. One can also use shared code between the scripts and the application itself, i.e. using one's own custom libraries.
+
 ## Getting started with swift scripting
 To get started lets craete a script that takes an input name and prints "Hello \(name)" in the Terminal.
 1. Open Terminal, type `touch Greet.swift` and press enter.
@@ -22,10 +23,9 @@ To get started lets craete a script that takes an input name and prints "Hello \
     let name = CommandLine.arguments.last ?? "World"
     print("Hello \(name)!")
     ```
-    Save and return to terminal window.
+Save and return to terminal window.
 3. Type `swift Greet.swift <name>` and press enter.
-<img src="https://github.com/v-i-s-h-a-l/v-i-s-h-a-l.github.io/images/posts/18-03-2020-swift-scripting/SS1.png"
-alt=""/>
+
 ## Using Swift Package Manager (SwiftPM) to create an executable product or swift script
 
 ## Installing your script: creating a command line tool
