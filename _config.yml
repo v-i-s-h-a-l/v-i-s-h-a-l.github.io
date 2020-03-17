@@ -10,7 +10,7 @@ locale                   : "en"
 title                    : "Vishal Singh"
 title_separator          : "-"
 name                     : "Vishal Singh"
-description              : "In the beginning..."
+description              : "🎯"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -55,7 +55,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : "@vishalsingh2706"
+  username               : "@v_s_h_a_l"
 facebook:
   username               :
   app_id                 :
@@ -79,7 +79,7 @@ analytics:
 author:
   name             : "Vishal Singh"
   avatar           : "bio-photo.jpg"
-  bio              : "iOS application development, video game development, programming, football."
+  bio              : "🇮🇳"
   location         : "India"
   email            : "vishalsingh2706@gmail.com"
   uri              :
@@ -97,10 +97,10 @@ author:
   linkedin         : "v-i-s-h-a-l"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    : https://stackoverflow.com/users/2407192/v-i-s-h-a-l
   steam            :
   tumblr           :
-  twitter          : "vishalsingh2706"
+  twitter          : "v_s_h_a_l"
   vine             :
   weibo            :
   xing             :
