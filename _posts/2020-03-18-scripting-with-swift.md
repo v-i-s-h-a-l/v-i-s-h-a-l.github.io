@@ -27,19 +27,32 @@ Save and return to terminal window.
 3. Type `swift Greet.swift <name>` and press enter.
 
 ## Using Swift Package Manager (SwiftPM) to create an executable product or swift script
-
+SwiftPM is swift’s own dependency management tool. It allows you to integrate reusable code / libraries into your own code. Also, it provides you a platform to export your code as a library or run it as an executable program. For a detailed understanding of SwiftPM refer: https://swift.org/package-manager/.
+for details on usage of SwiftPM:
+Usage.md 
+## Common SwiftPM commands
+```
+swift package init --type executable
+swift package init // swift package init --type library
+swift package resolve // for resolving dependencies
+swift package update // updating dependencies
+swift package clean
+swift build
+swift run
+swift package generate-xcodeproj
+```
 ## Installing your script: creating a command line tool
-To install the script as a tool, following commands need to be executed in the root folder of the repo: 
+To install the script as a tool, following commands need to be executed in the root folder of the repo:
 ```
 swift build -c release
 cd .build/release
 cp -f <ProductName> /usr/local/bin/<tool-name>
 ```
-for example:
-`cp -f CommitWithBranchName /usr/local/bin/vcommit`
+for example: cp -f CommitWithBranchName /usr/local/bin/vcommit
 
-## Example: "vcommit"
-
+## Example
+https://github.com/v-i-s-h-a-l/GetFolderDetails
+ 
 ## References and thanks to
 1. John Sundell's talk: https://www.youtube.com/watch?v=KntiH9E4TGQ
 2. https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/
