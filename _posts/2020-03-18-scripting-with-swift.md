@@ -29,7 +29,8 @@ Save and return to terminal window.
 ## Using Swift Package Manager (SwiftPM) to create an executable product or swift script
 SwiftPM is swift’s own dependency management tool. It allows you to integrate reusable code / libraries into your own code. Also, it provides you a platform to export your code as a library or run it as an executable program. For a detailed understanding of SwiftPM refer: https://swift.org/package-manager/.
 for details on usage of SwiftPM:
-Usage.md 
+https://github.com/apple/swift-package-manager/blob/master/Documentation/Usage.md
+
 ## Common SwiftPM commands
 ```
 swift package init --type executable
