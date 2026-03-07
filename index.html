@@ -48,6 +48,7 @@
             --edge-active: rgba(212, 160, 83, 0.25);
             --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
             --shadow-card-hover: 0 12px 40px rgba(0,0,0,0.5);
+            --bg-gradient: linear-gradient(145deg, #0e0e14 0%, #141422 30%, #0f1520 60%, #0e0e14 100%);
         }
 
         [data-theme="light"] {
@@ -77,6 +78,7 @@
             --edge-active: rgba(154, 107, 52, 0.2);
             --shadow-card: 0 4px 20px rgba(0,0,0,0.06);
             --shadow-card-hover: 0 12px 36px rgba(0,0,0,0.12);
+            --bg-gradient: linear-gradient(145deg, #f5f2ed 0%, #efe8de 30%, #f0ede6 60%, #f5f2ed 100%);
         }
 
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -88,11 +90,12 @@
 
         body {
             font-family: var(--sans);
-            background: var(--bg-primary);
+            background: var(--bg-gradient);
             color: var(--text-primary);
             line-height: 1.7;
             overflow-x: hidden;
             transition: background 0.5s ease, color 0.5s ease;
+            min-height: 100vh;
         }
 
         ::selection { background: var(--accent); color: var(--bg-primary); }
