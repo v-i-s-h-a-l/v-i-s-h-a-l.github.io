@@ -41,10 +41,179 @@
             display: flex; align-items: center; justify-content: center;
             width: 36px; height: 36px; border-radius: 8px;
             border: 1px solid var(--border); color: var(--text-secondary);
-            transition: all 0.3s ease; text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            text-decoration: none; cursor: pointer; background: none;
+            position: relative;
         }
         .nav-links-btn:hover { border-color: var(--accent); color: var(--accent); }
-        .nav-links-btn svg { width: 16px; height: 16px; }
+        .nav-links-btn svg { width: 16px; height: 16px; position: absolute; transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
+        .nav-links-btn .icon-x { opacity: 0; transform: rotate(-90deg) scale(0.5); }
+        .nav-links-btn.active .icon-lines { opacity: 0; transform: rotate(90deg) scale(0.5); }
+        .nav-links-btn.active .icon-x { opacity: 1; transform: rotate(0) scale(1); }
+        .nav-links-btn.active { border-color: var(--accent); color: var(--accent); }
+
+        /* ── Links Overlay ── */
+        .links-overlay {
+            position: fixed; inset: 0; z-index: 99;
+            display: flex; justify-content: center;
+            overflow-y: auto; overflow-x: hidden;
+            pointer-events: none; opacity: 0;
+            transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open { pointer-events: auto; opacity: 1; }
+
+        .links-overlay-backdrop {
+            position: fixed; inset: 0; z-index: 0;
+            background: color-mix(in srgb, var(--bg-primary) 80%, transparent);
+            backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+            opacity: 0; transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open .links-overlay-backdrop { opacity: 1; }
+
+        .links-overlay-content {
+            position: relative; z-index: 1;
+            width: 100%; max-width: 480px;
+            padding: 80px 20px 40px;
+            display: flex; flex-direction: column; align-items: center;
+        }
+
+        /* Profile in overlay */
+        .lo-profile {
+            display: flex; flex-direction: column; align-items: center;
+            margin-bottom: 2rem; text-align: center;
+            transform: translateY(40px) scale(0.92); opacity: 0;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+        }
+        .links-overlay.open .lo-profile { transform: translateY(0) scale(1); opacity: 1; }
+        .lo-avatar-ring {
+            width: 88px; height: 88px; border-radius: 50%;
+            padding: 3px; margin-bottom: 0.8rem;
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+            box-shadow: 0 0 30px var(--accent-glow);
+        }
+        .lo-avatar {
+            width: 100%; height: 100%; border-radius: 50%;
+            background: var(--bg-primary);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.6rem; font-weight: 700; color: var(--accent);
+            font-family: var(--mono);
+        }
+        .lo-name { font-size: 1.5rem; font-weight: 800; letter-spacing: -1px; }
+        .lo-name .highlight {
+            background: linear-gradient(135deg, var(--accent), var(--accent-secondary));
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+        }
+        .lo-tagline { font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+        /* Section labels in overlay */
+        .lo-section {
+            width: 100%; font-family: var(--mono); font-size: 0.68rem; font-weight: 500;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 3px;
+            display: flex; align-items: center; gap: 0.75rem;
+            margin-bottom: 0.8rem; margin-top: 0.5rem;
+            transform: translateY(20px); opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .lo-section::before, .lo-section::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+        .links-overlay.open .lo-section { transform: translateY(0); opacity: 1; }
+
+        /* Link cards in overlay */
+        .lo-list { width: 100%; display: flex; flex-direction: column; gap: 10px; }
+
+        .lo-card {
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); overflow: hidden;
+            transform: translateY(30px) scale(0.96); opacity: 0;
+            transition: all 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open .lo-card { transform: translateY(0) scale(1); opacity: 1; }
+        .lo-card:hover {
+            background: var(--bg-card-hover); border-color: var(--border-hover);
+            box-shadow: var(--shadow-card-hover); transform: translateY(-3px) scale(1);
+        }
+        .lo-card a {
+            display: flex; align-items: center; gap: 14px;
+            padding: 14px 18px; color: var(--text-primary); text-decoration: none;
+        }
+        .lo-icon {
+            width: 42px; height: 42px; flex-shrink: 0;
+            display: flex; align-items: center; justify-content: center;
+            border-radius: 10px;
+        }
+        .lo-icon svg { width: 20px; height: 20px; fill: currentColor; }
+        .lo-icon.i-portfolio { background: var(--accent-dim); color: var(--accent); }
+        .lo-icon.i-github { background: var(--accent-dim); color: var(--accent); }
+        .lo-icon.i-linkedin { background: rgba(167, 139, 250, 0.12); color: var(--purple); }
+        .lo-icon.i-twitter { background: rgba(110, 231, 183, 0.12); color: var(--green); }
+        .lo-icon.i-so { background: rgba(251, 146, 60, 0.12); color: var(--orange); }
+        .lo-icon.i-app { background: rgba(244, 114, 182, 0.12); color: var(--pink); }
+        .lo-icon.i-email { background: var(--green-dim); color: var(--green); }
+
+        .lo-text { flex: 1; }
+        .lo-title { font-weight: 600; font-size: 0.9rem; line-height: 1.3; }
+        .lo-sub { font-family: var(--mono); font-size: 0.72rem; color: var(--text-muted); }
+        .lo-arrow { margin-left: auto; color: var(--text-muted); transition: all 0.3s ease; flex-shrink: 0; }
+        .lo-arrow svg { width: 16px; height: 16px; stroke: currentColor; fill: none; }
+        .lo-card:hover .lo-arrow { color: var(--accent); transform: translateX(3px); }
+
+        /* Divider in overlay */
+        .lo-divider {
+            width: 100%; margin: 1.5rem 0; display: flex; align-items: center;
+            transform: translateY(20px); opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open .lo-divider { transform: translateY(0); opacity: 1; }
+        .lo-divider::before, .lo-divider::after {
+            content: ''; flex: 1; height: 1px;
+            background: linear-gradient(to right, transparent, var(--accent), transparent);
+        }
+        .lo-divider::after { background: linear-gradient(to left, transparent, var(--accent), transparent); }
+        .lo-divider-badge {
+            font-family: var(--mono); font-size: 0.65rem; font-weight: 600;
+            color: var(--accent); text-transform: uppercase; letter-spacing: 3px;
+            padding: 0.4rem 1rem; border: 1px solid var(--accent);
+            border-radius: 20px; background: var(--accent-dim); white-space: nowrap;
+        }
+
+        /* QR in overlay */
+        .lo-qr {
+            margin-top: 0.5rem; display: flex; flex-direction: column; align-items: center; gap: 10px;
+            transform: translateY(30px); opacity: 0;
+            transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open .lo-qr { transform: translateY(0); opacity: 1; }
+        .lo-qr-box {
+            padding: 16px; background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: var(--radius); box-shadow: var(--shadow-card); transition: all 0.3s ease;
+        }
+        .lo-qr-box:hover { border-color: var(--border-hover); box-shadow: 0 0 20px var(--accent-glow); }
+        #lo-qr-canvas { display: block; }
+
+        .lo-footer {
+            margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);
+            width: 100%; text-align: center; font-family: var(--mono); font-size: 0.72rem; color: var(--text-muted);
+            transform: translateY(20px); opacity: 0;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .links-overlay.open .lo-footer { transform: translateY(0); opacity: 1; }
+        .lo-footer a { color: var(--accent); text-decoration: none; }
+        .lo-footer a:hover { text-decoration: underline; }
+
+        /* Stagger delays for cards */
+        .links-overlay.open .lo-stagger-1 { transition-delay: 0.15s; }
+        .links-overlay.open .lo-stagger-2 { transition-delay: 0.18s; }
+        .links-overlay.open .lo-stagger-3 { transition-delay: 0.21s; }
+        .links-overlay.open .lo-stagger-4 { transition-delay: 0.24s; }
+        .links-overlay.open .lo-stagger-5 { transition-delay: 0.27s; }
+        .links-overlay.open .lo-stagger-6 { transition-delay: 0.30s; }
+        .links-overlay.open .lo-stagger-7 { transition-delay: 0.33s; }
+        .links-overlay.open .lo-stagger-8 { transition-delay: 0.36s; }
+        .links-overlay.open .lo-stagger-9 { transition-delay: 0.39s; }
+        .links-overlay.open .lo-stagger-10 { transition-delay: 0.42s; }
+        .links-overlay.open .lo-stagger-11 { transition-delay: 0.45s; }
+        .links-overlay.open .lo-stagger-12 { transition-delay: 0.48s; }
+        .links-overlay.open .lo-stagger-13 { transition-delay: 0.51s; }
+        .links-overlay.open .lo-stagger-14 { transition-delay: 0.54s; }
         .nav-links { display: flex; gap: 2rem; list-style: none; }
         .nav-links a {
             font-family: var(--mono); font-size: 0.73rem; color: var(--text-secondary);
@@ -423,9 +592,10 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="https://v-i-s-h-a-l.github.io/links" class="nav-links-btn" target="_blank" rel="noopener" aria-label="All links" title="All my links">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/></svg>
-                </a>
+                <button class="nav-links-btn" id="linksToggle" aria-label="All links" title="All my links">
+                    <svg class="icon-lines" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/></svg>
+                    <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+                </button>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg>
                     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
@@ -998,10 +1168,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.725 0l-1.72 1.277 6.39 8.588 1.72-1.277L15.725 0zm-3.94 3.418l-1.369 1.644 8.225 6.85 1.369-1.644-8.225-6.85zm-3.15 4.465l-.905 1.94 9.702 4.517.905-1.94-9.702-4.517zm-1.85 4.86l-.44 2.093 10.473 2.201.44-2.092-10.473-2.203zM1.89 15.47V24h19.19v-8.53h-2.133v6.397H4.021v-6.396H1.89zm4.265 2.254v2.133h10.66v-2.133H6.154z"/></svg>
                     Stack Overflow
                 </a>
-                <a href="https://v-i-s-h-a-l.github.io/links" class="contact-link" target="_blank" rel="noopener">
+                <button class="contact-link" onclick="document.getElementById('linksToggle').click();" style="cursor:pointer;">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
                     All Links
-                </a>
+                </button>
             </div>
         </div>
     </section>
@@ -1012,10 +1182,91 @@
         </div>
     </footer>
 
+    <!-- Links Overlay -->
+    <div class="links-overlay" id="linksOverlay">
+        <div class="links-overlay-backdrop" id="linksBackdrop"></div>
+        <div class="links-overlay-content">
+            <div class="lo-profile">
+                <div class="lo-avatar-ring"><div class="lo-avatar">VS</div></div>
+                <div class="lo-name">Vishal <span class="highlight">Singh</span></div>
+                <div class="lo-tagline">iOS engineer &middot; AI explorer &middot; builder of things</div>
+            </div>
+
+            <div class="lo-section lo-stagger-1">Professional</div>
+            <div class="lo-list">
+                <div class="lo-card lo-stagger-2"><a href="#" onclick="closeLinksOverlay();return true;">
+                    <div class="lo-icon i-portfolio"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">Portfolio</div><div class="lo-sub">v-i-s-h-a-l.github.io</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-3"><a href="https://github.com/v-i-s-h-a-l" target="_blank" rel="noopener">
+                    <div class="lo-icon i-github"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">GitHub</div><div class="lo-sub">@v-i-s-h-a-l</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-4"><a href="https://linkedin.com/in/v-i-s-h-a-l" target="_blank" rel="noopener">
+                    <div class="lo-icon i-linkedin"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">LinkedIn</div><div class="lo-sub">in/v-i-s-h-a-l</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-5"><a href="https://twitter.com/v_s_h_a_l" target="_blank" rel="noopener">
+                    <div class="lo-icon i-twitter"><svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">X (Twitter)</div><div class="lo-sub">@v_s_h_a_l</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-6"><a href="https://stackoverflow.com/users/2407192/v-i-s-h-a-l" target="_blank" rel="noopener">
+                    <div class="lo-icon i-so"><svg viewBox="0 0 24 24"><path d="M15 21H3v-8h2v6h10v-6h2v8zM17.36 9.2l-1.13-1.47-5.98 4.57 1.13 1.47 5.98-4.57zm-1.2 3.17l-.73-1.7-6.78 2.9.73 1.7 6.78-2.9zm.53-6.6L14.52 4.2l-4.47 6.19 2.17 1.57 4.47-6.19zM21 .58L18.56 0l-2.58 7.89L18.4 8.47 21 .58zM5 15h8v2H5v-2z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">Stack Overflow</div><div class="lo-sub">2,000+ reputation</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-7"><a href="mailto:vishalsingh2706@gmail.com">
+                    <div class="lo-icon i-email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">Email</div><div class="lo-sub">vishalsingh2706@gmail.com</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+            </div>
+
+            <div class="lo-divider lo-stagger-8"><span class="lo-divider-badge">Projects</span></div>
+
+            <div class="lo-list">
+                <div class="lo-card lo-stagger-9"><a href="https://apps.apple.com/in/app/turnip-talk-to-your-friends/id1567159474" target="_blank" rel="noopener">
+                    <div class="lo-icon i-app"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">Turnip</div><div class="lo-sub">Social gaming &middot; App Store</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-10"><a href="https://apps.apple.com/in/app/paytm-money-stocks-trading-app/id1344431352" target="_blank" rel="noopener">
+                    <div class="lo-icon i-app"><svg viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">Paytm Money</div><div class="lo-sub">Fintech trading &middot; App Store</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+
+                <div class="lo-card lo-stagger-11"><a href="https://github.com/v-i-s-h-a-l/Tim-Bak-Toe" target="_blank" rel="noopener">
+                    <div class="lo-icon i-github"><svg viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></div>
+                    <div class="lo-text"><div class="lo-title">XO3</div><div class="lo-sub">Tic-Tac-Toe game &middot; Open Source</div></div>
+                    <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
+                </a></div>
+            </div>
+
+            <div class="lo-divider lo-stagger-12"><span class="lo-divider-badge">Scan &middot; Share</span></div>
+
+            <div class="lo-qr lo-stagger-13">
+                <div class="lo-qr-box"><canvas id="lo-qr-canvas" width="164" height="164"></canvas></div>
+            </div>
+
+            <div class="lo-footer lo-stagger-14"><a href="https://v-i-s-h-a-l.github.io">v-i-s-h-a-l.github.io</a></div>
+        </div>
+    </div>
+
     <script src="assets/js/shared.js"></script>
     <script>
-    // Page-specific: nav scroll + mobile nav toggle
     (function() {
+        // ── Nav scroll + mobile nav toggle ──
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('scrolled', window.scrollY > 50);
@@ -1033,6 +1284,84 @@
                 navLinks.classList.remove('open');
             });
         });
+
+        // ── Links Overlay ──
+        const linksToggle = document.getElementById('linksToggle');
+        const linksOverlay = document.getElementById('linksOverlay');
+        const linksBackdrop = document.getElementById('linksBackdrop');
+        let overlayOpen = false;
+
+        function openLinksOverlay() {
+            overlayOpen = true;
+            linksOverlay.classList.add('open');
+            linksToggle.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            drawOverlayQR();
+        }
+
+        window.closeLinksOverlay = function() {
+            overlayOpen = false;
+            linksOverlay.classList.remove('open');
+            linksToggle.classList.remove('active');
+            document.body.style.overflow = '';
+        };
+
+        linksToggle.addEventListener('click', () => {
+            if (overlayOpen) closeLinksOverlay();
+            else openLinksOverlay();
+        });
+
+        linksBackdrop.addEventListener('click', closeLinksOverlay);
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && overlayOpen) closeLinksOverlay();
+        });
+
+        // ── QR Code for overlay ──
+        // (Minimal QR generator - same as links page)
+        const EXP=new Uint8Array(256),LOG=new Uint8Array(256);(function(){let v=1;for(let i=0;i<255;i++){EXP[i]=v;LOG[v]=i;v=(v<<1)^(v>=128?0x11d:0);}EXP[255]=EXP[0];})();
+        function gfMul(a,b){return a===0||b===0?0:EXP[(LOG[a]+LOG[b])%255];}
+        function polyMul(a,b){const r=new Uint8Array(a.length+b.length-1);for(let i=0;i<a.length;i++)for(let j=0;j<b.length;j++)r[i+j]^=gfMul(a[i],b[j]);return r;}
+        function polyRest(d,g){const r=new Uint8Array(d.length+g.length-1);r.set(d);for(let i=0;i<d.length;i++){if(r[i]===0)continue;for(let j=0;j<g.length;j++)r[i+j]^=gfMul(g[j],r[i]);}return r.slice(d.length);}
+        function genPoly(n){let g=new Uint8Array([1]);for(let i=0;i<n;i++)g=polyMul(g,new Uint8Array([1,EXP[i]]));return g;}
+        function encodeBytes(url){const bytes=new TextEncoder().encode(url),len=bytes.length;let ver,tdc,ecw,nb;if(len<=17){ver=1;tdc=19;ecw=7;nb=1;}else if(len<=32){ver=2;tdc=34;ecw=10;nb=1;}else if(len<=53){ver=3;tdc=55;ecw=15;nb=1;}else{ver=4;tdc=80;ecw=20;nb=1;}const sz=ver*4+17,cc=ver<=9?8:16;let bits='0100'+len.toString(2).padStart(cc,'0');for(const b of bytes)bits+=b.toString(2).padStart(8,'0');bits+='0000';while(bits.length%8!==0)bits+='0';const dc=[];for(let i=0;i<bits.length;i+=8)dc.push(parseInt(bits.slice(i,i+8),2));let pb=0;while(dc.length<tdc){dc.push(pb===0?0xEC:0x11);pb^=1;}const dpb=Math.floor(tdc/nb),gen=genPoly(ecw),aD=[],aE=[];for(let b=0;b<nb;b++){const bd=new Uint8Array(dc.slice(b*dpb,(b+1)*dpb));aD.push(bd);aE.push(polyRest(bd,gen));}const res=[];for(let i=0;i<dpb;i++)for(let b=0;b<nb;b++)res.push(aD[b][i]);for(let i=0;i<ecw;i++)for(let b=0;b<nb;b++)res.push(aE[b][i]);return{codewords:res,version:ver,size:sz};}
+        function createMatrix(sz){const m=[],r=[];for(let i=0;i<sz;i++){m.push(new Uint8Array(sz));r.push(new Uint8Array(sz));}return{m,reserved:r,size:sz};}
+        function setMod(mx,r,c,v){mx.m[r][c]=v?1:0;mx.reserved[r][c]=1;}
+        function addFinder(mx,row,col){for(let r=-1;r<=7;r++)for(let c=-1;c<=7;c++){const rr=row+r,cc=col+c;if(rr<0||rr>=mx.size||cc<0||cc>=mx.size)continue;setMod(mx,rr,cc,!(r===-1||r===7||c===-1||c===7)&&(r===0||r===6||c===0||c===6||(r>=2&&r<=4&&c>=2&&c<=4)));}}
+        function addAlign(mx,row,col){for(let r=-2;r<=2;r++)for(let c=-2;c<=2;c++)setMod(mx,row+r,col+c,Math.abs(r)===2||Math.abs(c)===2||(r===0&&c===0));}
+        function addTiming(mx){for(let i=8;i<mx.size-8;i++){if(!mx.reserved[6][i])setMod(mx,6,i,i%2===0);if(!mx.reserved[i][6])setMod(mx,i,6,i%2===0);}}
+        const AL=[[],[],[6,18],[6,22],[6,26],[6,30],[6,34]];
+        function addFmt(mx,mask){const fb=((0b01)<<3)|mask;let rem=fb;for(let i=0;i<10;i++)rem=(rem<<1)^((rem>>9)*0b10100110111);const d=((fb<<10)|rem)^0b101010000010010;for(let i=0;i<6;i++)setMod(mx,8,i,(d>>i)&1);setMod(mx,8,7,(d>>6)&1);setMod(mx,8,8,(d>>7)&1);setMod(mx,7,8,(d>>8)&1);for(let i=0;i<6;i++)setMod(mx,5-i,8,(d>>(9+i))&1);for(let i=0;i<7;i++)setMod(mx,mx.size-1-i,8,(d>>i)&1);for(let i=0;i<8;i++)setMod(mx,8,mx.size-8+i,(d>>(7+i))&1);setMod(mx,mx.size-8,8,1);}
+        function placeData(mx,cw){let bi=0;const tb=cw.length*8;let right=mx.size-1;while(right>=1){if(right===6)right=5;for(let v=0;v<mx.size;v++)for(let j=0;j<2;j++){const col=right-j,up=((right+1)>>1)%2===1,row=up?mx.size-1-v:v;if(mx.reserved[row][col])continue;if(bi<tb){mx.m[row][col]=(cw[bi>>3]>>(7-(bi&7)))&1;}bi++;}right-=2;}}
+        const MF=[(r,c)=>(r+c)%2===0,r=>r%2===0,(_,c)=>c%3===0,(r,c)=>(r+c)%3===0,(r,c)=>(Math.floor(r/2)+Math.floor(c/3))%2===0,(r,c)=>((r*c)%2+(r*c)%3)===0,(r,c)=>((r*c)%2+(r*c)%3)%2===0,(r,c)=>((r+c)%2+(r*c)%3)%2===0];
+        function applyMask(mx,mi){const fn=MF[mi];for(let r=0;r<mx.size;r++)for(let c=0;c<mx.size;c++)if(!mx.reserved[r][c]&&fn(r,c))mx.m[r][c]^=1;}
+        function penalty(mx){let s=0;const sz=mx.size;for(let r=0;r<sz;r++){let run=1;for(let c=1;c<sz;c++){if(mx.m[r][c]===mx.m[r][c-1])run++;else{if(run>=5)s+=run-2;run=1;}}if(run>=5)s+=run-2;}for(let c=0;c<sz;c++){let run=1;for(let r=1;r<sz;r++){if(mx.m[r][c]===mx.m[r-1][c])run++;else{if(run>=5)s+=run-2;run=1;}}if(run>=5)s+=run-2;}return s;}
+        function generateQR(url){const{codewords,version,size}=encodeBytes(url);let best=null,bestS=Infinity;for(let mask=0;mask<8;mask++){const mx=createMatrix(size);addFinder(mx,0,0);addFinder(mx,0,size-7);addFinder(mx,size-7,0);if(version>=2){const pos=AL[version];for(const r of pos)for(const c of pos){if((r<9&&c<9)||(r<9&&c>size-9)||(r>size-9&&c<9))continue;addAlign(mx,r,c);}}addTiming(mx);addFmt(mx,mask);for(let i=0;i<8;i++){mx.reserved[8][i]=1;mx.reserved[i][8]=1;mx.reserved[8][size-1-i]=1;mx.reserved[size-1-i][8]=1;}mx.reserved[8][8]=1;placeData(mx,codewords);applyMask(mx,mask);addFmt(mx,mask);const sc=penalty(mx);if(sc<bestS){bestS=sc;best=mx;}}return best;}
+
+        function drawOverlayQR() {
+            const canvas = document.getElementById('lo-qr-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const matrix = generateQR('https://v-i-s-h-a-l.github.io/links');
+            const size = matrix.size, scale = Math.floor(canvas.width / (size + 8));
+            const offset = Math.floor((canvas.width - size * scale) / 2);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const isDark = document.documentElement.dataset.theme === 'dark';
+            const fg = isDark ? '#ececf1' : '#1a1a2e', accent = isDark ? '#d4a053' : '#9a6b34';
+            for (let r = 0; r < size; r++) for (let c = 0; c < size; c++) {
+                if (matrix.m[r][c]) {
+                    const inF = (r<7&&c<7)||(r<7&&c>=size-7)||(r>=size-7&&c<7);
+                    ctx.fillStyle = inF ? accent : fg;
+                    const x=offset+c*scale, y=offset+r*scale, s=scale-1, rad=s*0.25;
+                    ctx.beginPath(); ctx.moveTo(x+rad,y); ctx.lineTo(x+s-rad,y);
+                    ctx.quadraticCurveTo(x+s,y,x+s,y+rad); ctx.lineTo(x+s,y+s-rad);
+                    ctx.quadraticCurveTo(x+s,y+s,x+s-rad,y+s); ctx.lineTo(x+rad,y+s);
+                    ctx.quadraticCurveTo(x,y+s,x,y+s-rad); ctx.lineTo(x,y+rad);
+                    ctx.quadraticCurveTo(x,y,x+rad,y); ctx.fill();
+                }
+            }
+        }
+        window.addEventListener('themechange', () => { if (overlayOpen) drawOverlayQR(); });
     })();
     </script>
 </body>
