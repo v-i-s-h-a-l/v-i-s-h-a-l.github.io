@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishal Singh - Principal Engineer, iOS</title>
+    <title>Vishal Singh</title>
     <meta name="description" content="Vishal Singh - iOS Engineer and aspiring AI builder. Portfolio showcasing apps shipped across fintech, health-tech, social, and e-commerce.">
     <meta name="theme-color" content="#0e0e14">
     <meta property="og:title" content="Vishal Singh - Engineer & Builder">
@@ -42,10 +42,7 @@
             --orange: #fb923c;
             --purple: #a78bfa;
             --pink: #f472b6;
-            --node-color: rgba(212, 160, 83, 0.35);
-            --edge-color: rgba(212, 160, 83, 0.07);
-            --node-active: rgba(212, 160, 83, 0.9);
-            --edge-active: rgba(212, 160, 83, 0.25);
+
             --shadow-card: 0 4px 24px rgba(0,0,0,0.3);
             --shadow-card-hover: 0 12px 40px rgba(0,0,0,0.5);
             --bg-gradient: linear-gradient(145deg, #0e0e14 0%, #141422 30%, #0f1520 60%, #0e0e14 100%);
@@ -72,10 +69,7 @@
             --orange: #c2630b;
             --purple: #6d5daf;
             --pink: #c44a80;
-            --node-color: rgba(154, 107, 52, 0.3);
-            --edge-color: rgba(154, 107, 52, 0.06);
-            --node-active: rgba(154, 107, 52, 0.85);
-            --edge-active: rgba(154, 107, 52, 0.2);
+
             --shadow-card: 0 4px 20px rgba(0,0,0,0.06);
             --shadow-card-hover: 0 12px 36px rgba(0,0,0,0.12);
             --bg-gradient: linear-gradient(145deg, #f5f2ed 0%, #efe8de 30%, #f0ede6 60%, #f5f2ed 100%);
@@ -100,11 +94,79 @@
 
         ::selection { background: var(--accent); color: var(--bg-primary); }
 
-        /* ── Neural Network Background ── */
-        #nn-canvas {
+        /* ── Animated Background Orbs ── */
+        .bg-animation {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0; pointer-events: none; overflow: hidden;
+        }
+        .bg-orb {
+            position: absolute; border-radius: 50%; filter: blur(80px);
+            opacity: 0.35; will-change: transform;
+        }
+        [data-theme="light"] .bg-orb { opacity: 0.2; }
+        .bg-orb:nth-child(1) {
+            width: 500px; height: 500px; top: -10%; left: -5%;
+            background: radial-gradient(circle, rgba(var(--accent-rgb), 0.5), transparent 70%);
+            animation: orb-drift-1 18s ease-in-out infinite alternate;
+        }
+        .bg-orb:nth-child(2) {
+            width: 400px; height: 400px; top: 40%; right: -8%;
+            background: radial-gradient(circle, rgba(167, 139, 250, 0.4), transparent 70%);
+            animation: orb-drift-2 22s ease-in-out infinite alternate;
+        }
+        .bg-orb:nth-child(3) {
+            width: 350px; height: 350px; bottom: -5%; left: 25%;
+            background: radial-gradient(circle, rgba(var(--accent-rgb), 0.35), transparent 70%);
+            animation: orb-drift-3 20s ease-in-out infinite alternate;
+        }
+        .bg-orb:nth-child(4) {
+            width: 300px; height: 300px; top: 20%; left: 50%;
+            background: radial-gradient(circle, rgba(110, 231, 183, 0.25), transparent 70%);
+            animation: orb-drift-4 25s ease-in-out infinite alternate;
+        }
+        .bg-orb:nth-child(5) {
+            width: 250px; height: 250px; top: 65%; left: 10%;
+            background: radial-gradient(circle, rgba(167, 139, 250, 0.3), transparent 70%);
+            animation: orb-drift-5 19s ease-in-out infinite alternate;
+        }
+        @keyframes orb-drift-1 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(120px, 80px) scale(1.1); }
+            66% { transform: translate(50px, 150px) scale(0.95); }
+            100% { transform: translate(180px, 60px) scale(1.05); }
+        }
+        @keyframes orb-drift-2 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-100px, 60px) scale(1.08); }
+            66% { transform: translate(-60px, -80px) scale(0.92); }
+            100% { transform: translate(-150px, 40px) scale(1.05); }
+        }
+        @keyframes orb-drift-3 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(80px, -70px) scale(1.12); }
+            66% { transform: translate(-40px, -30px) scale(0.9); }
+            100% { transform: translate(60px, -100px) scale(1.08); }
+        }
+        @keyframes orb-drift-4 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(-70px, 90px) scale(1.06); }
+            66% { transform: translate(50px, 50px) scale(0.94); }
+            100% { transform: translate(-90px, 120px) scale(1.1); }
+        }
+        @keyframes orb-drift-5 {
+            0% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(100px, -50px) scale(1.1); }
+            66% { transform: translate(60px, 70px) scale(0.95); }
+            100% { transform: translate(130px, 30px) scale(1.05); }
+        }
+        /* Interactive hover layer */
+        .bg-hover-layer {
             position: fixed; top: 0; left: 0; width: 100%; height: 100%;
             z-index: 0; pointer-events: none;
+            background: radial-gradient(600px circle at var(--mx, 50%) var(--my, 50%), rgba(var(--accent-rgb), 0.06), transparent 40%);
+            opacity: 0; transition: opacity 0.5s ease;
         }
+        .bg-hover-layer.active { opacity: 1; }
 
         /* ── Navigation ── */
         nav {
@@ -553,8 +615,15 @@
     </style>
 </head>
 <body>
-    <!-- Neural Network Canvas -->
-    <canvas id="nn-canvas"></canvas>
+    <!-- Animated Background -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+        <div class="bg-orb"></div>
+    </div>
+    <div class="bg-hover-layer" id="bgHover" aria-hidden="true"></div>
 
     <!-- Navigation -->
     <nav id="navbar">
@@ -1154,162 +1223,18 @@
     (function() {
         'use strict';
 
-        // ── Neural Network Background Animation ──
-        const canvas = document.getElementById('nn-canvas');
-        const ctx = canvas.getContext('2d');
-        let nodes = [];
-        let mouseX = -1000, mouseY = -1000;
-        const HOVER_RADIUS = 180;
-        const CONNECT_DIST = 140;
-
-        function getColor(varName) {
-            return getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
-        }
-
-        function resize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-
-        function createNodes() {
-            nodes = [];
-            const area = canvas.width * canvas.height;
-            const count = Math.min(100, Math.max(30, Math.floor(area / 12000)));
-            for (let i = 0; i < count; i++) {
-                nodes.push({
-                    x: Math.random() * canvas.width,
-                    y: Math.random() * canvas.height,
-                    vx: (Math.random() - 0.5) * 0.25,
-                    vy: (Math.random() - 0.5) * 0.2,
-                    baseRadius: 1.5 + Math.random() * 2,
-                    radius: 1.5 + Math.random() * 2,
-                    pulse: Math.random() * Math.PI * 2,
-                    activation: 0,
-                });
-            }
-        }
-
-        // Enable pointer events on canvas for hover
-        canvas.style.pointerEvents = 'auto';
-        canvas.style.cursor = 'default';
-
-        canvas.addEventListener('mousemove', (e) => {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
+        // ── Interactive Background Hover Glow ──
+        const bgHover = document.getElementById('bgHover');
+        document.addEventListener('mousemove', (e) => {
+            const x = (e.clientX / window.innerWidth) * 100;
+            const y = (e.clientY / window.innerHeight) * 100;
+            bgHover.style.setProperty('--mx', x + '%');
+            bgHover.style.setProperty('--my', y + '%');
+            if (!bgHover.classList.contains('active')) bgHover.classList.add('active');
         });
-        canvas.addEventListener('mouseleave', () => {
-            mouseX = -1000;
-            mouseY = -1000;
+        document.addEventListener('mouseleave', () => {
+            bgHover.classList.remove('active');
         });
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            const nodeColor = getColor('--node-color');
-            const edgeColor = getColor('--edge-color');
-            const nodeActive = getColor('--node-active');
-            const edgeActive = getColor('--edge-active');
-
-            // Update nodes
-            for (const n of nodes) {
-                n.x += n.vx;
-                n.y += n.vy;
-                n.pulse += 0.01;
-
-                // Wrap around
-                if (n.x < -20) n.x = canvas.width + 20;
-                if (n.x > canvas.width + 20) n.x = -20;
-                if (n.y < -20) n.y = canvas.height + 20;
-                if (n.y > canvas.height + 20) n.y = -20;
-
-                // Mouse proximity activation + repulsion
-                const dx = n.x - mouseX;
-                const dy = n.y - mouseY;
-                const dist = Math.sqrt(dx * dx + dy * dy);
-                const targetActivation = dist < HOVER_RADIUS ? 1 - (dist / HOVER_RADIUS) : 0;
-                n.activation += (targetActivation - n.activation) * 0.08;
-
-                // Repel nodes away from cursor (magnetic push)
-                if (dist < HOVER_RADIUS && dist > 1) {
-                    const force = (1 - dist / HOVER_RADIUS) * 1.8;
-                    const ax = (dx / dist) * force;
-                    const ay = (dy / dist) * force;
-                    n.vx += ax * 0.06;
-                    n.vy += ay * 0.06;
-                }
-
-                // Dampen velocity so nodes settle back
-                n.vx *= 0.985;
-                n.vy *= 0.985;
-
-                // Clamp max speed
-                const speed = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
-                if (speed > 2.5) { n.vx = (n.vx / speed) * 2.5; n.vy = (n.vy / speed) * 2.5; }
-
-                // Pulse radius
-                n.radius = n.baseRadius + Math.sin(n.pulse) * 0.5 + n.activation * 3;
-            }
-
-            // Draw edges
-            for (let i = 0; i < nodes.length; i++) {
-                for (let j = i + 1; j < nodes.length; j++) {
-                    const a = nodes[i], b = nodes[j];
-                    const dx = a.x - b.x, dy = a.y - b.y;
-                    const dist = Math.sqrt(dx * dx + dy * dy);
-                    if (dist < CONNECT_DIST) {
-                        const alpha = 1 - dist / CONNECT_DIST;
-                        const maxAct = Math.max(a.activation, b.activation);
-                        // Lerp between idle and active edge color
-                        ctx.strokeStyle = maxAct > 0.05 ? edgeActive : edgeColor;
-                        ctx.globalAlpha = alpha * (0.3 + maxAct * 0.7);
-                        ctx.lineWidth = 0.5 + maxAct * 1.5;
-                        ctx.beginPath();
-                        ctx.moveTo(a.x, a.y);
-                        ctx.lineTo(b.x, b.y);
-                        ctx.stroke();
-
-                        // Draw "data pulse" on active edges
-                        if (maxAct > 0.3 && alpha > 0.4) {
-                            const t = (Date.now() % 2000) / 2000;
-                            const px = a.x + (b.x - a.x) * t;
-                            const py = a.y + (b.y - a.y) * t;
-                            ctx.globalAlpha = maxAct * alpha * 0.8;
-                            ctx.fillStyle = nodeActive;
-                            ctx.beginPath();
-                            ctx.arc(px, py, 1.5, 0, Math.PI * 2);
-                            ctx.fill();
-                        }
-                    }
-                }
-            }
-
-            // Draw nodes
-            for (const n of nodes) {
-                ctx.globalAlpha = 0.4 + n.activation * 0.6;
-                ctx.fillStyle = n.activation > 0.1 ? nodeActive : nodeColor;
-                ctx.beginPath();
-                ctx.arc(n.x, n.y, n.radius, 0, Math.PI * 2);
-                ctx.fill();
-
-                // Glow ring for activated nodes
-                if (n.activation > 0.2) {
-                    ctx.globalAlpha = n.activation * 0.2;
-                    ctx.strokeStyle = nodeActive;
-                    ctx.lineWidth = 1;
-                    ctx.beginPath();
-                    ctx.arc(n.x, n.y, n.radius + 4 + n.activation * 4, 0, Math.PI * 2);
-                    ctx.stroke();
-                }
-            }
-
-            ctx.globalAlpha = 1;
-            requestAnimationFrame(animate);
-        }
-
-        resize();
-        createNodes();
-        animate();
-        window.addEventListener('resize', () => { resize(); createNodes(); });
 
         // ── Tilt Card Effect ──
         document.querySelectorAll('.tilt-card').forEach(card => {
