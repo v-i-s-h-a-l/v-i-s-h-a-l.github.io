@@ -227,6 +227,41 @@
         .nav-links a:hover { color: var(--accent); }
         .nav-links a:hover::after { width: 100%; }
 
+        /* ── Language Switcher ── */
+        .lang-switcher {
+            position: relative; display: flex; align-items: center;
+        }
+        .lang-toggle {
+            display: flex; align-items: center; justify-content: center;
+            width: 36px; height: 36px; border-radius: 8px;
+            border: 1px solid var(--border); color: var(--text-secondary);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            cursor: pointer; background: none;
+            font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .lang-toggle:hover { border-color: var(--accent); color: var(--accent); }
+        .lang-dropdown {
+            position: absolute; top: calc(100% + 8px); right: 0;
+            background: var(--bg-card); border: 1px solid var(--border);
+            border-radius: 8px; overflow: hidden; min-width: 100px;
+            box-shadow: var(--shadow-card);
+            opacity: 0; transform: translateY(-8px); pointer-events: none;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 200;
+        }
+        .lang-dropdown.open {
+            opacity: 1; transform: translateY(0); pointer-events: auto;
+        }
+        .lang-option {
+            display: block; width: 100%; padding: 0.55rem 1rem;
+            font-family: var(--mono); font-size: 0.75rem;
+            color: var(--text-secondary); background: none; border: none;
+            cursor: pointer; text-align: left; transition: all 0.2s ease;
+        }
+        .lang-option:hover { background: var(--accent-dim); color: var(--accent); }
+        .lang-option.active { color: var(--accent); font-weight: 600; }
+
         .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
         .nav-toggle span {
             display: block; width: 20px; height: 2px; background: var(--text-secondary);
@@ -586,16 +621,25 @@
             <a href="#" class="nav-logo">vishal<span>.singh</span></a>
             <div class="nav-right">
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" data-i18n="nav.about">About</a></li>
+                    <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+                    <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
                 </ul>
                 <button class="nav-links-btn" id="linksToggle" aria-label="All links" title="All my links">
-                    <svg class="icon-lines" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"/></svg>
+                    <svg class="icon-lines" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
                     <svg class="icon-x" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
                 </button>
+                <div class="lang-switcher">
+                    <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+                        <span id="langDisplay">EN</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="hi">हिन्दी</button>
+                    </div>
+                </div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
                     <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg>
                     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
@@ -618,14 +662,14 @@
                 <h1 class="hero-name">
                     Vishal<br><span class="highlight">Singh</span>
                 </h1>
-                <p class="hero-title">
-                    <strong>Engineer & builder.</strong> Ships iOS apps by day,<br>
+                <p class="hero-title" data-i18n-html="hero.title">
+                    <strong>Engineer &amp; builder.</strong> Ships iOS apps by day,<br>
                     tinkers with AI and product ideas by night.
                 </p>
                 <div class="hero-meta">
                     <span class="hero-meta-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 0 1 15 0Z"/></svg>
-                        Bengaluru, India
+                        <span data-i18n="hero.location">Bengaluru, India</span>
                     </span>
                     <span class="hero-meta-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5"/></svg>
@@ -633,11 +677,11 @@
                     </span>
                     <span class="hero-meta-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z"/></svg>
-                        AI-augmented builder
+                        <span data-i18n="hero.builder">AI-augmented builder</span>
                     </span>
                 </div>
                 <div class="hero-links">
-                    <a href="#contact" class="btn-primary">Get in touch</a>
+                    <a href="#contact" class="btn-primary" data-i18n="hero.cta">Get in touch</a>
                     <a href="https://github.com/v-i-s-h-a-l" class="btn-ghost" target="_blank" rel="noopener">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         GitHub
@@ -671,33 +715,33 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <div class="section-label">About</div>
-                    <h2 class="section-title">Craft, curiosity,<br>and code</h2>
-                    <p>
+                    <div class="section-label" data-i18n="about.label">About</div>
+                    <h2 class="section-title" data-i18n-html="about.heading">Craft, curiosity,<br>and code</h2>
+                    <p data-i18n-html="about.p1">
                         Vishal is a <strong>Principal iOS Engineer</strong> who loves building things from scratch. He has shipped production apps across <strong>fintech, health-tech, social media, and e-commerce</strong> -- each time designing architecture that scales and stays maintainable.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p2">
                         He's drawn to the "zero to one" phase of products: laying out module boundaries, automating tedious workflows with Swift scripts, and mentoring teams to move with confidence. <strong>Clean code and reusable components</strong> are non-negotiable.
                     </p>
-                    <p>
+                    <p data-i18n-html="about.p3">
                         Currently exploring the intersection of <strong>AI and mobile</strong> -- learning to orchestrate LLMs, agents, and AI tools to multiply productivity. The long-term goal is to <strong>ship products faster</strong> by blending engineering craft with AI-augmented workflows, always learning from others along the way.
                     </p>
                     <div class="about-stats">
                         <div class="tilt-card stat-card">
                             <div class="stat-number">10+</div>
-                            <div class="stat-label">Apps shipped</div>
+                            <div class="stat-label" data-i18n="about.stat.apps">Apps shipped</div>
                         </div>
                         <div class="tilt-card stat-card">
                             <div class="stat-number">4</div>
-                            <div class="stat-label">Domains</div>
+                            <div class="stat-label" data-i18n="about.stat.domains">Domains</div>
                         </div>
                         <div class="tilt-card stat-card">
                             <div class="stat-number">3x</div>
-                            <div class="stat-label">Built from scratch</div>
+                            <div class="stat-label" data-i18n="about.stat.scratch">Built from scratch</div>
                         </div>
                         <div class="tilt-card stat-card">
                             <div class="stat-number">&infin;</div>
-                            <div class="stat-label">Curiosity</div>
+                            <div class="stat-label" data-i18n="about.stat.curiosity">Curiosity</div>
                         </div>
                     </div>
                 </div>
@@ -711,16 +755,16 @@
     <!-- Experience -->
     <section id="experience">
         <div class="container">
-            <div class="section-label reveal">Career</div>
-            <h2 class="section-title reveal">The journey so far</h2>
+            <div class="section-label reveal" data-i18n="career.label">Career</div>
+            <h2 class="section-title reveal" data-i18n="career.heading">The journey so far</h2>
             <div class="timeline">
 
                 <div class="timeline-item">
                     <div class="timeline-date">Dec 2022 -- Present</div>
-                    <div class="timeline-company"><a href="https://www.turnip.gg" target="_blank" rel="noopener">Turnip</a> <span class="current-badge">current</span></div>
+                    <div class="timeline-company"><a href="https://www.turnip.gg" target="_blank" rel="noopener">Turnip</a> <span class="current-badge" data-i18n="career.current">current</span></div>
                     <div class="timeline-role">Principal Engineer - iOS</div>
                     <div class="timeline-location">Bengaluru, India</div>
-                    <div class="timeline-desc">
+                    <div class="timeline-desc" data-i18n-html="career.turnip.desc">
                         <ul>
                             <li>Part of the founding engineering team, building the app from scratch.</li>
                             <li>Works cross-functionally with product, design, growth, and engineering on core features: onboarding, feed, creation, notifications, and image processing.</li>
@@ -736,7 +780,7 @@
                     <div class="timeline-company"><a href="https://www.novasignal.com" target="_blank" rel="noopener">NovaSignal</a></div>
                     <div class="timeline-role">Senior Software Engineer - iOS</div>
                     <div class="timeline-location">Bengaluru, India</div>
-                    <div class="timeline-desc">
+                    <div class="timeline-desc" data-i18n-html="career.novasignal.desc">
                         <ul>
                             <li>Built the iOS companion app from scratch for a robotic medical device measuring cerebral blood flow.</li>
                             <li>Architected for scale: reusable UI components, testability-first design, Xcode Cloud CI/CD pipeline.</li>
@@ -752,7 +796,7 @@
                     <div class="timeline-company"><a href="https://www.paytmmoney.com" target="_blank" rel="noopener">Paytm Money</a></div>
                     <div class="timeline-role">Senior Software Engineer - iOS</div>
                     <div class="timeline-location">Pune, India</div>
-                    <div class="timeline-desc">
+                    <div class="timeline-desc" data-i18n-html="career.paytm.desc">
                         <ul>
                             <li>One of the senior engineers in a 13-16 person iOS team for a top-rated fintech app (4.3 stars).</li>
                             <li>Revamped the home screen and Mutual Funds module. Mentored engineers and led code reviews.</li>
@@ -768,7 +812,7 @@
                     <div class="timeline-company"><a href="https://www.linkedin.com/company/caastle/" target="_blank" rel="noopener">CaaStle</a></div>
                     <div class="timeline-role">Software Engineer &rarr; Senior Software Engineer</div>
                     <div class="timeline-location">New Delhi, India</div>
-                    <div class="timeline-desc">
+                    <div class="timeline-desc" data-i18n-html="career.caastle.desc">
                         <ul>
                             <li>Led architecture for a white-label SaaS platform (Gwynnie Bee, Haverdash) powering garment rental in the US.</li>
                             <li>Designed a dynamic theming system automated via spreadsheets and in-house Swift scripting.</li>
@@ -785,7 +829,7 @@
                     <div class="timeline-company"><a href="https://www.moldedbits.com" target="_blank" rel="noopener">moldedbits</a></div>
                     <div class="timeline-role">Software Engineer</div>
                     <div class="timeline-location">New Delhi, India</div>
-                    <div class="timeline-desc">
+                    <div class="timeline-desc" data-i18n-html="career.moldedbits.desc">
                         <ul>
                             <li>Shipped multiple apps concurrently across enterprise and creative domains (Apache Industrial, Duet App, PropCube).</li>
                             <li>Grew from fresher to leading a 2-person iOS team and mentoring 4 new hires.</li>
@@ -803,8 +847,8 @@
     <!-- Projects -->
     <section id="projects">
         <div class="container">
-            <div class="section-label reveal">Work</div>
-            <h2 class="section-title reveal">Apps shipped</h2>
+            <div class="section-label reveal" data-i18n="projects.label">Work</div>
+            <h2 class="section-title reveal" data-i18n="projects.heading">Apps shipped</h2>
             <div class="projects-grid stagger-children">
 
                 <a href="https://apps.apple.com/in/app/turnip-talk-to-your-friends/id1567159474" class="project-card-link" target="_blank" rel="noopener">
@@ -812,14 +856,14 @@
                         <div class="project-header">
                             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c1/5f/46/c15f464a-7bf3-ad22-f33a-718fa8387800/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Turnip" class="project-icon">
                             <div class="project-header-text">
-                                <span class="project-domain domain-social">Social</span>
+                                <span class="project-domain domain-social" data-i18n="projects.domain.social">Social</span>
                                 <div class="project-name">Turnip</div>
                             </div>
                         </div>
                         <div class="project-company">Turnip &middot; 2022 - Present</div>
-                        <div class="project-desc">Social app built from scratch -- onboarding, feed, content creation, notifications, and image processing. Cross-functional collaboration from day one.</div>
+                        <div class="project-desc" data-i18n="projects.turnip.desc">Social app built from scratch -- onboarding, feed, content creation, notifications, and image processing. Cross-functional collaboration from day one.</div>
                         <div class="project-store-hint">
-                            View on App Store <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
+                            <span data-i18n="projects.appstore">View on App Store</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
                         </div>
                     </div>
                 </a>
@@ -828,12 +872,12 @@
                     <div class="project-header">
                         <div class="project-icon-placeholder health">N</div>
                         <div class="project-header-text">
-                            <span class="project-domain domain-health">Health-Tech</span>
+                            <span class="project-domain domain-health" data-i18n="projects.domain.health">Health-Tech</span>
                             <div class="project-name">NovaSignal</div>
                         </div>
                     </div>
                     <div class="project-company">NovaSignal &middot; 2022</div>
-                    <div class="project-desc">iOS companion for a robotic medical device. Enables hospitals to access AI-processed cerebral blood flow data for stroke prevention.</div>
+                    <div class="project-desc" data-i18n="projects.novasignal.desc">iOS companion for a robotic medical device. Enables hospitals to access AI-processed cerebral blood flow data for stroke prevention.</div>
                 </div>
 
                 <a href="https://apps.apple.com/in/app/paytm-money-stocks-trading-app/id1344431352" class="project-card-link" target="_blank" rel="noopener">
@@ -841,14 +885,14 @@
                         <div class="project-header">
                             <img src="https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2c/23/d7/2c23d7a2-39c8-825c-c9b0-93d6551778e2/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/100x100bb.jpg" alt="Paytm Money" class="project-icon">
                             <div class="project-header-text">
-                                <span class="project-domain domain-fintech">Fintech</span>
+                                <span class="project-domain domain-fintech" data-i18n="projects.domain.fintech">Fintech</span>
                                 <div class="project-name">Paytm Money</div>
                             </div>
                         </div>
                         <div class="project-company">Paytm Money &middot; 2021 - 2022</div>
-                        <div class="project-desc">One of India's top-rated investment apps. Stocks, mutual funds, IPOs, F&O. Revamped the home screen and mutual fund module serving millions of users.</div>
+                        <div class="project-desc" data-i18n="projects.paytm.desc">One of India's top-rated investment apps. Stocks, mutual funds, IPOs, F&O. Revamped the home screen and mutual fund module serving millions of users.</div>
                         <div class="project-store-hint">
-                            View on App Store <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
+                            <span data-i18n="projects.appstore">View on App Store</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
                         </div>
                     </div>
                 </a>
@@ -858,14 +902,14 @@
                         <div class="project-header">
                             <div class="project-icon-placeholder fashion">C</div>
                             <div class="project-header-text">
-                                <span class="project-domain domain-fashion">Fashion / SaaS</span>
+                                <span class="project-domain domain-fashion" data-i18n="projects.domain.fashion">Fashion / SaaS</span>
                                 <div class="project-name">Haverdash & Gwynnie Bee</div>
                             </div>
                         </div>
                         <div class="project-company">CaaStle &middot; 2018 - 2021</div>
-                        <div class="project-desc">White-label garment rental platform for the US market. Architected the modular, themeable SaaS framework powering multiple brand apps.</div>
+                        <div class="project-desc" data-i18n="projects.caastle.desc">White-label garment rental platform for the US market. Architected the modular, themeable SaaS framework powering multiple brand apps.</div>
                         <div class="project-store-hint">
-                            View on App Store <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
+                            <span data-i18n="projects.appstore">View on App Store</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
                         </div>
                     </div>
                 </a>
@@ -874,12 +918,12 @@
                     <div class="project-header">
                         <div class="project-icon-placeholder enterprise">A</div>
                         <div class="project-header-text">
-                            <span class="project-domain domain-enterprise">Enterprise</span>
+                            <span class="project-domain domain-enterprise" data-i18n="projects.domain.enterprise">Enterprise</span>
                             <div class="project-name">Apache Industrial (The Tribe)</div>
                         </div>
                     </div>
                     <div class="project-company">moldedbits &middot; 2016 - 2017</div>
-                    <div class="project-desc">Enterprise workforce management and monitoring app for Apache Industrial Services, used across operations in the US.</div>
+                    <div class="project-desc" data-i18n="projects.enterprise.desc">Enterprise workforce management and monitoring app for Apache Industrial Services, used across operations in the US.</div>
                 </div>
 
                 <a href="https://github.com/v-i-s-h-a-l/Tim-Bak-Toe" class="project-card-link" target="_blank" rel="noopener">
@@ -887,14 +931,14 @@
                         <div class="project-header">
                             <div class="project-icon-placeholder side">X</div>
                             <div class="project-header-text">
-                                <span class="project-domain domain-gaming">Side Project</span>
+                                <span class="project-domain domain-gaming" data-i18n="projects.domain.side">Side Project</span>
                                 <div class="project-name">Tim-Bak-Toe (XO3)</div>
                             </div>
                         </div>
                         <div class="project-company">Personal &middot; 2024 - Present</div>
-                        <div class="project-desc">A tic-tac-toe game exploring SwiftUI, Combine, and MultipeerConnectivity. Built with iOS 26+ and Swift 6.</div>
+                        <div class="project-desc" data-i18n="projects.xo3.desc">A tic-tac-toe game exploring SwiftUI, Combine, and MultipeerConnectivity. Built with iOS 26+ and Swift 6.</div>
                         <div class="project-store-hint">
-                            View on GitHub <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
+                            <span data-i18n="projects.github">View on GitHub</span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"/></svg>
                         </div>
                     </div>
                 </a>
@@ -906,14 +950,14 @@
     <!-- Skills -->
     <section id="skills">
         <div class="container">
-            <div class="section-label reveal">Toolkit</div>
-            <h2 class="section-title reveal">Technologies & skills</h2>
+            <div class="section-label reveal" data-i18n="skills.label">Toolkit</div>
+            <h2 class="section-title reveal" data-i18n="skills.heading">Technologies & skills</h2>
             <div class="skills-grid stagger-children">
 
                 <div class="tilt-card skill-group">
                     <div class="skill-group-title">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3"/></svg>
-                        iOS / Apple
+                        <span data-i18n="skills.ios">iOS / Apple</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Swift</span>
@@ -931,7 +975,7 @@
                 <div class="tilt-card skill-group">
                     <div class="skill-group-title">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z"/></svg>
-                        Architecture
+                        <span data-i18n="skills.architecture">Architecture</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">MVVM</span>
@@ -947,7 +991,7 @@
                 <div class="tilt-card skill-group">
                     <div class="skill-group-title">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456Z"/></svg>
-                        AI & Exploration
+                        <span data-i18n="skills.ai">AI & Exploration</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">LLMs & Agents</span>
@@ -962,7 +1006,7 @@
                 <div class="tilt-card skill-group">
                     <div class="skill-group-title">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.049.58.025 1.193-.14 1.743"/></svg>
-                        Tooling & Process
+                        <span data-i18n="skills.tooling">Tooling & Process</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Xcode Cloud</span>
@@ -978,7 +1022,7 @@
                 <div class="tilt-card skill-group">
                     <div class="skill-group-title">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
-                        Leadership
+                        <span data-i18n="skills.leadership">Leadership</span>
                     </div>
                     <div class="skill-tags">
                         <span class="skill-tag">Technical Architecture</span>
@@ -996,50 +1040,50 @@
     <!-- Open Source -->
     <section id="opensource">
         <div class="container">
-            <div class="section-label reveal">Open Source</div>
-            <h2 class="section-title reveal">On GitHub</h2>
+            <div class="section-label reveal" data-i18n="oss.label">Open Source</div>
+            <h2 class="section-title reveal" data-i18n="oss.heading">On GitHub</h2>
             <div class="oss-grid stagger-children">
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/v-i-s-h-a-l/Tim-Bak-Toe" target="_blank" rel="noopener">Tim-Bak-Toe</a></div>
                         <span class="oss-card-lang">Swift</span>
                     </div>
-                    <div class="oss-card-desc">A tic-tac-toe game to learn SwiftUI, Combine, and MultipeerConnectivity basics.</div>
+                    <div class="oss-card-desc" data-i18n="oss.timbaktoe">A tic-tac-toe game to learn SwiftUI, Combine, and MultipeerConnectivity basics.</div>
                 </div>
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/v-i-s-h-a-l/School" target="_blank" rel="noopener">School</a></div>
                         <span class="oss-card-lang">Swift</span>
                     </div>
-                    <div class="oss-card-desc">Starter app to understand SwiftUI and Combine patterns.</div>
+                    <div class="oss-card-desc" data-i18n="oss.school">Starter app to understand SwiftUI and Combine patterns.</div>
                 </div>
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/DIY-Team/open-pr" target="_blank" rel="noopener">open-pr</a></div>
                         <span class="oss-card-lang">Swift</span>
                     </div>
-                    <div class="oss-card-desc">CLI tool for creating pull requests, built with Swift Package Manager.</div>
+                    <div class="oss-card-desc" data-i18n="oss.openpr">CLI tool for creating pull requests, built with Swift Package Manager.</div>
                 </div>
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/v-i-s-h-a-l/MathOperations" target="_blank" rel="noopener">MathOperations</a></div>
                         <span class="oss-card-lang">Swift</span>
                     </div>
-                    <div class="oss-card-desc">Math utilities library. 4 forks on GitHub.</div>
+                    <div class="oss-card-desc" data-i18n="oss.math">Math utilities library. 4 forks on GitHub.</div>
                 </div>
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/v-i-s-h-a-l/GeoLocation" target="_blank" rel="noopener">GeoLocation</a></div>
                         <span class="oss-card-lang">Swift</span>
                     </div>
-                    <div class="oss-card-desc">Lightweight wrapper over iOS CoreLocation framework.</div>
+                    <div class="oss-card-desc" data-i18n="oss.geo">Lightweight wrapper over iOS CoreLocation framework.</div>
                 </div>
                 <div class="tilt-card oss-card">
                     <div class="oss-card-header">
                         <div class="oss-card-name"><a href="https://github.com/v-i-s-h-a-l/setup-new-system" target="_blank" rel="noopener">setup-new-system</a></div>
                         <span class="oss-card-lang">Markdown</span>
                     </div>
-                    <div class="oss-card-desc">A checklist for configuring fresh development machines.</div>
+                    <div class="oss-card-desc" data-i18n="oss.setup">A checklist for configuring fresh development machines.</div>
                 </div>
             </div>
             <div class="github-badges reveal">
@@ -1062,10 +1106,10 @@
     <!-- Education -->
     <section id="education">
         <div class="container">
-            <div class="section-label reveal">Education</div>
-            <h2 class="section-title reveal">Background</h2>
+            <div class="section-label reveal" data-i18n="edu.label">Education</div>
+            <h2 class="section-title reveal" data-i18n="edu.heading">Background</h2>
             <div class="tilt-card edu-card reveal">
-                <div class="edu-degree">B.Tech, Computer Science & Engineering</div>
+                <div class="edu-degree" data-i18n="edu.degree">B.Tech, Computer Science & Engineering</div>
                 <div class="edu-school"><a href="https://www.gjust.ac.in" target="_blank" rel="noopener">Guru Jambheshwar University</a></div>
                 <div class="edu-year">2011 -- 2015</div>
             </div>
@@ -1075,14 +1119,14 @@
     <!-- Beyond the Code -->
     <section id="offscreen">
         <div class="container">
-            <div class="section-label reveal">Off the clock</div>
-            <h2 class="section-title reveal">The non-engineering bits</h2>
+            <div class="section-label reveal" data-i18n="offclock.label">Off the clock</div>
+            <h2 class="section-title reveal" data-i18n="offclock.heading">The non-engineering bits</h2>
             <div class="interests-grid stagger-children">
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#9917;</div>
-                    <div class="interest-title">Football, trails & miles</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.sports.title">Football, trails & miles</div>
+                    <div class="interest-desc" data-i18n-html="offclock.sports.desc">
                         Football on weekends, hiking when the mountains call, running when they don't. Treats the body like production code -- no shortcuts, no tech debt.
                         <span class="aside">// Leg day has no rollback strategy</span>
                     </div>
@@ -1090,8 +1134,8 @@
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#129388;</div>
-                    <div class="interest-title">Clean fuel only</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.fuel.title">Clean fuel only</div>
+                    <div class="interest-desc" data-i18n-html="offclock.fuel.desc">
                         Eats clean -- not "mostly", actually clean. No alcohol, no smoking, no cheat meals. Thinks of the body as a long-running process: garbage in, garbage out.
                         <span class="aside">// Strongly recommends others adopt this lifestyle too</span>
                     </div>
@@ -1099,8 +1143,8 @@
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#127758;</div>
-                    <div class="interest-title">Maps, money & power</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.geo.title">Maps, money & power</div>
+                    <div class="interest-desc" data-i18n-html="offclock.geo.desc">
                         Fascinated by geopolitical shifts, history, geography, and economic trends. Loves connecting the dots between why borders moved and where markets are headed.
                         <span class="aside">// Will derail any dinner conversation into a macro thesis</span>
                     </div>
@@ -1108,8 +1152,8 @@
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#9992;&#65039;</div>
-                    <div class="interest-title">Passport stamps</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.travel.title">Passport stamps</div>
+                    <div class="interest-desc" data-i18n="offclock.travel.desc">
                         Has collected sunburns across Southeast Asia and beyond. Believes the best debugging happens 35,000 feet in the air.
                     </div>
                     <div class="pins">
@@ -1122,16 +1166,16 @@
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#128248;</div>
-                    <div class="interest-title">Photography</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.photo.title">Photography</div>
+                    <div class="interest-desc" data-i18n="offclock.photo.desc">
                         Enjoys capturing moments, mostly when traveling. The phone storage is 80% photos, 15% Xcode cache, 5% actual free space.
                     </div>
                 </div>
 
                 <div class="tilt-card interest-card">
                     <div class="interest-icon">&#128161;</div>
-                    <div class="interest-title">Ideas & building</div>
-                    <div class="interest-desc">
+                    <div class="interest-title" data-i18n="offclock.ideas.title">Ideas & building</div>
+                    <div class="interest-desc" data-i18n-html="offclock.ideas.desc">
                         Constantly daydreaming about products to build. Has a notes app full of "million dollar ideas" -- shipping one would be nice.
                         <span class="aside">// TODO: actually ship one of these</span>
                     </div>
@@ -1144,9 +1188,9 @@
     <!-- Contact -->
     <section id="contact">
         <div class="container reveal">
-            <div class="section-label" style="justify-content: center;">Connect</div>
-            <h2 class="contact-heading">Let's build something</h2>
-            <p class="contact-sub">Open to conversations about iOS, AI, product ideas, or building things together.</p>
+            <div class="section-label" style="justify-content: center;" data-i18n="contact.label">Connect</div>
+            <h2 class="contact-heading" data-i18n="contact.heading">Let's build something</h2>
+            <p class="contact-sub" data-i18n="contact.sub">Open to conversations about iOS, AI, product ideas, or building things together.</p>
             <div class="contact-links">
                 <a href="mailto:vishalsingh2706@gmail.com" class="contact-link">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
@@ -1170,7 +1214,7 @@
                 </a>
                 <button class="contact-link" onclick="document.getElementById('linksToggle').click();" style="cursor:pointer;">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
-                    All Links
+                    <span data-i18n="contact.alllinks">All Links</span>
                 </button>
             </div>
         </div>
@@ -1178,7 +1222,7 @@
 
     <footer>
         <div class="container">
-            <p class="footer-text">Designed & built by Vishal Singh</p>
+            <p class="footer-text" data-i18n="footer.text">Designed & built by Vishal Singh</p>
         </div>
     </footer>
 
@@ -1192,11 +1236,11 @@
                 <div class="lo-tagline">iOS engineer &middot; AI explorer &middot; builder of things</div>
             </div>
 
-            <div class="lo-section lo-stagger-1">Professional</div>
+            <div class="lo-section lo-stagger-1" data-i18n="lo.professional">Professional</div>
             <div class="lo-list">
                 <div class="lo-card lo-stagger-2"><a href="#" onclick="closeLinksOverlay();return true;">
                     <div class="lo-icon i-portfolio"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></div>
-                    <div class="lo-text"><div class="lo-title">Portfolio</div><div class="lo-sub">v-i-s-h-a-l.github.io</div></div>
+                    <div class="lo-text"><div class="lo-title" data-i18n="lo.portfolio">Portfolio</div><div class="lo-sub">v-i-s-h-a-l.github.io</div></div>
                     <span class="lo-arrow"><svg viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg></span>
                 </a></div>
 
@@ -1253,7 +1297,7 @@
                 </a></div>
             </div>
 
-            <div class="lo-divider lo-stagger-12"><span class="lo-divider-badge">Scan &middot; Share</span></div>
+            <div class="lo-divider lo-stagger-12"><span class="lo-divider-badge" data-i18n-html="lo.scan">Scan &middot; Share</span></div>
 
             <div class="lo-qr lo-stagger-13">
                 <div class="lo-qr-box"><canvas id="lo-qr-canvas" width="164" height="164"></canvas></div>
@@ -1263,6 +1307,7 @@
         </div>
     </div>
 
+    <script src="assets/js/i18n.js"></script>
     <script src="assets/js/shared.js"></script>
     <script>
     (function() {
