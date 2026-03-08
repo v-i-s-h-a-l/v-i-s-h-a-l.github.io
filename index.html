@@ -468,8 +468,9 @@
         .projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.5rem; }
         a.project-card-link {
             text-decoration: none; color: inherit; display: block;
+            min-width: 0; overflow: hidden;
         }
-        .project-card { padding: 2rem; cursor: default; }
+        .project-card { padding: 2rem; cursor: default; min-width: 0; }
         a.project-card-link .project-card { cursor: pointer; }
         .project-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
         .project-icon {
