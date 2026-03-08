@@ -1888,6 +1888,119 @@
             "lo.professional": "Profesjonalne",
             "lo.portfolio": "Portfolio",
             "lo.scan": "Skanuj &middot; Udost\u0119pnij"
+        },
+        tr: {
+            /* ── Nav ── */
+            "nav.about": "Hakk\u0131mda",
+            "nav.experience": "Deneyim",
+            "nav.projects": "Projeler",
+            "nav.skills": "Yetenekler",
+            "nav.contact": "\u0130leti\u015Fim",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>M\u00FChendis &amp; yap\u0131mc\u0131.</strong> G\u00FCnd\u00FCz iOS uygulamalar\u0131 geli\u015Ftirir,<br>gece AI ve \u00FCr\u00FCn fikirleriyle u\u011Fra\u015F\u0131r.",
+            "hero.location": "Bengaluru, Hindistan",
+            "hero.builder": "AI destekli yap\u0131mc\u0131",
+            "hero.cta": "\u0130leti\u015Fime ge\u00E7",
+
+            /* ── About ── */
+            "about.label": "Hakk\u0131mda",
+            "about.heading": "Zanaat, merak<br>ve kod",
+            "about.p1": "Vishal, s\u0131f\u0131rdan bir \u015Feyler in\u015Fa etmeyi seven bir <strong>K\u0131demli iOS M\u00FChendisi</strong>'dir. <strong>Fintek, sa\u011Fl\u0131k teknolojisi, sosyal medya ve e-ticaret</strong> alanlar\u0131nda \u00FCretim uygulamalar\u0131 geli\u015Ftirmi\u015Ftir -- her seferinde \u00F6l\u00E7eklenebilir ve s\u00FCrd\u00FCr\u00FClebilir mimariler tasarlam\u0131\u015Ft\u0131r.",
+            "about.p2": "\u00DCr\u00FCnlerin \"s\u0131f\u0131rdan bire\" a\u015Famas\u0131na \u00E7ekilir: mod\u00FCl s\u0131n\u0131rlar\u0131n\u0131 belirlemek, Swift betikleriyle s\u0131k\u0131c\u0131 i\u015F ak\u0131\u015Flar\u0131n\u0131 otomatikle\u015Ftirmek ve ekiplere g\u00FCvenle ilerleme konusunda mentorluk yapmak. <strong>Temiz kod ve yeniden kullan\u0131labilir bile\u015Fenler</strong> vazge\u00E7ilmezdir.",
+            "about.p3": "\u015Eu anda <strong>AI ve mobil</strong> kesi\u015Fimini ke\u015Ffediyor -- LLM'leri, ajanlar\u0131 ve AI ara\u00E7lar\u0131n\u0131 y\u00F6neterek verimlili\u011Fi art\u0131rmay\u0131 \u00F6\u011Freniyor. Uzun vadeli hedef, m\u00FChendislik zanaat\u0131n\u0131 AI destekli i\u015F ak\u0131\u015Flar\u0131yla harmanlayarak <strong>\u00FCr\u00FCnleri daha h\u0131zl\u0131 g\u00F6ndermek</strong>, her zaman ba\u015Fkalar\u0131ndan \u00F6\u011Frenerek.",
+            "about.stat.apps": "G\u00F6nderilen uygulamalar",
+            "about.stat.domains": "Alanlar",
+            "about.stat.scratch": "S\u0131f\u0131rdan in\u015Fa edildi",
+            "about.stat.curiosity": "Merak",
+
+            /* ── Career ── */
+            "career.label": "Kariyer",
+            "career.heading": "Bug\u00FCne kadarki yolculuk",
+            "career.current": "mevcut",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Kurucu m\u00FChendislik ekibinin bir par\u00E7as\u0131, uygulamay\u0131 s\u0131f\u0131rdan in\u015Fa ediyor.</li><li>\u00DCr\u00FCn, tasar\u0131m, b\u00FCy\u00FCme ve m\u00FChendislik ile \u00E7apraz fonksiyonel \u00E7al\u0131\u015F\u0131yor: al\u0131\u015Ft\u0131rma, ak\u0131\u015F, i\u00E7erik olu\u015Fturma, bildirimler ve g\u00F6r\u00FCnt\u00FC i\u015Fleme.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>Serebral kan ak\u0131\u015F\u0131n\u0131 \u00F6l\u00E7en robotik bir t\u0131bbi cihaz i\u00E7in iOS e\u015Flik\u00E7i uygulamas\u0131n\u0131 s\u0131f\u0131rdan in\u015Fa etti.</li><li>\u00D6l\u00E7ek i\u00E7in mimarilendi: yeniden kullan\u0131labilir UI bile\u015Fenleri, test \u00F6ncelikli tasar\u0131m, Xcode Cloud CI/CD hatt\u0131.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>En y\u00FCksek puanl\u0131 bir fintek uygulamas\u0131nda (4.3 y\u0131ld\u0131z) 13-16 ki\u015Filik iOS ekibinin k\u0131demli m\u00FChendislerinden biri.</li><li>Ana ekran ve Yat\u0131r\u0131m Fonlar\u0131 mod\u00FCl\u00FCn\u00FC yeniledi. M\u00FChendislere mentorluk yapt\u0131 ve kod incelemelerini y\u00F6netti.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>ABD'de giysi kiralama hizmeti sunan beyaz etiketli bir SaaS platformunun (Gwynnie Bee, Haverdash) mimarisine \u00F6nc\u00FCl\u00FCk etti.</li><li>Elektronik tablolar ve \u015Firket i\u00E7i Swift betikleri ile otomatikle\u015Ftirilmi\u015F dinamik bir tema sistemi tasarlad\u0131.</li><li>Birim test \u00E7er\u00E7evesini ve CI/CD hatt\u0131n\u0131 kurdu. Ekibe mentorluk yapt\u0131 ve mimari bilgisini aktard\u0131.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Kurumsal ve yarat\u0131c\u0131 alanlarda e\u015F zamanl\u0131 olarak birden fazla uygulama g\u00F6nderdi (Apache Industrial, Duet App, PropCube).</li><li>Yeni ba\u015Flayandan 2 ki\u015Filik iOS ekibini y\u00F6netmeye ve 4 yeni i\u015Fe al\u0131ma mentorluk yapmaya kadar b\u00FCy\u00FCd\u00FC.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "\u00C7al\u0131\u015Fmalar",
+            "projects.heading": "G\u00F6nderilen uygulamalar",
+            "projects.domain.social": "Sosyal",
+            "projects.domain.health": "Sa\u011Fl\u0131k Teknolojisi",
+            "projects.domain.fintech": "Fintek",
+            "projects.domain.fashion": "Moda / SaaS",
+            "projects.domain.enterprise": "Kurumsal",
+            "projects.domain.side": "Yan Proje",
+            "projects.turnip.desc": "S\u0131f\u0131rdan in\u015Fa edilen sosyal uygulama -- al\u0131\u015Ft\u0131rma, ak\u0131\u015F, i\u00E7erik olu\u015Fturma, bildirimler ve g\u00F6r\u00FCnt\u00FC i\u015Fleme. \u0130lk g\u00FCnden \u00E7apraz fonksiyonel i\u015F birli\u011Fi.",
+            "projects.novasignal.desc": "Robotik bir t\u0131bbi cihaz i\u00E7in iOS e\u015Flik\u00E7i uygulamas\u0131. Hastanelerin inme \u00F6nleme i\u00E7in AI ile i\u015Flenmi\u015F serebral kan ak\u0131\u015F\u0131 verilerine eri\u015Fmesini sa\u011Flar.",
+            "projects.paytm.desc": "Hindistan'\u0131n en y\u00FCksek puanl\u0131 yat\u0131r\u0131m uygulamalar\u0131ndan biri. Hisse senetleri, yat\u0131r\u0131m fonlar\u0131, halka arzlar, t\u00FCrev \u00FCr\u00FCnler. Milyonlarca kullan\u0131c\u0131ya hizmet veren ana ekran ve yat\u0131r\u0131m fonu mod\u00FCl\u00FCn\u00FC yeniledi.",
+            "projects.caastle.desc": "ABD pazar\u0131 i\u00E7in beyaz etiketli giysi kiralama platformu. Birden fazla marka uygulamas\u0131n\u0131 destekleyen mod\u00FCler, temalanabilir SaaS \u00E7er\u00E7evesinin mimarisini olu\u015Fturdu.",
+            "projects.enterprise.desc": "ABD genelinde operasyonlarda kullan\u0131lan Apache Industrial Services i\u00E7in kurumsal i\u015F g\u00FCc\u00FC y\u00F6netimi ve izleme uygulamas\u0131.",
+            "projects.xo3.desc": "SwiftUI, Combine ve MultipeerConnectivity'yi ke\u015Ffeden bir tic-tac-toe oyunu. iOS 26+ ve Swift 6 ile in\u015Fa edildi.",
+            "projects.appstore": "App Store'da G\u00F6r\u00FCnt\u00FCle",
+            "projects.github": "GitHub'da G\u00F6r\u00FCnt\u00FCle",
+
+            /* ── Skills ── */
+            "skills.label": "Ara\u00E7 Seti",
+            "skills.heading": "Teknolojiler ve yetenekler",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Mimari",
+            "skills.ai": "AI ve Ke\u015Fif",
+            "skills.tooling": "Ara\u00E7lar ve S\u00FCre\u00E7",
+            "skills.leadership": "Liderlik",
+
+            /* ── Open Source ── */
+            "oss.label": "A\u00E7\u0131k Kaynak",
+            "oss.heading": "GitHub'da",
+            "oss.timbaktoe": "SwiftUI, Combine ve MultipeerConnectivity temellerini \u00F6\u011Frenmek i\u00E7in bir tic-tac-toe oyunu.",
+            "oss.school": "SwiftUI ve Combine kal\u0131plar\u0131n\u0131 anlamak i\u00E7in ba\u015Flang\u0131\u00E7 uygulamas\u0131.",
+            "oss.openpr": "Swift Package Manager ile olu\u015Fturulmu\u015F, pull request olu\u015Fturmak i\u00E7in CLI arac\u0131.",
+            "oss.math": "Matematik yard\u0131mc\u0131 program k\u00FCt\u00FCphanesi. GitHub'da 4 fork.",
+            "oss.geo": "iOS CoreLocation \u00E7er\u00E7evesi \u00FCzerinde hafif bir sar\u0131c\u0131.",
+            "oss.setup": "Yeni geli\u015Ftirme makinelerini yap\u0131land\u0131rmak i\u00E7in bir kontrol listesi.",
+
+            /* ── Education ── */
+            "edu.label": "E\u011Fitim",
+            "edu.heading": "Ge\u00E7mi\u015F",
+            "edu.degree": "Lisans, Bilgisayar M\u00FChendisli\u011Fi",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Mesai d\u0131\u015F\u0131",
+            "offclock.heading": "M\u00FChendislik d\u0131\u015F\u0131ndakiler",
+            "offclock.sports.title": "Futbol, parkurlar ve ko\u015Fular",
+            "offclock.sports.desc": "Hafta sonlar\u0131 futbol, da\u011Flar \u00E7a\u011F\u0131rd\u0131\u011F\u0131nda y\u00FCr\u00FCy\u00FC\u015F, \u00E7a\u011F\u0131rmad\u0131\u011F\u0131nda ko\u015Fu. V\u00FCcuda \u00FCretim kodu gibi davran\u0131r -- k\u0131sayol yok, teknik bor\u00E7 yok.<span class=\"aside\">// Bacak g\u00FCn\u00FCn\u00FCn geri alma stratejisi yoktur</span>",
+            "offclock.fuel.title": "Sadece temiz yak\u0131t",
+            "offclock.fuel.desc": "Temiz beslenir -- \"\u00E7o\u011Funlukla\" de\u011Fil, ger\u00E7ekten temiz. Alkol yok, sigara yok, hile yeme\u011Fi yok. V\u00FCcudu uzun s\u00FCreli bir s\u00FCre\u00E7 olarak g\u00F6r\u00FCr: \u00E7\u00F6p girerse, \u00E7\u00F6p \u00E7\u0131kar.<span class=\"aside\">// Ba\u015Fkalar\u0131na da \u015Fiddetle tavsiye eder</span>",
+            "offclock.geo.title": "Haritalar, para ve g\u00FC\u00E7",
+            "offclock.geo.desc": "Jeopolitik de\u011Fi\u015Fimler, tarih, co\u011Frafya ve ekonomik trendlerle b\u00FCy\u00FClenir. S\u0131n\u0131rlar\u0131n neden ta\u015F\u0131nd\u0131\u011F\u0131n\u0131 piyasalar\u0131n nereye y\u00F6neldi\u011Fiyle birle\u015Ftirmeyi sever.<span class=\"aside\">// Herhangi bir ak\u015Fam yeme\u011Fini makro teze d\u00F6n\u00FC\u015Ft\u00FCr\u00FCr</span>",
+            "offclock.travel.title": "Pasaport damgalar\u0131",
+            "offclock.travel.desc": "G\u00FCneydo\u011Fu Asya ve \u00F6tesinde g\u00FCne\u015F yan\u0131klar\u0131 toplad\u0131. En iyi hata ay\u0131klaman\u0131n 35.000 fit y\u00FCkseklikte ger\u00E7ekle\u015Fti\u011Fine inan\u0131r.",
+            "offclock.photo.title": "Foto\u011Fraf\u00E7\u0131l\u0131k",
+            "offclock.photo.desc": "Anlar\u0131 yakalamay\u0131 sever, \u00F6zellikle seyahat ederken. Telefon depolamas\u0131 %80 foto\u011Fraf, %15 Xcode \u00F6nbelle\u011Fi, %5 ger\u00E7ek bo\u015F alan.",
+            "offclock.ideas.title": "Fikirler ve in\u015Fa",
+            "offclock.ideas.desc": "S\u00FCrekli in\u015Fa edilecek \u00FCr\u00FCnler hakk\u0131nda hayal kurar. Notlar\u0131 \"milyonluk fikirlerle\" dolu -- birini g\u00F6ndermek g\u00FCzel olurdu.<span class=\"aside\">// TODO: bunlardan birini ger\u00E7ekten g\u00F6nder</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Ba\u011Flant\u0131",
+            "contact.heading": "Birlikte bir \u015Feyler in\u015Fa edelim",
+            "contact.sub": "iOS, AI, \u00FCr\u00FCn fikirleri veya birlikte bir \u015Feyler in\u015Fa etme hakk\u0131nda sohbete a\u00E7\u0131k.",
+            "contact.alllinks": "T\u00FCm Ba\u011Flant\u0131lar",
+
+            /* ── Footer ── */
+            "footer.text": "Vishal Singh taraf\u0131ndan tasarlan\u0131p in\u015Fa edildi",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesyonel",
+            "lo.portfolio": "Portf\u00F6y",
+            "lo.scan": "Tara &middot; Payla\u015F"
         }
     };
 
