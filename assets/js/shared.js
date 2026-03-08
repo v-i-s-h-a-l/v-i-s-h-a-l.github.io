@@ -78,6 +78,36 @@
 
     document.querySelectorAll('.reveal, .timeline-item, .stagger-children').forEach(el => observer.observe(el));
 
+    // ── Screenshot Carousel — prevent scroll/drag from triggering parent link ──
+    document.querySelectorAll('.screenshot-carousel').forEach(carousel => {
+        const track = carousel.querySelector('.screenshot-track');
+        let isScrolling = false;
+        let startX = 0;
+
+        track.addEventListener('pointerdown', (e) => {
+            startX = e.clientX;
+            isScrolling = false;
+        });
+
+        track.addEventListener('pointermove', (e) => {
+            if (Math.abs(e.clientX - startX) > 5) {
+                isScrolling = true;
+            }
+        });
+
+        // Capture click on the carousel link wrapper — if user was scrolling, prevent navigation
+        const parentLink = carousel.closest('a.project-card-link');
+        if (parentLink) {
+            carousel.addEventListener('click', (e) => {
+                if (isScrolling) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    isScrolling = false;
+                }
+            });
+        }
+    });
+
     // ── Smooth Scroll for anchor links ──
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {

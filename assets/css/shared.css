@@ -232,6 +232,48 @@ body {
 .stagger-children.visible > :nth-child(6) .tilt-card,
 .stagger-children.visible > :nth-child(6).tilt-card { transition-delay: 0.4s; }
 
+/* ── Screenshot Carousel ── */
+.screenshot-carousel {
+    margin: 0.75rem 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.screenshot-track {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 0.25rem 0;
+}
+.screenshot-track::-webkit-scrollbar {
+    display: none;
+}
+.screenshot-img {
+    flex: 0 0 auto;
+    width: 90px;
+    height: auto;
+    aspect-ratio: 392 / 696;
+    object-fit: cover;
+    border-radius: 8px;
+    scroll-snap-align: start;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    pointer-events: auto;
+}
+.screenshot-img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 600px) {
+    .screenshot-img {
+        width: 76px;
+    }
+}
+
 /* ── Section Divider (for links page etc.) ── */
 .section-divider {
     width: 100%; margin: 1.5rem 0; position: relative;
