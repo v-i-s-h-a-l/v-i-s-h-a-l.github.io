@@ -660,6 +660,115 @@
             "lo.professional": "\u0E21\u0E37\u0E2D\u0E2D\u0E32\u0E0A\u0E35\u0E1E",
             "lo.portfolio": "\u0E1C\u0E25\u0E07\u0E32\u0E19",
             "lo.scan": "\u0E2A\u0E41\u0E01\u0E19 &middot; \u0E41\u0E0A\u0E23\u0E4C"
+        },
+
+        es: {
+            /* ── Nav ── */
+            "nav.about": "Acerca",
+            "nav.experience": "Experiencia",
+            "nav.projects": "Proyectos",
+            "nav.skills": "Habilidades",
+            "nav.contact": "Contacto",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Ingeniero y constructor.</strong> Crea apps iOS de día,<br>experimenta con IA e ideas de producto de noche.",
+            "hero.location": "Bengaluru, India",
+            "hero.builder": "Constructor potenciado por IA",
+            "hero.cta": "Contactar",
+
+            /* ── About ── */
+            "about.label": "Acerca",
+            "about.heading": "Oficio, curiosidad<br>y código",
+            "about.p1": "Vishal es un <strong>Ingeniero iOS Principal</strong> que ama construir cosas desde cero. Ha lanzado apps en producción en <strong>fintech, health-tech, redes sociales y comercio electrónico</strong> -- cada vez diseñando arquitecturas escalables y mantenibles.",
+            "about.p2": "Le atrae la fase de \"cero a uno\" de los productos: definir límites de módulos, automatizar flujos de trabajo con scripts Swift y mentorear equipos para avanzar con confianza. <strong>Código limpio y componentes reutilizables</strong> son innegociables.",
+            "about.p3": "Actualmente explorando la intersección de <strong>IA y móvil</strong> -- aprendiendo a orquestar LLMs, agentes y herramientas de IA para multiplicar la productividad. El objetivo a largo plazo es <strong>lanzar productos más rápido</strong> combinando ingeniería con flujos potenciados por IA, siempre aprendiendo de otros.",
+            "about.stat.apps": "Apps lanzadas",
+            "about.stat.domains": "Dominios",
+            "about.stat.scratch": "Desde cero",
+            "about.stat.curiosity": "Curiosidad",
+
+            /* ── Career ── */
+            "career.label": "Carrera",
+            "career.heading": "El camino hasta ahora",
+            "career.current": "actual",
+
+            "career.turnip.desc": "<ul><li>Parte del equipo fundador de ingeniería, construyendo la app desde cero.</li><li>Trabajo multifuncional con producto, diseño, crecimiento e ingeniería en funciones clave: onboarding, feed, creación, notificaciones y procesamiento de imágenes.</li></ul>",
+            "career.novasignal.desc": "<ul><li>Construyó la app iOS complementaria desde cero para un dispositivo médico robótico que mide el flujo sanguíneo cerebral.</li><li>Arquitectura escalable: componentes UI reutilizables, diseño test-first, pipeline CI/CD con Xcode Cloud.</li></ul>",
+            "career.paytm.desc": "<ul><li>Ingeniero senior en un equipo iOS de 13-16 personas para una app fintech de alta calificación (4.3 estrellas).</li><li>Rediseñó la pantalla principal y el módulo de fondos mutuos. Mentoró ingenieros y lideró revisiones de código.</li></ul>",
+            "career.caastle.desc": "<ul><li>Lideró la arquitectura de una plataforma SaaS marca blanca (Gwynnie Bee, Haverdash) para alquiler de ropa en EE.UU.</li><li>Diseñó un sistema de temas dinámico automatizado mediante hojas de cálculo y scripts Swift internos.</li><li>Configuró el framework de pruebas unitarias y el pipeline CI/CD. Mentoró al equipo y transfirió conocimiento arquitectónico.</li></ul>",
+            "career.moldedbits.desc": "<ul><li>Lanzó múltiples apps simultáneamente en dominios empresariales y creativos (Apache Industrial, Duet App, PropCube).</li><li>Creció de recién graduado a líder de un equipo iOS de 2 personas y mentor de 4 nuevos empleados.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Trabajo",
+            "projects.heading": "Apps lanzadas",
+            "projects.domain.social": "Social",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Moda / SaaS",
+            "projects.domain.enterprise": "Empresarial",
+            "projects.domain.side": "Proyecto personal",
+            "projects.turnip.desc": "App social construida desde cero -- onboarding, feed, creación de contenido, notificaciones y procesamiento de imágenes. Colaboración multifuncional desde el día uno.",
+            "projects.novasignal.desc": "Complemento iOS para un dispositivo médico robótico. Permite a hospitales acceder a datos de flujo sanguíneo cerebral procesados por IA para prevención de ictus.",
+            "projects.paytm.desc": "Una de las apps de inversión mejor valoradas de India. Acciones, fondos mutuos, IPOs, F&O. Rediseño de la pantalla principal y módulo de fondos para millones de usuarios.",
+            "projects.caastle.desc": "Plataforma de alquiler de ropa marca blanca para el mercado estadounidense. Arquitectura del framework SaaS modular y personalizable para múltiples marcas.",
+            "projects.enterprise.desc": "App empresarial de gestión y monitoreo de personal para Apache Industrial Services, utilizada en operaciones en EE.UU.",
+            "projects.xo3.desc": "Un juego de tres en raya explorando SwiftUI, Combine y MultipeerConnectivity. Construido con iOS 26+ y Swift 6.",
+            "projects.appstore": "Ver en App Store",
+            "projects.github": "Ver en GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Herramientas",
+            "skills.heading": "Tecnologías y habilidades",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arquitectura",
+            "skills.ai": "IA y exploración",
+            "skills.tooling": "Herramientas y procesos",
+            "skills.leadership": "Liderazgo",
+
+            /* ── Open Source ── */
+            "oss.label": "Código abierto",
+            "oss.heading": "En GitHub",
+            "oss.timbaktoe": "Un juego de tres en raya para aprender los fundamentos de SwiftUI, Combine y MultipeerConnectivity.",
+            "oss.school": "App inicial para entender patrones de SwiftUI y Combine.",
+            "oss.openpr": "Herramienta CLI para crear pull requests, construida con Swift Package Manager.",
+            "oss.math": "Biblioteca de utilidades matemáticas. 4 forks en GitHub.",
+            "oss.geo": "Wrapper ligero sobre el framework iOS CoreLocation.",
+            "oss.setup": "Lista de verificación para configurar máquinas de desarrollo nuevas.",
+
+            /* ── Education ── */
+            "edu.label": "Educación",
+            "edu.heading": "Formación",
+            "edu.degree": "B.Tech, Ciencias de la Computación e Ingeniería",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Fuera del trabajo",
+            "offclock.heading": "Lo no-ingenieril",
+            "offclock.sports.title": "Fútbol, senderos y kilómetros",
+            "offclock.sports.desc": "Fútbol los fines de semana, senderismo cuando las montañas llaman, correr cuando no. Trata el cuerpo como código en producción -- sin atajos, sin deuda técnica.<span class=\"aside\">// El día de piernas no tiene estrategia de rollback</span>",
+            "offclock.fuel.title": "Solo combustible limpio",
+            "offclock.fuel.desc": "Come limpio -- no \"mayormente\", realmente limpio. Sin alcohol, sin tabaco, sin comidas trampa. Ve el cuerpo como un proceso de larga duración: basura entra, basura sale.<span class=\"aside\">// Recomienda encarecidamente que otros adopten este estilo de vida</span>",
+            "offclock.geo.title": "Mapas, dinero y poder",
+            "offclock.geo.desc": "Fascinado por los cambios geopolíticos, la historia, la geografía y las tendencias económicas. Le encanta conectar los puntos entre por qué se movieron las fronteras y hacia dónde van los mercados.<span class=\"aside\">// Desviará cualquier cena hacia una tesis macroeconómica</span>",
+            "offclock.travel.title": "Sellos en el pasaporte",
+            "offclock.travel.desc": "Ha coleccionado quemaduras de sol por el sudeste asiático y más allá. Cree que la mejor depuración ocurre a 35,000 pies de altura.",
+            "offclock.photo.title": "Fotografía",
+            "offclock.photo.desc": "Disfruta capturando momentos, sobre todo viajando. El almacenamiento del teléfono es 80% fotos, 15% caché de Xcode, 5% espacio libre real.",
+            "offclock.ideas.title": "Ideas y construcción",
+            "offclock.ideas.desc": "Constantemente soñando con productos para construir. Tiene una app de notas llena de \"ideas de un millón de dólares\" -- lanzar una estaría bien.<span class=\"aside\">// TODO: realmente lanzar una de estas</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Conectar",
+            "contact.heading": "Construyamos algo",
+            "contact.sub": "Abierto a conversaciones sobre iOS, IA, ideas de producto o construir cosas juntos.",
+            "contact.alllinks": "Todos los enlaces",
+
+            /* ── Footer ── */
+            "footer.text": "Diseñado y construido por Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesional",
+            "lo.portfolio": "Portafolio",
+            "lo.scan": "Escanear &middot; Compartir"
         }
     };
 
