@@ -1323,6 +1323,119 @@
             "lo.professional": "Professionale",
             "lo.portfolio": "Portfolio",
             "lo.scan": "Scansiona &middot; Condividi"
+        },
+        nl: {
+            /* ── Nav ── */
+            "nav.about": "Over",
+            "nav.experience": "Ervaring",
+            "nav.projects": "Projecten",
+            "nav.skills": "Vaardigheden",
+            "nav.contact": "Contact",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Engineer &amp; bouwer.</strong> Bouwt overdag iOS-apps,<br>sleutelt \u2019s avonds aan AI en productidee\u00EBn.",
+            "hero.location": "Bengaluru, India",
+            "hero.builder": "AI-ondersteunde bouwer",
+            "hero.cta": "Neem contact op",
+
+            /* ── About ── */
+            "about.label": "Over",
+            "about.heading": "Vakmanschap, nieuwsgierigheid<br>en code",
+            "about.p1": "Vishal is een <strong>Principal iOS Engineer</strong> die graag dingen vanaf nul bouwt. Hij heeft productie-apps uitgebracht in <strong>fintech, health-tech, social media en e-commerce</strong> \u2013 telkens met een architectuur die schaalt en onderhoudbaar blijft.",
+            "about.p2": "Hij wordt aangetrokken door de \u201Czero to one\u201D-fase van producten: modulegrenzen uitzetten, vervelende workflows automatiseren met Swift-scripts en teams begeleiden om met vertrouwen te werken. <strong>Schone code en herbruikbare componenten</strong> zijn niet onderhandelbaar.",
+            "about.p3": "Momenteel verkent hij het snijvlak van <strong>AI en mobiel</strong> \u2013 leert LLM\u2019s, agents en AI-tools te orkestreren om de productiviteit te vermenigvuldigen. Het langetermijndoel is om <strong>sneller producten te leveren</strong> door vakmanschap te combineren met AI-ondersteunde workflows, en altijd te leren van anderen.",
+            "about.stat.apps": "Apps uitgebracht",
+            "about.stat.domains": "Domeinen",
+            "about.stat.scratch": "Vanaf nul gebouwd",
+            "about.stat.curiosity": "Nieuwsgierigheid",
+
+            /* ── Career ── */
+            "career.label": "Carri\u00E8re",
+            "career.heading": "De reis tot nu toe",
+            "career.current": "huidig",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Onderdeel van het founding engineering team, de app vanaf nul opgebouwd.</li><li>Werkt cross-functioneel met product, design, groei en engineering aan kernfuncties: onboarding, feed, creatie, notificaties en beeldverwerking.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>De iOS-begeleidingsapp vanaf nul gebouwd voor een robotisch medisch apparaat dat de cerebrale bloedstroom meet.</li><li>Ontworpen voor schaalbaarheid: herbruikbare UI-componenten, testbaarheidsontwerp, Xcode Cloud CI/CD-pipeline.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>E\u00E9n van de senior engineers in een iOS-team van 13-16 personen voor een topbeoordeelde fintech-app (4,3 sterren).</li><li>Het startscherm en de Mutual Funds-module vernieuwd. Engineers begeleid en code reviews geleid.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>Leidde de architectuur voor een white-label SaaS-platform (Gwynnie Bee, Haverdash) voor kledingverhuur in de VS.</li><li>Ontwierp een dynamisch themasysteem geautomatiseerd via spreadsheets en interne Swift-scripting.</li><li>Unit testing framework en CI/CD-pipeline opgezet. Het team begeleid en architectuurkennis overgedragen.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Meerdere apps tegelijkertijd uitgebracht in enterprise- en creatieve domeinen (Apache Industrial, Duet App, PropCube).</li><li>Groeide van starter tot leider van een 2-persoons iOS-team en begeleider van 4 nieuwe medewerkers.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Werk",
+            "projects.heading": "Uitgebrachte apps",
+            "projects.domain.social": "Sociaal",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Mode / SaaS",
+            "projects.domain.enterprise": "Enterprise",
+            "projects.domain.side": "Zijproject",
+            "projects.turnip.desc": "Sociale app vanaf nul gebouwd \u2013 onboarding, feed, contentcreatie, notificaties en beeldverwerking. Cross-functionele samenwerking vanaf dag \u00E9\u00E9n.",
+            "projects.novasignal.desc": "iOS-begeleider voor een robotisch medisch apparaat. Stelt ziekenhuizen in staat om AI-verwerkte cerebrale bloedstroomdata te raadplegen voor beroertepreventie.",
+            "projects.paytm.desc": "E\u00E9n van India\u2019s best beoordeelde beleggingsapps. Aandelen, beleggingsfondsen, IPO\u2019s, F&O. Startscherm en beleggingsfondsmodule vernieuwd voor miljoenen gebruikers.",
+            "projects.caastle.desc": "White-label kledingverhuurplatform voor de Amerikaanse markt. Architectuur van het modulaire, thematiseerbare SaaS-framework dat meerdere merk-apps aandrijft.",
+            "projects.enterprise.desc": "Enterprise personeelsbeheer- en monitoringapp voor Apache Industrial Services, gebruikt in de VS.",
+            "projects.xo3.desc": "Een boter-kaas-en-eieren-spel dat SwiftUI, Combine en MultipeerConnectivity verkent. Gebouwd met iOS 26+ en Swift 6.",
+            "projects.appstore": "Bekijk in App Store",
+            "projects.github": "Bekijk op GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Toolkit",
+            "skills.heading": "Technologie\u00EBn & vaardigheden",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Architectuur",
+            "skills.ai": "AI & Verkenning",
+            "skills.tooling": "Tooling & Proces",
+            "skills.leadership": "Leiderschap",
+
+            /* ── Open Source ── */
+            "oss.label": "Open Source",
+            "oss.heading": "Op GitHub",
+            "oss.timbaktoe": "Een boter-kaas-en-eieren-spel om SwiftUI, Combine en MultipeerConnectivity te leren.",
+            "oss.school": "Starter-app om SwiftUI- en Combine-patronen te begrijpen.",
+            "oss.openpr": "CLI-tool voor het aanmaken van pull requests, gebouwd met Swift Package Manager.",
+            "oss.math": "Wiskundige hulpbibliotheek. 4 forks op GitHub.",
+            "oss.geo": "Lichtgewicht wrapper rond het iOS CoreLocation-framework.",
+            "oss.setup": "Een checklist voor het configureren van nieuwe ontwikkelmachines.",
+
+            /* ── Education ── */
+            "edu.label": "Opleiding",
+            "edu.heading": "Achtergrond",
+            "edu.degree": "B.Tech, Informatica & Techniek",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Vrije tijd",
+            "offclock.heading": "De niet-technische kant",
+            "offclock.sports.title": "Voetbal, trails & kilometers",
+            "offclock.sports.desc": "Voetbal in het weekend, wandelen als de bergen roepen, hardlopen als dat niet zo is. Behandelt het lichaam als productiecode \u2013 geen shortcuts, geen technische schuld.<span class=\"aside\">// Beendag kent geen rollback-strategie</span>",
+            "offclock.fuel.title": "Alleen schone brandstof",
+            "offclock.fuel.desc": "Eet gezond \u2013 niet \u201Cgrotendeels\u201D, echt gezond. Geen alcohol, niet roken, geen cheat meals. Beschouwt het lichaam als een langlopend proces: rommel erin, rommel eruit.<span class=\"aside\">// Raadt anderen sterk aan deze levensstijl ook aan te nemen</span>",
+            "offclock.geo.title": "Kaarten, geld & macht",
+            "offclock.geo.desc": "Gefascineerd door geopolitieke verschuivingen, geschiedenis, aardrijkskunde en economische trends. Houdt ervan de punten te verbinden tussen waarom grenzen verschoven en waar markten naartoe gaan.<span class=\"aside\">// Zal elk diner-gesprek ontsporen naar een macrothese</span>",
+            "offclock.travel.title": "Paspoortstempels",
+            "offclock.travel.desc": "Heeft zonnebrand verzameld in Zuidoost-Azi\u00EB en daarbuiten. Gelooft dat de beste debugging plaatsvindt op 10.000 meter hoogte.",
+            "offclock.photo.title": "Fotografie",
+            "offclock.photo.desc": "Geniet van het vastleggen van momenten, vooral tijdens reizen. De telefoonopslag is 80% foto\u2019s, 15% Xcode-cache, 5% daadwerkelijk vrije ruimte.",
+            "offclock.ideas.title": "Idee\u00EBn & bouwen",
+            "offclock.ideas.desc": "Dagdroomt voortdurend over producten om te bouwen. Heeft een notitie-app vol \u201Cmiljoenenidee\u00EBn\u201D \u2013 er \u00E9\u00E9n uitbrengen zou mooi zijn.<span class=\"aside\">// TODO: er daadwerkelijk \u00E9\u00E9n van uitbrengen</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Verbinden",
+            "contact.heading": "Laten we iets bouwen",
+            "contact.sub": "Open voor gesprekken over iOS, AI, productidee\u00EBn of samen dingen bouwen.",
+            "contact.alllinks": "Alle links",
+
+            /* ── Footer ── */
+            "footer.text": "Ontworpen & gebouwd door Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Professioneel",
+            "lo.portfolio": "Portfolio",
+            "lo.scan": "Scan &middot; Delen"
         }
     };
 
