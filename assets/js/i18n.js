@@ -769,6 +769,115 @@
             "lo.professional": "Profesional",
             "lo.portfolio": "Portafolio",
             "lo.scan": "Escanear &middot; Compartir"
+        },
+
+        pt: {
+            /* ── Nav ── */
+            "nav.about": "Sobre",
+            "nav.experience": "Experi\u00EAncia",
+            "nav.projects": "Projetos",
+            "nav.skills": "Habilidades",
+            "nav.contact": "Contato",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Engenheiro e construtor.</strong> Cria apps iOS de dia,<br>experimenta com IA e ideias de produto \u00E0 noite.",
+            "hero.location": "Bengaluru, \u00CDndia",
+            "hero.builder": "Construtor potencializado por IA",
+            "hero.cta": "Entre em contato",
+
+            /* ── About ── */
+            "about.label": "Sobre",
+            "about.heading": "Arte, curiosidade<br>e c\u00F3digo",
+            "about.p1": "Vishal \u00E9 um <strong>Engenheiro iOS Principal</strong> que adora construir coisas do zero. Ele lan\u00E7ou apps em produ\u00E7\u00E3o em <strong>fintech, health-tech, m\u00EDdia social e e-commerce</strong> -- sempre projetando arquiteturas escal\u00E1veis e sustent\u00E1veis.",
+            "about.p2": "Ele \u00E9 atra\u00EDdo pela fase \"do zero ao um\" dos produtos: definir limites de m\u00F3dulos, automatizar fluxos de trabalho com scripts Swift e mentorar equipes para avan\u00E7ar com confian\u00E7a. <strong>C\u00F3digo limpo e componentes reutiliz\u00E1veis</strong> s\u00E3o inegoci\u00E1veis.",
+            "about.p3": "Atualmente explorando a interse\u00E7\u00E3o de <strong>IA e mobile</strong> -- aprendendo a orquestrar LLMs, agentes e ferramentas de IA para multiplicar a produtividade. O objetivo de longo prazo \u00E9 <strong>lan\u00E7ar produtos mais r\u00E1pido</strong> combinando engenharia com fluxos potencializados por IA, sempre aprendendo com outros.",
+            "about.stat.apps": "Apps lan\u00E7ados",
+            "about.stat.domains": "Dom\u00EDnios",
+            "about.stat.scratch": "Do zero",
+            "about.stat.curiosity": "Curiosidade",
+
+            /* ── Career ── */
+            "career.label": "Carreira",
+            "career.heading": "A jornada at\u00E9 aqui",
+            "career.current": "atual",
+
+            "career.turnip.desc": "<ul><li>Parte da equipe fundadora de engenharia, construindo o app do zero.</li><li>Trabalho multifuncional com produto, design, crescimento e engenharia em funcionalidades-chave: onboarding, feed, cria\u00E7\u00E3o, notifica\u00E7\u00F5es e processamento de imagens.</li></ul>",
+            "career.novasignal.desc": "<ul><li>Construiu o app iOS complementar do zero para um dispositivo m\u00E9dico rob\u00F3tico que mede o fluxo sangu\u00EDneo cerebral.</li><li>Arquitetura escal\u00E1vel: componentes UI reutiliz\u00E1veis, design test-first, pipeline CI/CD com Xcode Cloud.</li></ul>",
+            "career.paytm.desc": "<ul><li>Engenheiro s\u00EAnior em uma equipe iOS de 13-16 pessoas para um app fintech de alta classifica\u00E7\u00E3o (4,3 estrelas).</li><li>Redesenhou a tela principal e o m\u00F3dulo de fundos m\u00FAtuos. Mentorou engenheiros e liderou revis\u00F5es de c\u00F3digo.</li></ul>",
+            "career.caastle.desc": "<ul><li>Liderou a arquitetura de uma plataforma SaaS marca branca (Gwynnie Bee, Haverdash) para aluguel de roupas nos EUA.</li><li>Projetou um sistema de temas din\u00E2mico automatizado via planilhas e scripts Swift internos.</li><li>Configurou o framework de testes unit\u00E1rios e o pipeline CI/CD. Mentorou a equipe e transferiu conhecimento arquitet\u00F4nico.</li></ul>",
+            "career.moldedbits.desc": "<ul><li>Lan\u00E7ou m\u00FAltiplos apps simultaneamente em dom\u00EDnios empresariais e criativos (Apache Industrial, Duet App, PropCube).</li><li>Cresceu de rec\u00E9m-formado a l\u00EDder de uma equipe iOS de 2 pessoas e mentor de 4 novos funcion\u00E1rios.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Trabalho",
+            "projects.heading": "Apps lan\u00E7ados",
+            "projects.domain.social": "Social",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Moda / SaaS",
+            "projects.domain.enterprise": "Empresarial",
+            "projects.domain.side": "Projeto pessoal",
+            "projects.turnip.desc": "App social constru\u00EDdo do zero -- onboarding, feed, cria\u00E7\u00E3o de conte\u00FAdo, notifica\u00E7\u00F5es e processamento de imagens. Colabora\u00E7\u00E3o multifuncional desde o primeiro dia.",
+            "projects.novasignal.desc": "Complemento iOS para um dispositivo m\u00E9dico rob\u00F3tico. Permite que hospitais acessem dados de fluxo sangu\u00EDneo cerebral processados por IA para preven\u00E7\u00E3o de AVC.",
+            "projects.paytm.desc": "Um dos apps de investimento mais bem avaliados da \u00CDndia. A\u00E7\u00F5es, fundos m\u00FAtuos, IPOs, F&O. Redesenho da tela principal e m\u00F3dulo de fundos para milh\u00F5es de usu\u00E1rios.",
+            "projects.caastle.desc": "Plataforma de aluguel de roupas marca branca para o mercado americano. Arquitetura do framework SaaS modular e personaliz\u00E1vel para m\u00FAltiplas marcas.",
+            "projects.enterprise.desc": "App empresarial de gest\u00E3o e monitoramento de pessoal para Apache Industrial Services, utilizado em opera\u00E7\u00F5es nos EUA.",
+            "projects.xo3.desc": "Um jogo da velha explorando SwiftUI, Combine e MultipeerConnectivity. Constru\u00EDdo com iOS 26+ e Swift 6.",
+            "projects.appstore": "Ver na App Store",
+            "projects.github": "Ver no GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Ferramentas",
+            "skills.heading": "Tecnologias e habilidades",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arquitetura",
+            "skills.ai": "IA e explora\u00E7\u00E3o",
+            "skills.tooling": "Ferramentas e processos",
+            "skills.leadership": "Lideran\u00E7a",
+
+            /* ── Open Source ── */
+            "oss.label": "C\u00F3digo aberto",
+            "oss.heading": "No GitHub",
+            "oss.timbaktoe": "Um jogo da velha para aprender os fundamentos de SwiftUI, Combine e MultipeerConnectivity.",
+            "oss.school": "App inicial para entender padr\u00F5es de SwiftUI e Combine.",
+            "oss.openpr": "Ferramenta CLI para criar pull requests, constru\u00EDda com Swift Package Manager.",
+            "oss.math": "Biblioteca de utilit\u00E1rios matem\u00E1ticos. 4 forks no GitHub.",
+            "oss.geo": "Wrapper leve sobre o framework iOS CoreLocation.",
+            "oss.setup": "Checklist para configurar m\u00E1quinas de desenvolvimento novas.",
+
+            /* ── Education ── */
+            "edu.label": "Educa\u00E7\u00E3o",
+            "edu.heading": "Forma\u00E7\u00E3o",
+            "edu.degree": "B.Tech, Ci\u00EAncia da Computa\u00E7\u00E3o e Engenharia",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Fora do trabalho",
+            "offclock.heading": "O lado n\u00E3o-engenheiro",
+            "offclock.sports.title": "Futebol, trilhas e corridas",
+            "offclock.sports.desc": "Futebol nos fins de semana, caminhadas quando as montanhas chamam, corrida quando n\u00E3o. Trata o corpo como c\u00F3digo em produ\u00E7\u00E3o -- sem atalhos, sem d\u00EDvida t\u00E9cnica.<span class=\"aside\">// Dia de perna n\u00E3o tem estrat\u00E9gia de rollback</span>",
+            "offclock.fuel.title": "S\u00F3 combust\u00EDvel limpo",
+            "offclock.fuel.desc": "Come limpo -- n\u00E3o \"na maioria\", realmente limpo. Sem \u00E1lcool, sem cigarro, sem refei\u00E7\u00F5es trapaceiras. V\u00EA o corpo como um processo de longa dura\u00E7\u00E3o: lixo entra, lixo sai.<span class=\"aside\">// Recomenda fortemente que outros adotem esse estilo de vida</span>",
+            "offclock.geo.title": "Mapas, dinheiro e poder",
+            "offclock.geo.desc": "Fascinado por mudan\u00E7as geopol\u00EDticas, hist\u00F3ria, geografia e tend\u00EAncias econ\u00F4micas. Adora conectar os pontos entre por que as fronteiras se moveram e para onde os mercados est\u00E3o indo.<span class=\"aside\">// Vai desviar qualquer jantar para uma tese macroecon\u00F4mica</span>",
+            "offclock.travel.title": "Carimbos no passaporte",
+            "offclock.travel.desc": "Colecionou queimaduras de sol pelo sudeste asi\u00E1tico e al\u00E9m. Acredita que a melhor depura\u00E7\u00E3o acontece a 35.000 p\u00E9s de altura.",
+            "offclock.photo.title": "Fotografia",
+            "offclock.photo.desc": "Gosta de capturar momentos, principalmente viajando. O armazenamento do celular \u00E9 80% fotos, 15% cache do Xcode, 5% espa\u00E7o livre real.",
+            "offclock.ideas.title": "Ideias e constru\u00E7\u00E3o",
+            "offclock.ideas.desc": "Constantemente sonhando com produtos para construir. Tem um app de notas cheio de \"ideias de um milh\u00E3o de d\u00F3lares\" -- lan\u00E7ar uma seria bom.<span class=\"aside\">// TODO: realmente lan\u00E7ar uma dessas</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Conectar",
+            "contact.heading": "Vamos construir algo",
+            "contact.sub": "Aberto a conversas sobre iOS, IA, ideias de produto ou construir coisas juntos.",
+            "contact.alllinks": "Todos os links",
+
+            /* ── Footer ── */
+            "footer.text": "Projetado e constru\u00EDdo por Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profissional",
+            "lo.portfolio": "Portf\u00F3lio",
+            "lo.scan": "Escanear &middot; Compartilhar"
         }
     };
 
