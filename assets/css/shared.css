@@ -238,6 +238,8 @@ body {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
+    min-width: 0;
+    max-width: 100%;
 }
 .screenshot-track {
     display: flex;
