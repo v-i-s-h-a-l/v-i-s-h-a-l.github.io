@@ -244,11 +244,12 @@
         .lang-dropdown {
             position: absolute; top: calc(100% + 8px); right: 0;
             background: var(--bg-card); border: 1px solid var(--border);
-            border-radius: 8px; overflow: hidden; min-width: 100px;
+            border-radius: 8px; overflow: hidden; overflow-y: auto; min-width: 120px; max-height: 320px;
             box-shadow: var(--shadow-card);
             opacity: 0; transform: translateY(-8px); pointer-events: none;
             transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
             z-index: 200;
+            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
         }
         .lang-dropdown.open {
             opacity: 1; transform: translateY(0); pointer-events: auto;
@@ -617,6 +618,27 @@
             .about-stats { grid-template-columns: 1fr; }
             .contact-links { flex-direction: column; align-items: center; }
         }
+
+        /* ── RTL Support ── */
+        [dir="rtl"] { direction: rtl; text-align: right; }
+        [dir="rtl"] .nav-links { flex-direction: row-reverse; }
+        [dir="rtl"] .nav-actions { flex-direction: row-reverse; }
+        [dir="rtl"] .section-label { flex-direction: row-reverse; }
+        [dir="rtl"] .section-label::before { order: 1; }
+        [dir="rtl"] .hero-text { text-align: right; }
+        [dir="rtl"] .hero-meta { flex-direction: row-reverse; }
+        [dir="rtl"] .hero-links { flex-direction: row-reverse; }
+        [dir="rtl"] .about-text { text-align: right; }
+        [dir="rtl"] .timeline-item { padding-left: 0; padding-right: 2rem; border-left: none; border-right: 2px solid var(--border); }
+        [dir="rtl"] .timeline-item::before { left: auto; right: -7px; }
+        [dir="rtl"] .timeline-header { flex-direction: row-reverse; }
+        [dir="rtl"] .project-card .card-body { text-align: right; }
+        [dir="rtl"] .card-links { flex-direction: row-reverse; }
+        [dir="rtl"] .contact-links { flex-direction: row-reverse; }
+        [dir="rtl"] .lang-dropdown { right: auto; left: 0; }
+        [dir="rtl"] .lang-option { text-align: right; }
+        [dir="rtl"] .footer-inner { direction: rtl; }
+        [dir="rtl"] ul { padding-right: 1.2em; padding-left: 0; }
     </style>
 </head>
 <body>
@@ -653,6 +675,7 @@
                     <div class="lang-dropdown" id="langDropdown">
                         <button class="lang-option active" data-lang="en">English</button>
                         <button class="lang-option" data-lang="hi">हिन्दी</button>
+                        <button class="lang-option" data-lang="ar">العربية</button>
                     </div>
                 </div>
                 <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
