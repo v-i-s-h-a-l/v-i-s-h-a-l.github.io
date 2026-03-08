@@ -2001,6 +2001,119 @@
             "lo.professional": "Profesyonel",
             "lo.portfolio": "Portf\u00F6y",
             "lo.scan": "Tara &middot; Payla\u015F"
+        },
+        ms: {
+            /* ── Nav ── */
+            "nav.about": "Tentang",
+            "nav.experience": "Pengalaman",
+            "nav.projects": "Projek",
+            "nav.skills": "Kemahiran",
+            "nav.contact": "Hubungi",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Jurutera &amp; pembina.</strong> Menghantar aplikasi iOS pada siang hari,<br>meneroka AI dan idea produk pada waktu malam.",
+            "hero.location": "Bengaluru, India",
+            "hero.builder": "Pembina dipacu AI",
+            "hero.cta": "Hubungi saya",
+
+            /* ── About ── */
+            "about.label": "Tentang",
+            "about.heading": "Kraf, rasa ingin tahu,<br>dan kod",
+            "about.p1": "Vishal ialah seorang <strong>Jurutera iOS Utama</strong> yang gemar membina sesuatu dari awal. Beliau telah melancarkan aplikasi pengeluaran merentas <strong>fintech, teknologi kesihatan, media sosial dan e-dagang</strong> -- setiap kali mereka bentuk seni bina yang berskala dan mudah diselenggara.",
+            "about.p2": "Beliau tertarik dengan fasa \"sifar ke satu\" produk: menetapkan sempadan modul, mengautomasi aliran kerja dengan skrip Swift, dan membimbing pasukan untuk bergerak dengan yakin. <strong>Kod bersih dan komponen boleh guna semula</strong> adalah tidak boleh dirunding.",
+            "about.p3": "Kini meneroka persimpangan <strong>AI dan mudah alih</strong> -- belajar mendalangi LLM, ejen dan alat AI untuk melipatgandakan produktiviti. Matlamat jangka panjang ialah <strong>melancarkan produk dengan lebih pantas</strong> dengan menggabungkan kemahiran kejuruteraan dengan aliran kerja dipacu AI, sentiasa belajar daripada orang lain.",
+            "about.stat.apps": "Aplikasi dilancarkan",
+            "about.stat.domains": "Domain",
+            "about.stat.scratch": "Dibina dari awal",
+            "about.stat.curiosity": "Rasa ingin tahu",
+
+            /* ── Career ── */
+            "career.label": "Kerjaya",
+            "career.heading": "Perjalanan setakat ini",
+            "career.current": "semasa",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Sebahagian daripada pasukan kejuruteraan pengasas, membina aplikasi dari awal.</li><li>Bekerja merentas fungsi dengan produk, reka bentuk, pertumbuhan dan kejuruteraan pada ciri teras: penyertaan, suapan, penciptaan, pemberitahuan dan pemprosesan imej.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>Membina aplikasi pendamping iOS dari awal untuk peranti perubatan robotik yang mengukur aliran darah serebrum.</li><li>Mereka bentuk untuk skala: komponen UI boleh guna semula, reka bentuk mengutamakan kebolehujian, saluran paip CI/CD Xcode Cloud.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>Salah seorang jurutera kanan dalam pasukan iOS 13-16 orang untuk aplikasi fintech bertaraf tinggi (4.3 bintang).</li><li>Merombak skrin utama dan modul Dana Bersama. Membimbing jurutera dan memimpin semakan kod.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>Memimpin seni bina untuk platform SaaS label putih (Gwynnie Bee, Haverdash) yang menguasai penyewaan pakaian di AS.</li><li>Mereka bentuk sistem tema dinamik yang diautomasi melalui hamparan dan skrip Swift dalaman.</li><li>Menyediakan rangka kerja ujian unit dan saluran paip CI/CD. Membimbing pasukan dan memindahkan pengetahuan seni bina.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Melancarkan pelbagai aplikasi serentak merentas domain perusahaan dan kreatif (Apache Industrial, Duet App, PropCube).</li><li>Berkembang daripada pemula kepada memimpin pasukan iOS 2 orang dan membimbing 4 pekerja baharu.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Kerja",
+            "projects.heading": "Aplikasi dilancarkan",
+            "projects.domain.social": "Sosial",
+            "projects.domain.health": "Teknologi Kesihatan",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Fesyen / SaaS",
+            "projects.domain.enterprise": "Perusahaan",
+            "projects.domain.side": "Projek Sampingan",
+            "projects.turnip.desc": "Aplikasi sosial dibina dari awal -- penyertaan, suapan, penciptaan kandungan, pemberitahuan dan pemprosesan imej. Kerjasama merentas fungsi dari hari pertama.",
+            "projects.novasignal.desc": "Pendamping iOS untuk peranti perubatan robotik. Membolehkan hospital mengakses data aliran darah serebrum diproses AI untuk pencegahan strok.",
+            "projects.paytm.desc": "Salah satu aplikasi pelaburan tertinggi penilaian di India. Saham, dana bersama, IPO, F&O. Merombak skrin utama dan modul dana bersama yang melayani jutaan pengguna.",
+            "projects.caastle.desc": "Platform penyewaan pakaian label putih untuk pasaran AS. Mereka bentuk rangka kerja SaaS modular dan boleh ditema yang menguasai pelbagai aplikasi jenama.",
+            "projects.enterprise.desc": "Aplikasi pengurusan dan pemantauan tenaga kerja perusahaan untuk Apache Industrial Services, digunakan merentas operasi di AS.",
+            "projects.xo3.desc": "Permainan tic-tac-toe yang meneroka SwiftUI, Combine dan MultipeerConnectivity. Dibina dengan iOS 26+ dan Swift 6.",
+            "projects.appstore": "Lihat di App Store",
+            "projects.github": "Lihat di GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Kit Alat",
+            "skills.heading": "Teknologi & kemahiran",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Seni Bina",
+            "skills.ai": "AI & Penerokaan",
+            "skills.tooling": "Perkakas & Proses",
+            "skills.leadership": "Kepimpinan",
+
+            /* ── Open Source ── */
+            "oss.label": "Sumber Terbuka",
+            "oss.heading": "Di GitHub",
+            "oss.timbaktoe": "Permainan tic-tac-toe untuk mempelajari asas SwiftUI, Combine dan MultipeerConnectivity.",
+            "oss.school": "Aplikasi permulaan untuk memahami corak SwiftUI dan Combine.",
+            "oss.openpr": "Alat CLI untuk membuat permintaan tarik, dibina dengan Swift Package Manager.",
+            "oss.math": "Pustaka utiliti matematik. 4 fork di GitHub.",
+            "oss.geo": "Pembalut ringan untuk rangka kerja iOS CoreLocation.",
+            "oss.setup": "Senarai semak untuk mengkonfigurasi mesin pembangunan baharu.",
+
+            /* ── Education ── */
+            "edu.label": "Pendidikan",
+            "edu.heading": "Latar Belakang",
+            "edu.degree": "B.Tech, Sains Komputer & Kejuruteraan",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Di luar waktu kerja",
+            "offclock.heading": "Bahagian bukan kejuruteraan",
+            "offclock.sports.title": "Bola sepak, denai & batu",
+            "offclock.sports.desc": "Bola sepak pada hujung minggu, mendaki apabila gunung memanggil, berlari apabila tidak. Melayan badan seperti kod pengeluaran -- tiada jalan pintas, tiada hutang teknikal.<span class=\"aside\">// Hari kaki tiada strategi pemulihan</span>",
+            "offclock.fuel.title": "Bahan api bersih sahaja",
+            "offclock.fuel.desc": "Makan bersih -- bukan \"kebanyakannya\", benar-benar bersih. Tiada alkohol, tiada merokok, tiada hari curang. Menganggap badan sebagai proses jangka panjang: sampah masuk, sampah keluar.<span class=\"aside\">// Sangat mengesyorkan orang lain turut mengamalkan gaya hidup ini</span>",
+            "offclock.geo.title": "Peta, wang & kuasa",
+            "offclock.geo.desc": "Terpesona dengan perubahan geopolitik, sejarah, geografi dan trend ekonomi. Suka menghubungkan titik antara mengapa sempadan berubah dan ke mana pasaran menuju.<span class=\"aside\">// Akan mengalihkan mana-mana perbualan makan malam kepada tesis makro</span>",
+            "offclock.travel.title": "Cap pasport",
+            "offclock.travel.desc": "Telah mengumpul selaran matahari merentasi Asia Tenggara dan seterusnya. Percaya penyahpepijatan terbaik berlaku pada ketinggian 35,000 kaki.",
+            "offclock.photo.title": "Fotografi",
+            "offclock.photo.desc": "Gemar mengabadikan detik, terutamanya ketika melancong. Storan telefon 80% foto, 15% cache Xcode, 5% ruang kosong sebenar.",
+            "offclock.ideas.title": "Idea & pembinaan",
+            "offclock.ideas.desc": "Sentiasa bermimpi tentang produk untuk dibina. Mempunyai aplikasi nota penuh dengan \"idea berjuta-juta\" -- melancarkan satu pun sudah bagus.<span class=\"aside\">// TODO: benar-benar lancarkan salah satu daripada ini</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Hubungi",
+            "contact.heading": "Jom bina sesuatu",
+            "contact.sub": "Terbuka untuk perbualan tentang iOS, AI, idea produk, atau membina sesuatu bersama.",
+            "contact.alllinks": "Semua Pautan",
+
+            /* ── Footer ── */
+            "footer.text": "Direka & dibina oleh Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesional",
+            "lo.portfolio": "Portfolio",
+            "lo.scan": "Imbas &middot; Kongsi"
         }
     };
 
