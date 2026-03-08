@@ -1106,7 +1106,14 @@
     const LANG_DISPLAY = {
         en: 'EN', hi: '\u0939\u093F', ar: '\u0639\u0631',
         he: '\u05E2\u05D1', zh: '\u4E2D', th: '\u0E44\u0E17',
-        ru: '\u0420\u0423', es: 'ES', pt: 'PT', fr: 'FR'
+        ru: '\u0420\u0423', es: 'ES', pt: 'PT', fr: 'FR',
+        ja: '\u65E5', ko: '\uD55C', de: 'DE',
+        it: 'IT', nl: 'NL', pl: 'PL',
+        tr: 'TR', vi: 'VI', id: 'ID',
+        ms: 'MS', sv: 'SV', da: 'DA',
+        fi: 'FI', cs: 'CS', ro: 'RO',
+        uk: '\u0423\u041A', el: '\u0395\u039B', hu: 'HU',
+        bn: '\u09AC\u09BE', ta: '\u0BA4\u0BAE'
     };
 
     /* ── Engine ── */
