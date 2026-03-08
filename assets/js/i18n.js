@@ -2114,6 +2114,119 @@
             "lo.professional": "Profesional",
             "lo.portfolio": "Portfolio",
             "lo.scan": "Imbas &middot; Kongsi"
+        },
+        vi: {
+            /* ── Nav ── */
+            "nav.about": "Gi\u1EDBi thi\u1EC7u",
+            "nav.experience": "Kinh nghi\u1EC7m",
+            "nav.projects": "D\u1EF1 \u00E1n",
+            "nav.skills": "K\u1EF9 n\u0103ng",
+            "nav.contact": "Li\u00EAn h\u1EC7",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>K\u1EF9 s\u01B0 & nh\u00E0 ph\u00E1t tri\u1EC3n.</strong> Ph\u00E1t tri\u1EC3n \u1EE9ng d\u1EE5ng iOS ban ng\u00E0y,<br>kh\u00E1m ph\u00E1 AI v\u00E0 \u00FD t\u01B0\u1EDFng s\u1EA3n ph\u1EA9m ban \u0111\u00EAm.",
+            "hero.location": "Bengaluru, \u1EA4n \u0110\u1ED9",
+            "hero.builder": "Nh\u00E0 ph\u00E1t tri\u1EC3n t\u0103ng c\u01B0\u1EDDng b\u1EDFi AI",
+            "hero.cta": "Li\u00EAn h\u1EC7 ngay",
+
+            /* ── About ── */
+            "about.label": "Gi\u1EDBi thi\u1EC7u",
+            "about.heading": "Ngh\u1EC7 thu\u1EADt, s\u1EF1 t\u00F2 m\u00F2,<br>v\u00E0 m\u00E3 ngu\u1ED3n",
+            "about.p1": "Vishal l\u00E0 m\u1ED9t <strong>K\u1EF9 s\u01B0 iOS Ch\u00EDnh</strong> y\u00EAu th\u00EDch x\u00E2y d\u1EF1ng m\u1ECDi th\u1EE9 t\u1EEB \u0111\u1EA7u. Anh \u00E3 ph\u00E1t h\u00E0nh c\u00E1c \u1EE9ng d\u1EE5ng th\u1EF1c t\u1EBF trong c\u00E1c l\u0129nh v\u1EF1c <strong>fintech, health-tech, m\u1EA1ng x\u00E3 h\u1ED9i v\u00E0 th\u01B0\u01A1ng m\u1EA1i \u0111i\u1EC7n t\u1EED</strong> -- m\u1ED7i l\u1EA7n \u0111\u1EC1u thi\u1EBFt k\u1EBF ki\u1EBFn tr\u00FAc c\u00F3 kh\u1EA3 n\u0103ng m\u1EDF r\u1ED9ng v\u00E0 d\u1EC5 b\u1EA3o tr\u00EC.",
+            "about.p2": "Anh b\u1ECB thu h\u00FAt b\u1EDFi giai \u0111o\u1EA1n \"t\u1EEB kh\u00F4ng \u0111\u1EBFn m\u1ED9t\" c\u1EE7a s\u1EA3n ph\u1EA9m: thi\u1EBFt l\u1EADp ranh gi\u1EDBi module, t\u1EF1 \u0111\u1ED9ng h\u00F3a c\u00E1c quy tr\u00ECnh nh\u00E0m ch\u00E1n b\u1EB1ng Swift script, v\u00E0 h\u01B0\u1EDBng d\u1EABn \u0111\u1ED9i ng\u0169 l\u00E0m vi\u1EC7c t\u1EF1 tin. <strong>M\u00E3 s\u1EA1ch v\u00E0 c\u00E1c th\u00E0nh ph\u1EA7n t\u00E1i s\u1EED d\u1EE5ng</strong> l\u00E0 kh\u00F4ng th\u1EC3 th\u01B0\u01A1ng l\u01B0\u1EE3ng.",
+            "about.p3": "Hi\u1EC7n \u0111ang kh\u00E1m ph\u00E1 giao \u0111i\u1EC3m gi\u1EEFa <strong>AI v\u00E0 di \u0111\u1ED9ng</strong> -- h\u1ECDc c\u00E1ch \u0111i\u1EC1u ph\u1ED1i LLM, agent v\u00E0 c\u00F4ng c\u1EE5 AI \u0111\u1EC3 nh\u00E2n n\u0103ng su\u1EA5t. M\u1EE5c ti\u00EAu d\u00E0i h\u1EA1n l\u00E0 <strong>ph\u00E1t h\u00E0nh s\u1EA3n ph\u1EA9m nhanh h\u01A1n</strong> b\u1EB1ng c\u00E1ch k\u1EBFt h\u1EE3p ngh\u1EC7 thu\u1EADt k\u1EF9 thu\u1EADt v\u1EDBi quy tr\u00ECnh t\u0103ng c\u01B0\u1EDDng b\u1EDFi AI, lu\u00F4n h\u1ECDc h\u1ECFi t\u1EEB ng\u01B0\u1EDDi kh\u00E1c.",
+            "about.stat.apps": "\u1EE8ng d\u1EE5ng \u0111\u00E3 ph\u00E1t h\u00E0nh",
+            "about.stat.domains": "L\u0129nh v\u1EF1c",
+            "about.stat.scratch": "X\u00E2y d\u1EF1ng t\u1EEB \u0111\u1EA7u",
+            "about.stat.curiosity": "S\u1EF1 t\u00F2 m\u00F2",
+
+            /* ── Career ── */
+            "career.label": "S\u1EF1 nghi\u1EC7p",
+            "career.heading": "H\u00E0nh tr\u00ECnh \u0111\u1EBFn nay",
+            "career.current": "hi\u1EC7n t\u1EA1i",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Th\u00E0nh vi\u00EAn \u0111\u1ED9i k\u1EF9 thu\u1EADt s\u00E1ng l\u1EADp, x\u00E2y d\u1EF1ng \u1EE9ng d\u1EE5ng t\u1EEB \u0111\u1EA7u.</li><li>L\u00E0m vi\u1EC7c li\u00EAn ch\u1EE9c n\u0103ng v\u1EDBi s\u1EA3n ph\u1EA9m, thi\u1EBFt k\u1EBF, t\u0103ng tr\u01B0\u1EDFng v\u00E0 k\u1EF9 thu\u1EADt tr\u00EAn c\u00E1c t\u00EDnh n\u0103ng ch\u00EDnh: onboarding, feed, s\u00E1ng t\u1EA1o n\u1ED9i dung, th\u00F4ng b\u00E1o v\u00E0 x\u1EED l\u00FD h\u00ECnh \u1EA3nh.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>X\u00E2y d\u1EF1ng \u1EE9ng d\u1EE5ng iOS \u0111\u1ED3ng h\u00E0nh t\u1EEB \u0111\u1EA7u cho thi\u1EBFt b\u1ECB y t\u1EBF robot \u0111o l\u01B0u l\u01B0\u1EE3ng m\u00E1u n\u00E3o.</li><li>Ki\u1EBFn tr\u00FAc cho quy m\u00F4 l\u1EDBn: c\u00E1c th\u00E0nh ph\u1EA7n UI t\u00E1i s\u1EED d\u1EE5ng, thi\u1EBFt k\u1EBF \u01B0u ti\u00EAn ki\u1EC3m th\u1EED, pipeline CI/CD Xcode Cloud.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>M\u1ED9t trong nh\u1EEFng k\u1EF9 s\u01B0 c\u1EA5p cao trong \u0111\u1ED9i iOS 13-16 ng\u01B0\u1EDDi cho \u1EE9ng d\u1EE5ng fintech \u0111\u01B0\u1EE3c \u0111\u00E1nh gi\u00E1 cao (4.3 sao).</li><li>C\u1EA3i ti\u1EBFn m\u00E0n h\u00ECnh ch\u00EDnh v\u00E0 module Qu\u1EF9 T\u01B0\u01A1ng h\u1ED7. H\u01B0\u1EDBng d\u1EABn k\u1EF9 s\u01B0 v\u00E0 d\u1EABn d\u1EAFt review m\u00E3.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>D\u1EABn d\u1EAFt ki\u1EBFn tr\u00FAc cho n\u1EC1n t\u1EA3ng SaaS white-label (Gwynnie Bee, Haverdash) cung c\u1EA5p d\u1ECBch v\u1EE5 thu\u00EA qu\u1EA7n \u00E1o t\u1EA1i M\u1EF9.</li><li>Thi\u1EBFt k\u1EBF h\u1EC7 th\u1ED1ng giao di\u1EC7n \u0111\u1ED9ng t\u1EF1 \u0111\u1ED9ng h\u00F3a qua b\u1EA3ng t\u00EDnh v\u00E0 Swift scripting n\u1ED9i b\u1ED9.</li><li>Thi\u1EBFt l\u1EADp framework ki\u1EC3m th\u1EED \u0111\u01A1n v\u1ECB v\u00E0 pipeline CI/CD. H\u01B0\u1EDBng d\u1EABn \u0111\u1ED9i ng\u0169 v\u00E0 chuy\u1EC3n giao ki\u1EBFn th\u1EE9c ki\u1EBFn tr\u00FAc.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Ph\u00E1t h\u00E0nh nhi\u1EC1u \u1EE9ng d\u1EE5ng \u0111\u1ED3ng th\u1EDDi trong c\u00E1c l\u0129nh v\u1EF1c doanh nghi\u1EC7p v\u00E0 s\u00E1ng t\u1EA1o (Apache Industrial, Duet App, PropCube).</li><li>Ph\u00E1t tri\u1EC3n t\u1EEB ng\u01B0\u1EDDi m\u1EDBi \u0111\u1EBFn d\u1EABn d\u1EAFt \u0111\u1ED9i iOS 2 ng\u01B0\u1EDDi v\u00E0 h\u01B0\u1EDBng d\u1EABn 4 nh\u00E2n vi\u00EAn m\u1EDBi.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "C\u00F4ng vi\u1EC7c",
+            "projects.heading": "\u1EE8ng d\u1EE5ng \u0111\u00E3 ph\u00E1t h\u00E0nh",
+            "projects.domain.social": "M\u1EA1ng x\u00E3 h\u1ED9i",
+            "projects.domain.health": "C\u00F4ng ngh\u1EC7 y t\u1EBF",
+            "projects.domain.fintech": "C\u00F4ng ngh\u1EC7 t\u00E0i ch\u00EDnh",
+            "projects.domain.fashion": "Th\u1EDDi trang / SaaS",
+            "projects.domain.enterprise": "Doanh nghi\u1EC7p",
+            "projects.domain.side": "D\u1EF1 \u00E1n c\u00E1 nh\u00E2n",
+            "projects.turnip.desc": "\u1EE8ng d\u1EE5ng m\u1EA1ng x\u00E3 h\u1ED9i x\u00E2y d\u1EF1ng t\u1EEB \u0111\u1EA7u -- onboarding, feed, s\u00E1ng t\u1EA1o n\u1ED9i dung, th\u00F4ng b\u00E1o v\u00E0 x\u1EED l\u00FD h\u00ECnh \u1EA3nh. H\u1EE3p t\u00E1c li\u00EAn ch\u1EE9c n\u0103ng t\u1EEB ng\u00E0y \u0111\u1EA7u ti\u00EAn.",
+            "projects.novasignal.desc": "\u1EE8ng d\u1EE5ng iOS \u0111\u1ED3ng h\u00E0nh cho thi\u1EBFt b\u1ECB y t\u1EBF robot. Gi\u00FAp b\u1EC7nh vi\u1EC7n truy c\u1EADp d\u1EEF li\u1EC7u l\u01B0u l\u01B0\u1EE3ng m\u00E1u n\u00E3o \u0111\u01B0\u1EE3c x\u1EED l\u00FD b\u1EDFi AI \u0111\u1EC3 ph\u00F2ng ng\u1EEBa \u0111\u1ED9t qu\u1EF5.",
+            "projects.paytm.desc": "M\u1ED9t trong nh\u1EEFng \u1EE9ng d\u1EE5ng \u0111\u1EA7u t\u01B0 \u0111\u01B0\u1EE3c \u0111\u00E1nh gi\u00E1 cao nh\u1EA5t \u1EA4n \u0110\u1ED9. C\u1ED5 phi\u1EBFu, qu\u1EF9 t\u01B0\u01A1ng h\u1ED7, IPO, F&O. C\u1EA3i ti\u1EBFn m\u00E0n h\u00ECnh ch\u00EDnh v\u00E0 module qu\u1EF9 t\u01B0\u01A1ng h\u1ED7 ph\u1EE5c v\u1EE5 h\u00E0ng tri\u1EC7u ng\u01B0\u1EDDi d\u00F9ng.",
+            "projects.caastle.desc": "N\u1EC1n t\u1EA3ng thu\u00EA qu\u1EA7n \u00E1o white-label cho th\u1ECB tr\u01B0\u1EDDng M\u1EF9. Ki\u1EBFn tr\u00FAc framework SaaS module h\u00F3a, c\u00F3 th\u1EC3 t\u00F9y ch\u1EC9nh giao di\u1EC7n cho nhi\u1EC1u th\u01B0\u01A1ng hi\u1EC7u.",
+            "projects.enterprise.desc": "\u1EE8ng d\u1EE5ng qu\u1EA3n l\u00FD v\u00E0 gi\u00E1m s\u00E1t l\u1EF1c l\u01B0\u1EE3ng lao \u0111\u1ED9ng doanh nghi\u1EC7p cho Apache Industrial Services, \u0111\u01B0\u1EE3c s\u1EED d\u1EE5ng tr\u00EAn to\u00E0n b\u1ED9 ho\u1EA1t \u0111\u1ED9ng t\u1EA1i M\u1EF9.",
+            "projects.xo3.desc": "Tr\u00F2 ch\u01A1i tic-tac-toe kh\u00E1m ph\u00E1 SwiftUI, Combine v\u00E0 MultipeerConnectivity. X\u00E2y d\u1EF1ng v\u1EDBi iOS 26+ v\u00E0 Swift 6.",
+            "projects.appstore": "Xem tr\u00EAn App Store",
+            "projects.github": "Xem tr\u00EAn GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "C\u00F4ng c\u1EE5",
+            "skills.heading": "C\u00F4ng ngh\u1EC7 & k\u1EF9 n\u0103ng",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Ki\u1EBFn tr\u00FAc",
+            "skills.ai": "AI & Kh\u00E1m ph\u00E1",
+            "skills.tooling": "C\u00F4ng c\u1EE5 & Quy tr\u00ECnh",
+            "skills.leadership": "L\u00E3nh \u0111\u1EA1o",
+
+            /* ── Open Source ── */
+            "oss.label": "M\u00E3 ngu\u1ED3n m\u1EDF",
+            "oss.heading": "Tr\u00EAn GitHub",
+            "oss.timbaktoe": "Tr\u00F2 ch\u01A1i tic-tac-toe \u0111\u1EC3 h\u1ECDc c\u01A1 b\u1EA3n SwiftUI, Combine v\u00E0 MultipeerConnectivity.",
+            "oss.school": "\u1EE8ng d\u1EE5ng kh\u1EDFi \u0111\u1EA7u \u0111\u1EC3 hi\u1EC3u c\u00E1c m\u1EABu SwiftUI v\u00E0 Combine.",
+            "oss.openpr": "C\u00F4ng c\u1EE5 CLI \u0111\u1EC3 t\u1EA1o pull request, x\u00E2y d\u1EF1ng v\u1EDBi Swift Package Manager.",
+            "oss.math": "Th\u01B0 vi\u1EC7n ti\u1EC7n \u00EDch to\u00E1n h\u1ECDc. 4 fork tr\u00EAn GitHub.",
+            "oss.geo": "Wrapper nh\u1EB9 cho framework iOS CoreLocation.",
+            "oss.setup": "Danh s\u00E1ch ki\u1EC3m tra \u0111\u1EC3 c\u1EA5u h\u00ECnh m\u00E1y ph\u00E1t tri\u1EC3n m\u1EDBi.",
+
+            /* ── Education ── */
+            "edu.label": "H\u1ECDc v\u1EA5n",
+            "edu.heading": "N\u1EC1n t\u1EA3ng",
+            "edu.degree": "C\u1EED nh\u00E2n C\u00F4ng ngh\u1EC7, Khoa h\u1ECDc M\u00E1y t\u00EDnh & K\u1EF9 thu\u1EADt",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Ngo\u00E0i gi\u1EDD l\u00E0m",
+            "offclock.heading": "Nh\u1EEFng \u0111i\u1EC1u ngo\u00E0i k\u1EF9 thu\u1EADt",
+            "offclock.sports.title": "B\u00F3ng \u0111\u00E1, \u0111\u01B0\u1EDDng m\u00F2n & d\u1EB7m \u0111\u01B0\u1EDDng",
+            "offclock.sports.desc": "B\u00F3ng \u0111\u00E1 cu\u1ED1i tu\u1EA7n, leo n\u00FAi khi n\u00FAi g\u1ECDi, ch\u1EA1y b\u1ED9 khi kh\u00F4ng. Coi c\u01A1 th\u1EC3 nh\u01B0 m\u00E3 production -- kh\u00F4ng \u0111\u01B0\u1EDDng t\u1EAFt, kh\u00F4ng n\u1EE3 k\u1EF9 thu\u1EADt.<span class=\"aside\">// Ng\u00E0y t\u1EADp ch\u00E2n kh\u00F4ng c\u00F3 chi\u1EBFn l\u01B0\u1EE3c rollback</span>",
+            "offclock.fuel.title": "Ch\u1EC9 n\u0103ng l\u01B0\u1EE3ng s\u1EA1ch",
+            "offclock.fuel.desc": "\u0102n s\u1EA1ch -- kh\u00F4ng ph\u1EA3i \"ph\u1EA7n l\u1EDBn\", m\u00E0 th\u1EF1c s\u1EF1 s\u1EA1ch. Kh\u00F4ng r\u01B0\u1EE3u, kh\u00F4ng thu\u1ED1c l\u00E1, kh\u00F4ng b\u1EEFa gian l\u1EADn. Coi c\u01A1 th\u1EC3 l\u00E0 m\u1ED9t ti\u1EBFn tr\u00ECnh ch\u1EA1y d\u00E0i: r\u00E1c v\u00E0o, r\u00E1c ra.<span class=\"aside\">// R\u1EA5t khuy\u1EBFn kh\u00EDch ng\u01B0\u1EDDi kh\u00E1c c\u0169ng \u00E1p d\u1EE5ng l\u1ED1i s\u1ED1ng n\u00E0y</span>",
+            "offclock.geo.title": "B\u1EA3n \u0111\u1ED3, ti\u1EC1n b\u1EA1c & quy\u1EC1n l\u1EF1c",
+            "offclock.geo.desc": "B\u1ECB cu\u1ED1n h\u00FAt b\u1EDFi bi\u1EBFn \u0111\u1ED5i \u0111\u1ECBa ch\u00EDnh tr\u1ECB, l\u1ECBch s\u1EED, \u0111\u1ECBa l\u00FD v\u00E0 xu h\u01B0\u1EDBng kinh t\u1EBF. Th\u00EDch k\u1EBFt n\u1ED1i c\u00E1c \u0111i\u1EC3m gi\u1EEFa l\u00FD do bi\u00EAn gi\u1EDBi thay \u0111\u1ED5i v\u00E0 th\u1ECB tr\u01B0\u1EDDng \u0111ang h\u01B0\u1EDBng t\u1EDBi \u0111\u00E2u.<span class=\"aside\">// S\u1EBD l\u00E0m ch\u1EC7ch h\u01B0\u1EDBng b\u1EA5t k\u1EF3 bu\u1ED5i t\u1ED1i n\u00E0o th\u00E0nh lu\u1EADn \u0111i\u1EC3m v\u0129 m\u00F4</span>",
+            "offclock.travel.title": "D\u1EA5u m\u1ED9c h\u1ED9 chi\u1EBFu",
+            "offclock.travel.desc": "\u0110\u00E3 thu th\u1EADp v\u1EBFt ch\u00E1y n\u1EAFng kh\u1EAFp \u0110\u00F4ng Nam \u00C1 v\u00E0 xa h\u01A1n. Tin r\u1EB1ng vi\u1EC7c g\u1EE1 l\u1ED7i t\u1ED1t nh\u1EA5t x\u1EA3y ra \u1EDF \u0111\u1ED9 cao 35.000 feet.",
+            "offclock.photo.title": "Nhi\u1EBFp \u1EA3nh",
+            "offclock.photo.desc": "Th\u00EDch ghi l\u1EA1i kho\u1EA3nh kh\u1EAFc, ch\u1EE7 y\u1EBFu khi \u0111i du l\u1ECBch. B\u1ED9 nh\u1EDB \u0111i\u1EC7n tho\u1EA1i 80% \u1EA3nh, 15% b\u1ED9 nh\u1EDB \u0111\u1EC7m Xcode, 5% dung l\u01B0\u1EE3ng tr\u1ED1ng th\u1EF1c s\u1EF1.",
+            "offclock.ideas.title": "\u00DD t\u01B0\u1EDFng & x\u00E2y d\u1EF1ng",
+            "offclock.ideas.desc": "Li\u00EAn t\u1EE5c m\u01A1 m\u1ED9ng v\u1EC1 c\u00E1c s\u1EA3n ph\u1EA9m \u0111\u1EC3 x\u00E2y d\u1EF1ng. \u1EE8ng d\u1EE5ng ghi ch\u00FA \u0111\u1EA7y \"\u00FD t\u01B0\u1EDFng tri\u1EC7u \u0111\u00F4\" -- ph\u00E1t h\u00E0nh \u0111\u01B0\u1EE3c m\u1ED9t c\u00E1i th\u00EC t\u1ED1t.<span class=\"aside\">// TODO: th\u1EF1c s\u1EF1 ph\u00E1t h\u00E0nh m\u1ED9t trong s\u1ED1 n\u00E0y</span>",
+
+            /* ── Contact ── */
+            "contact.label": "K\u1EBFt n\u1ED1i",
+            "contact.heading": "H\u00E3y x\u00E2y d\u1EF1ng \u0111i\u1EC1u g\u00EC \u0111\u00F3",
+            "contact.sub": "S\u1EB5n s\u00E0ng tr\u00F2 chuy\u1EC7n v\u1EC1 iOS, AI, \u00FD t\u01B0\u1EDFng s\u1EA3n ph\u1EA9m, ho\u1EB7c c\u00F9ng nhau x\u00E2y d\u1EF1ng.",
+            "contact.alllinks": "T\u1EA5t c\u1EA3 li\u00EAn k\u1EBFt",
+
+            /* ── Footer ── */
+            "footer.text": "Thi\u1EBFt k\u1EBF & x\u00E2y d\u1EF1ng b\u1EDFi Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Chuy\u00EAn nghi\u1EC7p",
+            "lo.portfolio": "Danh m\u1EE5c \u0111\u1EA7u t\u01B0",
+            "lo.scan": "Qu\u00E9t &middot; Chia s\u1EBB"
         }
     };
 
