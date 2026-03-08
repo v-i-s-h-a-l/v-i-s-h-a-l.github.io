@@ -2453,6 +2453,119 @@
             "lo.professional": "Profesional",
             "lo.portfolio": "Portofoliu",
             "lo.scan": "Scaneaz\u0103 &middot; Distribuie"
+        },
+        cs: {
+            /* ── Nav ── */
+            "nav.about": "O mn\u011B",
+            "nav.experience": "Zku\u0161enosti",
+            "nav.projects": "Projekty",
+            "nav.skills": "Dovednosti",
+            "nav.contact": "Kontakt",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>In\u017Een\u00FDr a tv\u016Frce.</strong> P\u0159es den dod\u00E1v\u00E1 iOS aplikace,<br>v noci experimentuje s AI a produktov\u00FDmi n\u00E1pady.",
+            "hero.location": "Bengaluru, Indie",
+            "hero.builder": "Tv\u016Frce s podporou AI",
+            "hero.cta": "Spojte se se mnou",
+
+            /* ── About ── */
+            "about.label": "O mn\u011B",
+            "about.heading": "\u0158emeslo, zv\u011Bdavost<br>a k\u00F3d",
+            "about.p1": "Vishal je <strong>hlavn\u00ED iOS in\u017Een\u00FDr</strong>, kter\u00FD r\u00E1d stav\u00ED v\u011Bci od nuly. Dodal produk\u010Dn\u00ED aplikace v oblastech <strong>fintech, health-tech, soci\u00E1ln\u00ED m\u00E9dia a e-commerce</strong> -- poka\u017Ed\u00E9 navrhl architekturu, kter\u00E1 \u0161k\u00E1luje a z\u016Fst\u00E1v\u00E1 udr\u017Eovateln\u00E1.",
+            "about.p2": "P\u0159itahuje ho f\u00E1ze \u201Eod nuly k jedni\u010Dce\u201C produkt\u016F: stanovov\u00E1n\u00ED hranic modul\u016F, automatizace \u00FAmorn\u00FDch workflow pomoc\u00ED Swift skript\u016F a mentorov\u00E1n\u00ED t\u00FDm\u016F, aby se pohybovaly s jistotou. <strong>\u010Cist\u00FD k\u00F3d a znovupou\u017Eiteln\u00E9 komponenty</strong> jsou nep\u0159ekro\u010Diteln\u00E9.",
+            "about.p3": "V sou\u010Dasnosti zkoum\u00E1 pr\u016Fse\u010D\u00EDk <strong>AI a mobiln\u00EDch technologi\u00ED</strong> -- u\u010D\u00ED se orchestrovat LLM, agenty a AI n\u00E1stroje pro n\u00E1soben\u00ED produktivity. Dlouhodob\u00FDm c\u00EDlem je <strong>dod\u00E1vat produkty rychleji</strong> kombinac\u00ED in\u017Een\u00FDrsk\u00E9ho \u0159emesla s workflow s podporou AI, a neust\u00E1le se u\u010Dit od druh\u00FDch.",
+            "about.stat.apps": "Dodan\u00E9 aplikace",
+            "about.stat.domains": "Dom\u00E9ny",
+            "about.stat.scratch": "Postaveno od nuly",
+            "about.stat.curiosity": "Zv\u011Bdavost",
+
+            /* ── Career ── */
+            "career.label": "Kari\u00E9ra",
+            "career.heading": "Cesta dosud",
+            "career.current": "sou\u010Dasnost",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Sou\u010D\u00E1st zakl\u00E1daj\u00EDc\u00EDho in\u017Een\u00FDrsk\u00E9ho t\u00FDmu, stavba aplikace od nuly.</li><li>Spolupracuje nap\u0159\u00ED\u010D t\u00FDmy s produktem, designem, r\u016Fstem a in\u017Een\u00FDringem na kl\u00ED\u010Dov\u00FDch funkc\u00EDch: onboarding, feed, tvorba obsahu, notifikace a zpracov\u00E1n\u00ED obr\u00E1zk\u016F.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>Vytvo\u0159il iOS spole\u010Dnickou aplikaci od nuly pro robotick\u00E9 l\u00E9ka\u0159sk\u00E9 za\u0159\u00EDzen\u00ED m\u011B\u0159\u00EDc\u00ED mozkovou cirkulaci.</li><li>Navrhl architekturu pro \u0161k\u00E1lov\u00E1n\u00ED: znovupou\u017Eiteln\u00E9 UI komponenty, design s d\u016Frazem na testovatelnost, CI/CD pipeline p\u0159es Xcode Cloud.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>Jeden ze senior in\u017Een\u00FDr\u016F v 13-16\u010Dlenn\u00E9m iOS t\u00FDmu pro vysoce hodnocenou fintech aplikaci (4,3 hv\u011Bzdi\u010Dky).</li><li>P\u0159epracoval domovskou obrazovku a modul pod\u00EDlov\u00FDch fond\u016F. Mentoroval in\u017Een\u00FDry a vedl code reviews.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>Vedl architekturu pro white-label SaaS platformu (Gwynnie Bee, Haverdash) pohán\u011Bj\u00EDc\u00ED p\u016Fj\u010Dovnu od\u011Bv\u016F v USA.</li><li>Navrhl dynamick\u00FD syst\u00E9m motiv\u016F automatizovan\u00FD pomoc\u00ED tabulek a intern\u00EDch Swift skript\u016F.</li><li>Zavedl framework pro unit testy a CI/CD pipeline. Mentoroval t\u00FDm a p\u0159ed\u00E1val znalosti architektury.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Sou\u010Dasn\u011B dodal n\u011Bkolik aplikac\u00ED nap\u0159\u00ED\u010D podnikov\u00FDmi a kreativn\u00EDmi dom\u00E9nami (Apache Industrial, Duet App, PropCube).</li><li>Vyrostl z juniora na vedouc\u00EDho 2\u010Dlenn\u00E9ho iOS t\u00FDmu a mentora 4 nov\u00FDch koleg\u016F.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Pr\u00E1ce",
+            "projects.heading": "Dodan\u00E9 aplikace",
+            "projects.domain.social": "Soci\u00E1ln\u00ED",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "M\u00F3da / SaaS",
+            "projects.domain.enterprise": "Enterprise",
+            "projects.domain.side": "Vedlej\u0161\u00ED projekt",
+            "projects.turnip.desc": "Soci\u00E1ln\u00ED aplikace postaven\u00E1 od nuly -- onboarding, feed, tvorba obsahu, notifikace a zpracov\u00E1n\u00ED obr\u00E1zk\u016F. Mezit\u00FDmov\u00E1 spolupr\u00E1ce od prvn\u00EDho dne.",
+            "projects.novasignal.desc": "iOS spole\u010Dn\u00EDk pro robotick\u00E9 l\u00E9ka\u0159sk\u00E9 za\u0159\u00EDzen\u00ED. Umo\u017E\u0148uje nemocnic\u00EDm p\u0159\u00EDstup k AI zpracovan\u00FDm dat\u016Fm o mozkov\u00E9 cirkulaci pro prevenci mrtvice.",
+            "projects.paytm.desc": "Jedna z nejl\u00E9pe hodnocen\u00FDch investi\u010Dn\u00EDch aplikac\u00ED v Indii. Akcie, pod\u00EDlov\u00E9 fondy, IPO, F&O. P\u0159epracov\u00E1n\u00ED domovsk\u00E9 obrazovky a modulu fond\u016F slou\u017E\u00EDc\u00EDch milion\u016Fm u\u017Eivatel\u016F.",
+            "projects.caastle.desc": "White-label platforma pro p\u016Fj\u010Dovnu od\u011Bv\u016F na americk\u00E9m trhu. Architektoval modul\u00E1rn\u00ED, tematicky p\u0159izp\u016Fsobitelnou SaaS platformu poh\u00E1n\u011Bj\u00EDc\u00ED v\u00EDce zna\u010Dkov\u00FDch aplikac\u00ED.",
+            "projects.enterprise.desc": "Enterprise aplikace pro \u0159\u00EDzen\u00ED a monitorov\u00E1n\u00ED pracovn\u00ED s\u00EDly pro Apache Industrial Services, pou\u017E\u00EDvan\u00E1 v operac\u00EDch v USA.",
+            "projects.xo3.desc": "Hra pi\u0161kvorky zkoumaj\u00EDc\u00ED SwiftUI, Combine a MultipeerConnectivity. Postavena s iOS 26+ a Swift 6.",
+            "projects.appstore": "Zobrazit na App Store",
+            "projects.github": "Zobrazit na GitHubu",
+
+            /* ── Skills ── */
+            "skills.label": "N\u00E1stroje",
+            "skills.heading": "Technologie a dovednosti",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Architektura",
+            "skills.ai": "AI a pr\u016Fzkum",
+            "skills.tooling": "N\u00E1stroje a procesy",
+            "skills.leadership": "Veden\u00ED",
+
+            /* ── Open Source ── */
+            "oss.label": "Open Source",
+            "oss.heading": "Na GitHubu",
+            "oss.timbaktoe": "Hra pi\u0161kvorky pro studium z\u00E1klad\u016F SwiftUI, Combine a MultipeerConnectivity.",
+            "oss.school": "Startovn\u00ED aplikace pro pochopen\u00ED vzorc\u016F SwiftUI a Combine.",
+            "oss.openpr": "CLI n\u00E1stroj pro vytv\u00E1\u0159en\u00ED pull request\u016F, postaven\u00FD se Swift Package Managerem.",
+            "oss.math": "Knihovna matematick\u00FDch utilit. 4 forky na GitHubu.",
+            "oss.geo": "Lehk\u00FD wrapper nad iOS CoreLocation frameworkem.",
+            "oss.setup": "Kontroln\u00ED seznam pro konfiguraci nov\u00FDch v\u00FDvojov\u00FDch stroj\u016F.",
+
+            /* ── Education ── */
+            "edu.label": "Vzd\u011Bl\u00E1n\u00ED",
+            "edu.heading": "Z\u00E1zem\u00ED",
+            "edu.degree": "B.Tech, Informatika a in\u017Een\u00FDrstv\u00ED",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Mimo pr\u00E1ci",
+            "offclock.heading": "Nein\u017Een\u00FDrsk\u00E9 kousky",
+            "offclock.sports.title": "Fotbal, stezky a kilometry",
+            "offclock.sports.desc": "O v\u00EDkendech fotbal, turistika kdy\u017E volaj\u00ED hory, b\u011Bh kdy\u017E nevolaj\u00ED. K t\u011Blu p\u0159istupuje jako k produk\u010Dn\u00EDmu k\u00F3du -- \u017E\u00E1dn\u00E9 zkratky, \u017E\u00E1dn\u00FD technick\u00FD dluh.<span class=\"aside\">// Den noh nem\u00E1 strategii pro rollback</span>",
+            "offclock.fuel.title": "Pouze \u010Dist\u00E9 palivo",
+            "offclock.fuel.desc": "J\u00ED \u010Dist\u011B -- ne \u201Ev\u011Bt\u0161inou\u201C, opravdu \u010Dist\u011B. \u017D\u00E1dn\u00FD alkohol, \u017E\u00E1dn\u00E9 kou\u0159en\u00ED, \u017E\u00E1dn\u00E9 cheat mealy. T\u011Blo pova\u017Euje za dlouhodob\u011B b\u011B\u017E\u00EDc\u00ED proces: odpad dovnit\u0159 -- odpad ven.<span class=\"aside\">// Naléhav\u011B doporu\u010Duje tento \u017Eivotn\u00ED styl i ostatn\u00EDm</span>",
+            "offclock.geo.title": "Mapy, pen\u00EDze a moc",
+            "offclock.geo.desc": "Fascinov\u00E1n geopolitick\u00FDmi zm\u011Bnami, histori\u00ED, geografi\u00ED a ekonomick\u00FDmi trendy. R\u00E1d propojuje posuny hranic se sm\u011B\u0159ov\u00E1n\u00EDm trh\u016F.<span class=\"aside\">// Jak\u00FDkoli rozhovor u ve\u010De\u0159e p\u0159evede na makroekonomickou t\u00E9zi</span>",
+            "offclock.travel.title": "Raz\u00EDtka v pase",
+            "offclock.travel.desc": "Nashrom\u00E1\u017Edil \u00FA\u017Eehy po jihov\u00FDchodn\u00ED Asii a d\u00E1l. V\u011B\u0159\u00ED, \u017Ee nejlep\u0161\u00ED lad\u011Bn\u00ED prob\u00EDh\u00E1 ve v\u00FD\u0161ce 35 000 stop.",
+            "offclock.photo.title": "Fotografie",
+            "offclock.photo.desc": "R\u00E1d zachycuje okam\u017Eiky, zejm\u00E9na p\u0159i cestov\u00E1n\u00ED. Pam\u011B\u0165 telefonu: 80 % fotky, 15 % cache Xcode, 5 % voln\u00E9ho m\u00EDsta.",
+            "offclock.ideas.title": "N\u00E1pady a tvorba",
+            "offclock.ideas.desc": "Neust\u00E1le sn\u00ED o produktech k vytvo\u0159en\u00ED. Pozn\u00E1mky pln\u00E9 \u201En\u00E1pad\u016F za milion\u201C -- dodat alespo\u0148 jeden by bylo fajn.<span class=\"aside\">// TODO: opravdu dodat jeden z nich</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Kontakt",
+            "contact.heading": "Pojďme n\u011Bco vytvo\u0159it",
+            "contact.sub": "Otev\u0159en\u00FD rozhovor\u016Fm o iOS, AI, produktov\u00FDch n\u00E1padech nebo spole\u010Dn\u00E9 tvorb\u011B.",
+            "contact.alllinks": "V\u0161echny odkazy",
+
+            /* ── Footer ── */
+            "footer.text": "Navrhl a vytvo\u0159il Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesn\u00ED",
+            "lo.portfolio": "Portfolio",
+            "lo.scan": "Skenovat &middot; Sd\u00EDlet"
         }
     };
 
