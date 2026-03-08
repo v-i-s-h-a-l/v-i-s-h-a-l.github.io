@@ -172,6 +172,17 @@
             <div class="profile-tagline">iOS engineer &middot; AI explorer &middot; builder of things</div>
         </div>
 
+        <!-- QR Code -->
+        <div class="section-divider reveal">
+            <span class="section-divider-badge">Scan &middot; Share</span>
+        </div>
+
+        <div class="qr-section reveal">
+            <div class="qr-container">
+                <canvas id="qr-canvas" width="164" height="164"></canvas>
+            </div>
+        </div>
+
         <!-- Professional Links -->
         <div class="section-label reveal">Professional</div>
         <div class="link-list">
@@ -301,103 +312,19 @@
             </a>
         </div>
 
-        <!-- QR Code -->
-        <div class="section-divider reveal">
-            <span class="section-divider-badge">Scan &middot; Share</span>
-        </div>
-
-        <div class="qr-section reveal">
-            <div class="qr-container">
-                <canvas id="qr-canvas" width="164" height="164"></canvas>
-            </div>
-        </div>
-
         <!-- Footer -->
         <div class="footer reveal">
             <div class="footer-text"><a href="https://v-i-s-h-a-l.github.io">v-i-s-h-a-l.github.io</a></div>
         </div>
     </div>
 
+    <script src="../assets/js/qr.js"></script>
     <script src="../assets/js/shared.js"></script>
     <script>
-    // ── QR Code Generator (page-specific) ──
     (function() {
-        const EXP = new Uint8Array(256), LOG = new Uint8Array(256);
-        (function() { let v = 1; for (let i = 0; i < 255; i++) { EXP[i] = v; LOG[v] = i; v = (v << 1) ^ (v >= 128 ? 0x11d : 0); } EXP[255] = EXP[0]; })();
-        function gfMul(a, b) { return a === 0 || b === 0 ? 0 : EXP[(LOG[a] + LOG[b]) % 255]; }
-        function polyMul(a, b) { const r = new Uint8Array(a.length + b.length - 1); for (let i = 0; i < a.length; i++) for (let j = 0; j < b.length; j++) r[i + j] ^= gfMul(a[i], b[j]); return r; }
-        function polyRest(data, gen) { const r = new Uint8Array(data.length + gen.length - 1); r.set(data); for (let i = 0; i < data.length; i++) { if (r[i] === 0) continue; for (let j = 0; j < gen.length; j++) r[i + j] ^= gfMul(gen[j], r[i]); } return r.slice(data.length); }
-        function genPoly(n) { let g = new Uint8Array([1]); for (let i = 0; i < n; i++) g = polyMul(g, new Uint8Array([1, EXP[i]])); return g; }
-        function encodeBytes(url) {
-            const bytes = new TextEncoder().encode(url), len = bytes.length;
-            let version, totalDC, ecCW, numBlk;
-            if (len <= 17) { version=1; totalDC=19; ecCW=7; numBlk=1; }
-            else if (len <= 32) { version=2; totalDC=34; ecCW=10; numBlk=1; }
-            else if (len <= 53) { version=3; totalDC=55; ecCW=15; numBlk=1; }
-            else if (len <= 78) { version=4; totalDC=80; ecCW=20; numBlk=1; }
-            else if (len <= 106) { version=5; totalDC=108; ecCW=26; numBlk=1; }
-            else { version=6; totalDC=136; ecCW=18; numBlk=2; }
-            const size = version * 4 + 17, ccBits = version <= 9 ? 8 : 16;
-            let bits = '0100' + len.toString(2).padStart(ccBits, '0');
-            for (const b of bytes) bits += b.toString(2).padStart(8, '0');
-            bits += '0000'; while (bits.length % 8 !== 0) bits += '0';
-            const dc = []; for (let i = 0; i < bits.length; i += 8) dc.push(parseInt(bits.slice(i, i + 8), 2));
-            let pb = 0; while (dc.length < totalDC) { dc.push(pb === 0 ? 0xEC : 0x11); pb ^= 1; }
-            const dpb = Math.floor(totalDC / numBlk), gen = genPoly(ecCW), aD = [], aE = [];
-            for (let b = 0; b < numBlk; b++) { const bd = new Uint8Array(dc.slice(b*dpb,(b+1)*dpb)); aD.push(bd); aE.push(polyRest(bd, gen)); }
-            const res = []; for (let i = 0; i < dpb; i++) for (let b = 0; b < numBlk; b++) res.push(aD[b][i]);
-            for (let i = 0; i < ecCW; i++) for (let b = 0; b < numBlk; b++) res.push(aE[b][i]);
-            return { codewords: res, version, size };
-        }
-        function createMatrix(sz) { const m=[],r=[]; for (let i=0;i<sz;i++){m.push(new Uint8Array(sz));r.push(new Uint8Array(sz));} return{m,reserved:r,size:sz}; }
-        function setMod(mx,r,c,v){mx.m[r][c]=v?1:0;mx.reserved[r][c]=1;}
-        function addFinder(mx,row,col){for(let r=-1;r<=7;r++)for(let c=-1;c<=7;c++){const rr=row+r,cc=col+c;if(rr<0||rr>=mx.size||cc<0||cc>=mx.size)continue;const inO=r===0||r===6||c===0||c===6,inI=r>=2&&r<=4&&c>=2&&c<=4,isS=r===-1||r===7||c===-1||c===7;setMod(mx,rr,cc,!isS&&(inO||inI));}}
-        function addAlign(mx,row,col){for(let r=-2;r<=2;r++)for(let c=-2;c<=2;c++)setMod(mx,row+r,col+c,Math.abs(r)===2||Math.abs(c)===2||(r===0&&c===0));}
-        function addTiming(mx){for(let i=8;i<mx.size-8;i++){if(!mx.reserved[6][i])setMod(mx,6,i,i%2===0);if(!mx.reserved[i][6])setMod(mx,i,6,i%2===0);}}
-        const AL=[[],[],[6,18],[6,22],[6,26],[6,30],[6,34]];
-        function addFmt(mx,mask){const fb=((0b01)<<3)|mask;let rem=fb;for(let i=0;i<10;i++)rem=(rem<<1)^((rem>>9)*0b10100110111);const d=((fb<<10)|rem)^0b101010000010010;for(let i=0;i<6;i++)setMod(mx,8,i,(d>>i)&1);setMod(mx,8,7,(d>>6)&1);setMod(mx,8,8,(d>>7)&1);setMod(mx,7,8,(d>>8)&1);for(let i=0;i<6;i++)setMod(mx,5-i,8,(d>>(9+i))&1);for(let i=0;i<7;i++)setMod(mx,mx.size-1-i,8,(d>>i)&1);for(let i=0;i<8;i++)setMod(mx,8,mx.size-8+i,(d>>(7+i))&1);setMod(mx,mx.size-8,8,1);}
-        function placeData(mx,cw){let bi=0;const tb=cw.length*8;let right=mx.size-1;while(right>=1){if(right===6)right=5;for(let v=0;v<mx.size;v++)for(let j=0;j<2;j++){const col=right-j,up=((right+1)>>1)%2===1,row=up?mx.size-1-v:v;if(mx.reserved[row][col])continue;if(bi<tb){const by=bi>>3;mx.m[row][col]=(cw[by]>>(7-(bi&7)))&1;}bi++;}right-=2;}}
-        const MF=[(r,c)=>(r+c)%2===0,r=>r%2===0,(_,c)=>c%3===0,(r,c)=>(r+c)%3===0,(r,c)=>(Math.floor(r/2)+Math.floor(c/3))%2===0,(r,c)=>((r*c)%2+(r*c)%3)===0,(r,c)=>((r*c)%2+(r*c)%3)%2===0,(r,c)=>((r+c)%2+(r*c)%3)%2===0];
-        function applyMask(mx,mi){const fn=MF[mi];for(let r=0;r<mx.size;r++)for(let c=0;c<mx.size;c++)if(!mx.reserved[r][c]&&fn(r,c))mx.m[r][c]^=1;}
-        function penalty(mx){let s=0;const sz=mx.size;for(let r=0;r<sz;r++){let run=1;for(let c=1;c<sz;c++){if(mx.m[r][c]===mx.m[r][c-1])run++;else{if(run>=5)s+=run-2;run=1;}}if(run>=5)s+=run-2;}for(let c=0;c<sz;c++){let run=1;for(let r=1;r<sz;r++){if(mx.m[r][c]===mx.m[r-1][c])run++;else{if(run>=5)s+=run-2;run=1;}}if(run>=5)s+=run-2;}return s;}
-
-        function generateQR(url) {
-            const{codewords,version,size}=encodeBytes(url);let best=null,bestS=Infinity;
-            for(let mask=0;mask<8;mask++){const mx=createMatrix(size);addFinder(mx,0,0);addFinder(mx,0,size-7);addFinder(mx,size-7,0);if(version>=2){const pos=AL[version];for(const r of pos)for(const c of pos){if((r<9&&c<9)||(r<9&&c>size-9)||(r>size-9&&c<9))continue;addAlign(mx,r,c);}}addTiming(mx);addFmt(mx,mask);for(let i=0;i<8;i++){mx.reserved[8][i]=1;mx.reserved[i][8]=1;mx.reserved[8][size-1-i]=1;mx.reserved[size-1-i][8]=1;}mx.reserved[8][8]=1;placeData(mx,codewords);applyMask(mx,mask);addFmt(mx,mask);const sc=penalty(mx);if(sc<bestS){bestS=sc;best=mx;}}
-            return best;
-        }
-
-        function drawQR() {
-            const canvas = document.getElementById('qr-canvas');
-            const ctx = canvas.getContext('2d');
-            const matrix = generateQR('https://v-i-s-h-a-l.github.io/links');
-            const size = matrix.size;
-            const scale = Math.floor(canvas.width / (size + 8));
-            const offset = Math.floor((canvas.width - size * scale) / 2);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            const isDark = document.documentElement.dataset.theme === 'dark';
-            const fg = isDark ? '#ececf1' : '#1a1a2e';
-            const accent = isDark ? '#d4a053' : '#9a6b34';
-            for (let r = 0; r < size; r++) {
-                for (let c = 0; c < size; c++) {
-                    if (matrix.m[r][c]) {
-                        const inFinder = (r<7&&c<7)||(r<7&&c>=size-7)||(r>=size-7&&c<7);
-                        ctx.fillStyle = inFinder ? accent : fg;
-                        const x = offset + c * scale, y = offset + r * scale, s = scale - 1, rad = s * 0.25;
-                        ctx.beginPath();
-                        ctx.moveTo(x+rad, y); ctx.lineTo(x+s-rad, y);
-                        ctx.quadraticCurveTo(x+s, y, x+s, y+rad); ctx.lineTo(x+s, y+s-rad);
-                        ctx.quadraticCurveTo(x+s, y+s, x+s-rad, y+s); ctx.lineTo(x+rad, y+s);
-                        ctx.quadraticCurveTo(x, y+s, x, y+s-rad); ctx.lineTo(x, y+rad);
-                        ctx.quadraticCurveTo(x, y, x+rad, y);
-                        ctx.fill();
-                    }
-                }
-            }
-        }
-
+        var QR_URL = 'https://v-i-s-h-a-l.github.io/links';
+        function drawQR() { QRCode.draw('qr-canvas', QR_URL); }
         drawQR();
-        // Re-draw QR on theme change (event fired by shared.js)
         window.addEventListener('themechange', drawQR);
     })();
     </script>
