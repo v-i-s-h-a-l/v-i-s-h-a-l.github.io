@@ -2566,6 +2566,114 @@
             "lo.professional": "Profesn\u00ED",
             "lo.portfolio": "Portfolio",
             "lo.scan": "Skenovat &middot; Sd\u00EDlet"
+        },
+        da: {
+            /* ── Nav ── */
+            "nav.about": "Om",
+            "nav.experience": "Erfaring",
+            "nav.projects": "Projekter",
+            "nav.skills": "Kompetencer",
+            "nav.contact": "Kontakt",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Ingeni\u00F8r & skaber.</strong> Sender iOS-apps afsted om dagen,<br>eksperimenterer med AI og produktid\u00E9er om natten.",
+            "hero.location": "Bengaluru, Indien",
+            "hero.builder": "AI-forst\u00E6rket skaber",
+            "hero.cta": "Kontakt mig",
+
+            /* ── About ── */
+            "about.label": "Om",
+            "about.heading": "H\u00E5ndv\u00E6rk, nysgerrighed<br>og kode",
+            "about.p1": "Vishal er en <strong>Principal iOS-ingeni\u00F8r</strong>, der elsker at bygge ting fra bunden. Han har leveret produktionsapps inden for <strong>fintech, sundhedsteknologi, sociale medier og e-handel</strong> -- hver gang med en arkitektur, der skalerer og forbliver vedligeholdbar.",
+            "about.p2": "Han tiltr\u00E6kkes af \"nul til \u00E9n\"-fasen i produkter: at l\u00E6gge modulgr\u00E6nser, automatisere kedelige arbejdsgange med Swift-scripts og mentore teams til at arbejde med tillid. <strong>Ren kode og genbrugelige komponenter</strong> er ikke til forhandling.",
+            "about.p3": "Udforsker i \u00F8jeblikket krydsfeltet mellem <strong>AI og mobil</strong> -- l\u00E6rer at orkestrere LLM'er, agenter og AI-v\u00E6rkt\u00F8jer for at mangedoble produktiviteten. Det langsigtede m\u00E5l er at <strong>sende produkter hurtigere</strong> ved at blande ingeni\u00F8rh\u00E5ndv\u00E6rk med AI-forst\u00E6rkede arbejdsgange, altid l\u00E6rende fra andre undervejs.",
+            "about.stat.apps": "Apps leveret",
+            "about.stat.domains": "Dom\u00E6ner",
+            "about.stat.scratch": "Bygget fra bunden",
+            "about.stat.curiosity": "Nysgerrighed",
+
+            /* ── Career ── */
+            "career.label": "Karriere",
+            "career.heading": "Rejsen indtil nu",
+            "career.current": "nuv\u00E6rende",
+
+            "career.turnip.desc": "<ul><li>Del af det grundl\u00E6ggende ingeni\u00F8rteam, byggede appen fra bunden.</li><li>Arbejder tv\u00E6rfunktionelt med produkt, design, v\u00E6kst og teknik p\u00E5 kernefunktioner: onboarding, feed, indholdsskabelse, notifikationer og billedbehandling.</li></ul>",
+            "career.novasignal.desc": "<ul><li>Byggede iOS-f\u00F8lgeappen fra bunden til en robotmedicinsk enhed, der m\u00E5ler cerebral blodgennemstr\u00F8mning.</li><li>Arkitekteret til skalering: genbrugelige UI-komponenter, test-f\u00F8rst-design, Xcode Cloud CI/CD-pipeline.</li></ul>",
+            "career.paytm.desc": "<ul><li>En af senioringeni\u00F8rerne i et iOS-team p\u00E5 13-16 personer for en topbed\u00F8mt fintech-app (4,3 stjerner).</li><li>Fornyede startsk\u00E6rmen og investeringsforeningsmodulet. Mentorede ingeni\u00F8rer og ledede kodegennemgange.</li></ul>",
+            "career.caastle.desc": "<ul><li>Ledede arkitekturen for en white-label SaaS-platform (Gwynnie Bee, Haverdash), der driver t\u00F8judlejning i USA.</li><li>Designede et dynamisk tema-system automatiseret via regneark og interne Swift-scripts.</li><li>Opsatte enhedstestframeworket og CI/CD-pipelinen. Mentorede teamet og overdrog arkitekturviden.</li></ul>",
+            "career.moldedbits.desc": "<ul><li>Leverede flere apps samtidigt inden for virksomheds- og kreative dom\u00E6ner (Apache Industrial, Duet App, PropCube).</li><li>Voksede fra nybegynder til at lede et 2-personers iOS-team og mentore 4 nye ansatte.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Arbejde",
+            "projects.heading": "Apps leveret",
+            "projects.domain.social": "Social",
+            "projects.domain.health": "Sundhedsteknologi",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Mode / SaaS",
+            "projects.domain.enterprise": "Virksomhed",
+            "projects.domain.side": "Sideprojekt",
+            "projects.turnip.desc": "Social app bygget fra bunden -- onboarding, feed, indholdsskabelse, notifikationer og billedbehandling. Tv\u00E6rfunktionelt samarbejde fra dag \u00E9t.",
+            "projects.novasignal.desc": "iOS-f\u00F8lgeapp til en robotmedicinsk enhed. G\u00F8r det muligt for hospitaler at tilg\u00E5 AI-behandlede data om cerebral blodgennemstr\u00F8mning til forebyggelse af slagtilf\u00E6lde.",
+            "projects.paytm.desc": "En af Indiens topbed\u00F8mte investeringsapps. Aktier, investeringsforeninger, b\u00F8rsnoteringer, derivater. Fornyede startsk\u00E6rmen og investeringsforeningsmodulet for millioner af brugere.",
+            "projects.caastle.desc": "White-label t\u00F8judlejningsplatform til det amerikanske marked. Arkitekterede det modul\u00E6re, temabare SaaS-framework, der driver flere m\u00E6rkeapps.",
+            "projects.enterprise.desc": "Virksomhedsapp til arbejdsstyringstyring og overv\u00E5gning for Apache Industrial Services, brugt p\u00E5 tv\u00E6rs af operationer i USA.",
+            "projects.xo3.desc": "Et kryds og bolle-spil, der udforsker SwiftUI, Combine og MultipeerConnectivity. Bygget med iOS 26+ og Swift 6.",
+            "projects.appstore": "Se p\u00E5 App Store",
+            "projects.github": "Se p\u00E5 GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "V\u00E6rkt\u00F8jskasse",
+            "skills.heading": "Teknologier & kompetencer",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arkitektur",
+            "skills.ai": "AI & udforskning",
+            "skills.tooling": "V\u00E6rkt\u00F8jer & processer",
+            "skills.leadership": "Lederskab",
+
+            /* ── Open Source ── */
+            "oss.label": "\u00C5ben kildekode",
+            "oss.heading": "P\u00E5 GitHub",
+            "oss.timbaktoe": "Et kryds og bolle-spil til at l\u00E6re grundl\u00E6ggende SwiftUI, Combine og MultipeerConnectivity.",
+            "oss.school": "Starter-app til at forst\u00E5 SwiftUI- og Combine-m\u00F8nstre.",
+            "oss.openpr": "CLI-v\u00E6rkt\u00F8j til at oprette pull requests, bygget med Swift Package Manager.",
+            "oss.math": "Matematisk hj\u00E6lpebibliotek. 4 forks p\u00E5 GitHub.",
+            "oss.geo": "Let wrapper over iOS CoreLocation-frameworket.",
+            "oss.setup": "En tjekliste til ops\u00E6tning af nye udviklingsmaskiner.",
+
+            /* ── Education ── */
+            "edu.label": "Uddannelse",
+            "edu.heading": "Baggrund",
+            "edu.degree": "B.Tech, datalogi & ingeni\u00F8rvidenskab",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Uden for arbejdstid",
+            "offclock.heading": "De ikke-tekniske sider",
+            "offclock.sports.title": "Fodbold, stier & kilometer",
+            "offclock.sports.desc": "Fodbold i weekenden, vandring n\u00E5r bjergene kalder, l\u00F8b n\u00E5r de ikke g\u00F8r. Behandler kroppen som produktionskode -- ingen genveje, ingen teknisk g\u00E6ld.<span class=\"aside\">// Bendag har ingen tilbagerulningsstrategi</span>",
+            "offclock.fuel.title": "Kun rent br\u00E6ndstof",
+            "offclock.fuel.desc": "Spiser rent -- ikke \"for det meste\", virkelig rent. Ingen alkohol, ingen rygning, ingen snydm\u00E5ltider. Ser kroppen som en langk\u00F8rende proces: skrald ind, skrald ud.<span class=\"aside\">// Anbefaler st\u00E6rkt andre at g\u00F8re det samme</span>",
+            "offclock.geo.title": "Kort, penge & magt",
+            "offclock.geo.desc": "Fascineret af geopolitiske skift, historie, geografi og \u00F8konomiske tendenser. Elsker at forbinde punkterne mellem hvorfor gr\u00E6nser flyttede sig, og hvor markederne er p\u00E5 vej hen.<span class=\"aside\">// Vil afspore enhver middag til en makrotese</span>",
+            "offclock.travel.title": "Passtempler",
+            "offclock.travel.desc": "Har samlet solskoldninger p\u00E5 tv\u00E6rs af Syd\u00F8stasien og videre. Mener at den bedste fejlfinding sker i 35.000 fods h\u00F8jde.",
+            "offclock.photo.title": "Fotografi",
+            "offclock.photo.desc": "Nyder at fange \u00F8jeblikke, mest n\u00E5r han rejser. Telefonlageret er 80% fotos, 15% Xcode-cache, 5% faktisk fri plads.",
+            "offclock.ideas.title": "Id\u00E9er & bygning",
+            "offclock.ideas.desc": "Dagdr\u00F8mmer konstant om produkter at bygge. Har en note-app fuld af \"million-dollar-id\u00E9er\" -- det ville v\u00E6re rart at sende \u00E9n af dem.<span class=\"aside\">// TODO: faktisk sende \u00E9n af disse</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Kontakt",
+            "contact.heading": "Lad os bygge noget",
+            "contact.sub": "\u00C5ben for samtaler om iOS, AI, produktid\u00E9er eller at bygge ting sammen.",
+            "contact.alllinks": "Alle links",
+
+            /* ── Footer ── */
+            "footer.text": "Designet & bygget af Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Professionelt",
+            "lo.portfolio": "Portefolio",
+            "lo.scan": "Scan &middot; Del"
         }
     };
 
