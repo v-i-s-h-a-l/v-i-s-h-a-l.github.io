@@ -2998,6 +2998,114 @@
             "lo.professional": "\u0395\u03C0\u03B1\u03B3\u03B3\u03B5\u03BB\u03BC\u03B1\u03C4\u03B9\u03BA\u03AC",
             "lo.portfolio": "\u03A0\u03BF\u03C1\u03C4\u03C6\u03CC\u03BB\u03B9\u03BF",
             "lo.scan": "\u03A3\u03AC\u03C1\u03C9\u03C3\u03B7 &middot; \u039A\u03BF\u03B9\u03BD\u03BF\u03C0\u03BF\u03AF\u03B7\u03C3\u03B7"
+        },
+        hu: {
+            /* ── Nav ── */
+            "nav.about": "R\u00F3lam",
+            "nav.experience": "Tapasztalat",
+            "nav.projects": "Projektek",
+            "nav.skills": "K\u00E9pess\u00E9gek",
+            "nav.contact": "Kapcsolat",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>M\u00E9rn\u00F6k \u00E9s alkot\u00F3.</strong> Nappal iOS alkalmaz\u00E1sokat \u00E9p\u00EDt,<br>\u00E9jjel AI-jal \u00E9s term\u00E9k\u00F6tletekkel k\u00EDs\u00E9rletezik.",
+            "hero.location": "Bengaluru, India",
+            "hero.builder": "AI-vel er\u0151s\u00EDtett alkot\u00F3",
+            "hero.cta": "Kapcsolatfelv\u00E9tel",
+
+            /* ── About ── */
+            "about.label": "R\u00F3lam",
+            "about.heading": "Mesters\u00E9g, k\u00EDv\u00E1ncsis\u00E1g<br>\u00E9s k\u00F3d",
+            "about.p1": "Vishal egy <strong>Principal iOS Engineer</strong>, aki szeret mindent a null\u00E1r\u00F3l \u00E9p\u00EDteni. Produkci\u00F3s alkalmaz\u00E1sokat sz\u00E1ll\u00EDtott <strong>fintech, health-tech, k\u00F6z\u00F6ss\u00E9gi m\u00E9dia \u00E9s e-commerce</strong> ter\u00FCleten \u2014 minden alkalommal sk\u00E1l\u00E1zhat\u00F3 \u00E9s karbantarthat\u00F3 architekt\u00FAr\u00E1t tervezve.",
+            "about.p2": "A \u00ABnull\u00E1r\u00F3l az egyig\u00BB f\u00E1zis vonzza: modulhat\u00E1rok kijel\u00F6l\u00E9se, munkafolyamatok automatiz\u00E1l\u00E1sa Swift szkriptekkel, \u00E9s csapatok mentorl\u00E1sa. <strong>Tiszta k\u00F3d \u00E9s \u00FAjrafelhaszn\u00E1lhat\u00F3 komponensek</strong> \u2014 kompromisszum n\u00E9lk\u00FCl.",
+            "about.p3": "Jelenleg az <strong>AI \u00E9s mobil</strong> metszet\u00E9t kutatja \u2014 LLM-ek, \u00E1gensek \u00E9s AI-eszk\u00F6z\u00F6k orkesztr\u00E1l\u00E1s\u00E1t tanulja a produktivit\u00E1s n\u00F6vel\u00E9s\u00E9re. Hossz\u00FA t\u00E1v\u00FA c\u00E9l: <strong>gyorsabb term\u00E9ksz\u00E1ll\u00EDt\u00E1s</strong> m\u00E9rn\u00F6ki mesters\u00E9g \u00E9s AI-munkafolyamatok \u00F6tv\u00F6z\u00E9s\u00E9vel.",
+            "about.stat.apps": "Sz\u00E1ll\u00EDtott appok",
+            "about.stat.domains": "Ter\u00FCletek",
+            "about.stat.scratch": "Null\u00E1r\u00F3l \u00E9p\u00EDtve",
+            "about.stat.curiosity": "K\u00EDv\u00E1ncsis\u00E1g",
+
+            /* ── Career ── */
+            "career.label": "Karrier",
+            "career.heading": "Az \u00FAt eddig",
+            "career.current": "jelenlegi",
+
+            "career.turnip.desc": "<ul><li>Az alap\u00EDt\u00F3 m\u00E9rn\u00F6ki csapat tagja, az alkalmaz\u00E1s null\u00E1r\u00F3l \u00E9p\u00EDt\u00E9se.</li><li>Keresztfunkcion\u00E1lis egy\u00FCttm\u0171k\u00F6d\u00E9s term\u00E9k, design, n\u00F6veked\u00E9s \u00E9s fejleszt\u00E9s ter\u00FClet\u00E9n: onboarding, feed, tartaloml\u00E9trehoz\u00E1s, \u00E9rtes\u00EDt\u00E9sek \u00E9s k\u00E9pfeldolgoz\u00E1s.</li></ul>",
+            "career.novasignal.desc": "<ul><li>Null\u00E1r\u00F3l \u00E9p\u00EDtette az iOS alkalmaz\u00E1st egy robotikus orvosi eszk\u00F6zh\u00F6z, amely agyi v\u00E9r\u00E1raml\u00E1st m\u00E9r.</li><li>Sk\u00E1l\u00E1zhat\u00F3 architekt\u00FAra: \u00FAjrafelhaszn\u00E1lhat\u00F3 UI-komponensek, tesztelhet\u0151s\u00E9g-els\u0151 tervez\u00E9s, Xcode Cloud CI/CD.</li></ul>",
+            "career.paytm.desc": "<ul><li>Egy 13-16 f\u0151s iOS csapat szenior m\u00E9rn\u00F6ke egy top fintech alkalmaz\u00E1sn\u00E1l (4.3 csillag).</li><li>A f\u0151k\u00E9perny\u0151 \u00E9s a befektet\u00E9si alapok modul meg\u00FAj\u00EDt\u00E1sa. Mentorl\u00E1s \u00E9s k\u00F3d\u00E1tvizsg\u00E1lat.</li></ul>",
+            "career.caastle.desc": "<ul><li>White-label SaaS platform (Gwynnie Bee, Haverdash) architekt\u00FAr\u00E1j\u00E1nak vezet\u00E9se ruhak\u00F6lcs\u00F6nz\u00E9shez az USA-ban.</li><li>Dinamikus t\u00E9marendszer t\u00E1bl\u00E1zatokkal \u00E9s Swift szkriptekkel automatiz\u00E1lva.</li><li>Unit tesztel\u00E9si keretrendszer \u00E9s CI/CD be\u00E1ll\u00EDt\u00E1sa. Csapat mentorl\u00E1sa \u00E9s tud\u00E1s\u00E1tad\u00E1s.</li></ul>",
+            "career.moldedbits.desc": "<ul><li>T\u00F6bb alkalmaz\u00E1s p\u00E1rhuzamos sz\u00E1ll\u00EDt\u00E1sa (Apache Industrial, Duet App, PropCube).</li><li>\u00DAjonct\u00F3l n\u0151tte ki mag\u00E1t 2 f\u0151s iOS csapat vezet\u0151j\u00E9v\u00E9 \u00E9s 4 \u00FAj munkat\u00E1rs mentor\u00E1v\u00E1.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Munk\u00E1k",
+            "projects.heading": "Sz\u00E1ll\u00EDtott alkalmaz\u00E1sok",
+            "projects.domain.social": "K\u00F6z\u00F6ss\u00E9gi",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Divat / SaaS",
+            "projects.domain.enterprise": "V\u00E1llalati",
+            "projects.domain.side": "Hobbiprojekt",
+            "projects.turnip.desc": "K\u00F6z\u00F6ss\u00E9gi alkalmaz\u00E1s null\u00E1r\u00F3l \u2014 onboarding, feed, tartaloml\u00E9trehoz\u00E1s, \u00E9rtes\u00EDt\u00E9sek \u00E9s k\u00E9pfeldolgoz\u00E1s. Keresztfunkcion\u00E1lis egy\u00FCttm\u0171k\u00F6d\u00E9s az els\u0151 napt\u00F3l.",
+            "projects.novasignal.desc": "iOS kompanion robotikus orvosi eszk\u00F6zh\u00F6z. K\u00F3rh\u00E1zak hozz\u00E1f\u00E9r\u00E9se AI-feldolgozott agyi v\u00E9r\u00E1raml\u00E1si adatokhoz stroke megel\u0151z\u00E9s\u00E9re.",
+            "projects.paytm.desc": "India egyik legjobban \u00E9rt\u00E9kelt befektet\u00E9si alkalmaz\u00E1sa. R\u00E9szv\u00E9nyek, befektet\u00E9si alapok, IPO, F&O. A f\u0151k\u00E9perny\u0151 \u00E9s alap modul meg\u00FAj\u00EDt\u00E1sa milli\u00F3k sz\u00E1m\u00E1ra.",
+            "projects.caastle.desc": "White-label ruhak\u00F6lcs\u00F6nz\u0151 platform az USA piac\u00E1ra. Modul\u00E1ris, t\u00E9m\u00E1zhat\u00F3 SaaS keretrendszer t\u00F6bb m\u00E1rka alkalmaz\u00E1s\u00E1hoz.",
+            "projects.enterprise.desc": "V\u00E1llalati munkaer\u0151-kezel\u0151 alkalmaz\u00E1s az Apache Industrial Services sz\u00E1m\u00E1ra az USA-ban.",
+            "projects.xo3.desc": "Tic-tac-toe j\u00E1t\u00E9k SwiftUI, Combine \u00E9s MultipeerConnectivity felfedez\u00E9s\u00E9re. iOS 26+ \u00E9s Swift 6.",
+            "projects.appstore": "Megn\u00E9z\u00E9s az App Store-ban",
+            "projects.github": "Megn\u00E9z\u00E9s a GitHub-on",
+
+            /* ── Skills ── */
+            "skills.label": "Eszk\u00F6zt\u00E1r",
+            "skills.heading": "Technol\u00F3gi\u00E1k \u00E9s k\u00E9pess\u00E9gek",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Architekt\u00FAra",
+            "skills.ai": "AI \u00E9s felfedez\u00E9s",
+            "skills.tooling": "Eszk\u00F6z\u00F6k \u00E9s folyamatok",
+            "skills.leadership": "Vezet\u00E9s",
+
+            /* ── Open Source ── */
+            "oss.label": "Ny\u00EDlt forr\u00E1s",
+            "oss.heading": "GitHub-on",
+            "oss.timbaktoe": "Tic-tac-toe j\u00E1t\u00E9k SwiftUI, Combine \u00E9s MultipeerConnectivity tanul\u00E1s\u00E1ra.",
+            "oss.school": "Starter alkalmaz\u00E1s SwiftUI \u00E9s Combine mint\u00E1k meg\u00E9rt\u00E9s\u00E9re.",
+            "oss.openpr": "CLI eszk\u00F6z pull requestek l\u00E9trehoz\u00E1s\u00E1ra, Swift Package Managerrel.",
+            "oss.math": "Matematikai seg\u00E9deszk\u00F6z-k\u00F6nyvt\u00E1r. 4 fork a GitHub-on.",
+            "oss.geo": "K\u00F6nny\u0171 wrapper az iOS CoreLocation felett.",
+            "oss.setup": "Checklist \u00FAj fejleszt\u0151i g\u00E9pek be\u00E1ll\u00EDt\u00E1s\u00E1hoz.",
+
+            /* ── Education ── */
+            "edu.label": "Tanulm\u00E1nyok",
+            "edu.heading": "H\u00E1tt\u00E9r",
+            "edu.degree": "B.Tech, Sz\u00E1m\u00EDt\u00E1studom\u00E1ny \u00E9s m\u00E9rn\u00F6ki informatika",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Szabadid\u0151",
+            "offclock.heading": "A nem-m\u00E9rn\u00F6ki r\u00E9sz",
+            "offclock.sports.title": "Foci, t\u00FAr\u00E1k \u00E9s kilom\u00E9terek",
+            "offclock.sports.desc": "H\u00E9tv\u00E9g\u00E9n foci, t\u00FAr\u00E1z\u00E1s amikor a hegyek h\u00EDvnak, fut\u00E1s amikor nem. A testet \u00FAgy kezeli mint a produkci\u00F3s k\u00F3dot \u2014 nincs r\u00F6vid\u00EDt\u00E9s, nincs technikai ad\u00F3ss\u00E1g.<span class=\"aside\">// A l\u00E1bnap nem ismer rollbacket</span>",
+            "offclock.fuel.title": "Csak tiszta \u00FCzemanyag",
+            "offclock.fuel.desc": "Eg\u00E9szs\u00E9gesen eszik \u2014 nem \u00ABnagyj\u00E1b\u00F3l\u00BB, t\u00E9nyleg. Nincs alkohol, nincs doh\u00E1nyz\u00E1s, nincs cheat meal. A testet hosszan fut\u00F3 folyamatnak tekinti: szem\u00E9t be, szem\u00E9t ki.<span class=\"aside\">// Hat\u00E1rozottan aj\u00E1nlja m\u00E1soknak is ezt az \u00E9letm\u00F3dot</span>",
+            "offclock.geo.title": "T\u00E9rk\u00E9pek, p\u00E9nz \u00E9s hatalom",
+            "offclock.geo.desc": "Leny\u0171g\u00F6zik a geopolitikai v\u00E1ltoz\u00E1sok, t\u00F6rt\u00E9nelem, f\u00F6ldrajz \u00E9s gazdas\u00E1gi trendek. Szeret \u00F6sszek\u00F6tni a pontokat hat\u00E1rv\u00E1ltoz\u00E1sok \u00E9s piaci ir\u00E1nyok k\u00F6z\u00F6tt.<span class=\"aside\">// B\u00E1rmely vacsor\u00E1t makro-t\u00E9ziss\u00E9 ford\u00EDtja</span>",
+            "offclock.travel.title": "\u00DAtlev\u00E9lpecs\u00E9tek",
+            "offclock.travel.desc": "Napf\u00E9nyes le\u00E9g\u00E9seket gy\u0171jt\u00F6tt D\u00E9lkelet-\u00C1zsi\u00E1ban \u00E9s azon t\u00FAl. Hiszi, hogy a legjobb hibakeres\u00E9s 35.000 l\u00E1b magasan t\u00F6rt\u00E9nik.",
+            "offclock.photo.title": "Fot\u00F3z\u00E1s",
+            "offclock.photo.desc": "Szeret pillanatokat megragadni, f\u0151leg utaz\u00E1s k\u00F6zben. A telefon t\u00E1rhelye: 80% fot\u00F3, 15% Xcode cache, 5% szabad hely.",
+            "offclock.ideas.title": "\u00D6tletek \u00E9s alkot\u00E1s",
+            "offclock.ideas.desc": "Folyamatosan term\u00E9kekr\u0151l \u00E1lmodik. A jegyzetei tele vannak \u00ABmilli\u00F3s \u00F6tletekkel\u00BB \u2014 j\u00F3 lenne legal\u00E1bb egyet kiadni.<span class=\"aside\">// TODO: t\u00E9nyleg kiadni valamit ezekb\u0151l</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Kapcsolat",
+            "contact.heading": "\u00C9p\u00EDts\u00FCnk valamit",
+            "contact.sub": "Ny\u00EDlt besz\u00E9lget\u00E9sekre iOS-r\u0151l, AI-r\u00F3l, term\u00E9k\u00F6tletekr\u0151l vagy k\u00F6z\u00F6s alkot\u00E1sr\u00F3l.",
+            "contact.alllinks": "\u00D6sszes link",
+
+            /* ── Footer ── */
+            "footer.text": "Tervezte \u00E9s \u00E9p\u00EDtette Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Szakmai",
+            "lo.portfolio": "Portf\u00F3li\u00F3",
+            "lo.scan": "Szken &middot; Megoszt\u00E1s"
         }
     };
 
