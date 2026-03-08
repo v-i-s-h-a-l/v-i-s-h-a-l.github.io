@@ -235,15 +235,19 @@ body {
 /* ── Screenshot Carousel ── */
 .screenshot-carousel {
     margin: 0.75rem 0;
-    overflow: hidden;
     border-radius: 8px;
+    position: relative;
 }
 .screenshot-track {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 0.5rem;
     overflow-x: auto;
+    overflow-y: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     -ms-overflow-style: none;
     scrollbar-width: none;
     padding: 0.25rem 0;
@@ -252,8 +256,10 @@ body {
     display: none;
 }
 .screenshot-img {
-    flex: 0 0 auto;
+    flex: 0 0 90px;
     width: 90px;
+    min-width: 90px;
+    max-width: none;
     height: auto;
     aspect-ratio: 392 / 696;
     object-fit: cover;
@@ -263,6 +269,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     pointer-events: auto;
+    -webkit-user-drag: none;
 }
 .screenshot-img:hover {
     transform: scale(1.04);
@@ -270,7 +277,10 @@ body {
 }
 @media (max-width: 600px) {
     .screenshot-img {
+        flex: 0 0 76px;
         width: 76px;
+        min-width: 76px;
+        max-width: none;
     }
 }
 
