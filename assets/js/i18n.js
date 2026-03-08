@@ -2674,6 +2674,114 @@
             "lo.professional": "Professionelt",
             "lo.portfolio": "Portefolio",
             "lo.scan": "Scan &middot; Del"
+        },
+        fi: {
+            /* ── Nav ── */
+            "nav.about": "Tietoja",
+            "nav.experience": "Kokemus",
+            "nav.projects": "Projektit",
+            "nav.skills": "Taidot",
+            "nav.contact": "Yhteystiedot",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Insin\u00F6\u00F6ri ja rakentaja.</strong> Toimittaa iOS-sovelluksia p\u00E4iv\u00E4ll\u00E4,<br>kokeilee teko\u00E4ly\u00E4 ja tuoteideoita iltaisin.",
+            "hero.location": "Bengaluru, Intia",
+            "hero.builder": "Teko\u00E4lyavusteinen rakentaja",
+            "hero.cta": "Ota yhteytt\u00E4",
+
+            /* ── About ── */
+            "about.label": "Tietoja",
+            "about.heading": "Ammattitaito, uteliaisuus<br>ja koodi",
+            "about.p1": "Vishal on <strong>johtava iOS-insin\u00F6\u00F6ri</strong>, joka rakastaa rakentamista alusta alkaen. H\u00E4n on toimittanut tuotantosovelluksia <strong>fintechiss\u00E4, terveysteknologiassa, sosiaalisessa mediassa ja verkkokaupassa</strong> -- joka kerta suunnitellen skaalautuvan ja yll\u00E4pidett\u00E4v\u00E4n arkkitehtuurin.",
+            "about.p2": "H\u00E4nt\u00E4 kiehtoo tuotteiden \"nollasta yhteen\" -vaihe: moduulirajojen m\u00E4\u00E4rittely, ty\u00F6nkulkujen automatisointi Swift-skripteill\u00E4 ja tiimien mentorointi. <strong>Puhdas koodi ja uudelleenk\u00E4ytett\u00E4v\u00E4t komponentit</strong> eiv\u00E4t ole neuvoteltavissa.",
+            "about.p3": "Tutkii parhaillaan <strong>teko\u00E4lyn ja mobiilin</strong> risteyskohtaa -- oppii orkestroimaan LLM:i\u00E4, agentteja ja teko\u00E4lyty\u00F6kaluja tuottavuuden moninkertaistamiseksi. Pitk\u00E4n aikav\u00E4lin tavoite on <strong>toimittaa tuotteita nopeammin</strong> yhdist\u00E4m\u00E4ll\u00E4 insin\u00F6\u00F6riosaaminen teko\u00E4lyavusteisiin ty\u00F6nkulkuihin, oppien jatkuvasti muilta.",
+            "about.stat.apps": "Toimitetut sovellukset",
+            "about.stat.domains": "Toimialat",
+            "about.stat.scratch": "Rakennettu alusta",
+            "about.stat.curiosity": "Uteliaisuus",
+
+            /* ── Career ── */
+            "career.label": "Ura",
+            "career.heading": "Matka t\u00E4h\u00E4n asti",
+            "career.current": "nykyinen",
+
+            "career.turnip.desc": "<ul><li>Osa perustajainsin\u00F6\u00F6ritiimi\u00E4, rakensi sovelluksen alusta alkaen.</li><li>Ty\u00F6skenteli poikkitoiminnallisesti tuotteen, suunnittelun, kasvun ja tekniikan parissa ydintoiminnoissa: k\u00E4ytt\u00F6\u00F6notto, sy\u00F6te, sis\u00E4ll\u00F6nluonti, ilmoitukset ja kuvank\u00E4sittely.</li></ul>",
+            "career.novasignal.desc": "<ul><li>Rakensi iOS-kumppanisovelluksen alusta alkaen robottil\u00E4\u00E4ketieteen laitteelle, joka mittaa aivojen verenvirtausta.</li><li>Suunnitteli skaalautuvan arkkitehtuurin: uudelleenk\u00E4ytett\u00E4v\u00E4t UI-komponentit, testattavuus edell\u00E4, Xcode Cloud CI/CD -putki.</li></ul>",
+            "career.paytm.desc": "<ul><li>Yksi vanhemmista insin\u00F6\u00F6reist\u00E4 13\u201316 hengen iOS-tiimiss\u00E4 huippuarvioidulle fintech-sovellukselle (4,3 t\u00E4hte\u00E4).</li><li>Uudisti aloitusn\u00E4yt\u00F6n ja sijoitusrahastomoduulin. Mentoroi insin\u00F6\u00F6rej\u00E4 ja johti koodikatselmointeja.</li></ul>",
+            "career.caastle.desc": "<ul><li>Johti white-label SaaS-alustan arkkitehtuuria (Gwynnie Bee, Haverdash) vaatteiden vuokraukseen Yhdysvalloissa.</li><li>Suunnitteli dynaamisen teemoitusj\u00E4rjestelm\u00E4n, joka automatisoitiin taulukoilla ja sis\u00E4isill\u00E4 Swift-skripteill\u00E4.</li><li>Pystytti yksikk\u00F6testikehyksen ja CI/CD-putken. Mentoroi tiimi\u00E4 ja siirsi arkkitehtuuriosaamisen.</li></ul>",
+            "career.moldedbits.desc": "<ul><li>Toimitti useita sovelluksia samanaikaisesti yritys- ja luovilla aloilla (Apache Industrial, Duet App, PropCube).</li><li>Kasvoi vastavalmistuneesta 2 hengen iOS-tiimin vet\u00E4j\u00E4ksi ja 4 uuden ty\u00F6ntekij\u00E4n mentoriksi.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Ty\u00F6t",
+            "projects.heading": "Toimitetut sovellukset",
+            "projects.domain.social": "Sosiaalinen",
+            "projects.domain.health": "Terveysteknologia",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Muoti / SaaS",
+            "projects.domain.enterprise": "Yritys",
+            "projects.domain.side": "Sivuprojekti",
+            "projects.turnip.desc": "Sosiaalinen sovellus rakennettu alusta alkaen -- k\u00E4ytt\u00F6\u00F6notto, sy\u00F6te, sis\u00E4ll\u00F6nluonti, ilmoitukset ja kuvank\u00E4sittely. Poikkitoiminnallista yhteisty\u00F6t\u00E4 ensimm\u00E4isest\u00E4 p\u00E4iv\u00E4st\u00E4 l\u00E4htien.",
+            "projects.novasignal.desc": "iOS-kumppanisovellus robottil\u00E4\u00E4ketieteen laitteelle. Mahdollistaa sairaaloille p\u00E4\u00E4syn teko\u00E4lyn k\u00E4sittelemiin aivojen verenvirtaustietoihin aivohalvauksen ehk\u00E4isemiseksi.",
+            "projects.paytm.desc": "Yksi Intian parhaiten arvioiduista sijoitussovelluksista. Osakkeet, sijoitusrahastot, listautumiset, johdannaiset. Uudistettu aloitusn\u00E4ytt\u00F6 ja rahastomoduuli palvelee miljoonia k\u00E4ytt\u00E4ji\u00E4.",
+            "projects.caastle.desc": "White-label vaatteiden vuokrausalusta Yhdysvaltain markkinoille. Suunnitteli modulaarisen, teemoitettavan SaaS-kehyksen, joka tukee useita br\u00E4ndisovelluksia.",
+            "projects.enterprise.desc": "Yrityksen ty\u00F6voiman hallinta- ja seurantasovellus Apache Industrial Servicesille, k\u00E4yt\u00F6ss\u00E4 operaatioissa kaikkialla Yhdysvalloissa.",
+            "projects.xo3.desc": "Ristinolla-peli SwiftUI:n, Combinen ja MultipeerConnectivityn tutkimiseen. Rakennettu iOS 26+ ja Swift 6:lla.",
+            "projects.appstore": "Katso App Storessa",
+            "projects.github": "Katso GitHubissa",
+
+            /* ── Skills ── */
+            "skills.label": "Ty\u00F6kalut",
+            "skills.heading": "Teknologiat ja taidot",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arkkitehtuuri",
+            "skills.ai": "Teko\u00E4ly ja tutkimus",
+            "skills.tooling": "Ty\u00F6kalut ja prosessit",
+            "skills.leadership": "Johtaminen",
+
+            /* ── Open Source ── */
+            "oss.label": "Avoin l\u00E4hdekoodi",
+            "oss.heading": "GitHubissa",
+            "oss.timbaktoe": "Ristinolla-peli SwiftUI:n, Combinen ja MultipeerConnectivityn perusteiden oppimiseen.",
+            "oss.school": "Aloitussovellus SwiftUI- ja Combine-mallien ymm\u00E4rt\u00E4miseen.",
+            "oss.openpr": "CLI-ty\u00F6kalu pull requestien luomiseen, rakennettu Swift Package Managerilla.",
+            "oss.math": "Matemaattinen apukirjasto. 4 haarautumaa GitHubissa.",
+            "oss.geo": "Kevyt k\u00E4\u00E4re iOS CoreLocation -kehyksen ymp\u00E4rille.",
+            "oss.setup": "Tarkistuslista uusien kehityskoneiden m\u00E4\u00E4ritt\u00E4miseen.",
+
+            /* ── Education ── */
+            "edu.label": "Koulutus",
+            "edu.heading": "Tausta",
+            "edu.degree": "Tekniikan kandidaatti, tietotekniikka",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Vapaa-aika",
+            "offclock.heading": "Ei-tekniset puolet",
+            "offclock.sports.title": "Jalkapallo, polut ja kilometrit",
+            "offclock.sports.desc": "Jalkapalloa viikonloppuisin, patikointia kun vuoret kutsuvat, juoksua kun eiv\u00E4t kutsu. Kohtelee kehoa kuin tuotantokoodia -- ei oikopolkuja, ei teknist\u00E4 velkaa.<span class=\"aside\">// Jalkap\u00E4iv\u00E4ll\u00E4 ei ole palautusstrategiaa</span>",
+            "offclock.fuel.title": "Vain puhdasta polttoainetta",
+            "offclock.fuel.desc": "Sy\u00F6 puhtaasti -- ei \"enimm\u00E4kseen\", oikeasti puhtaasti. Ei alkoholia, ei tupakointia, ei huijausaterioita. Pit\u00E4\u00E4 kehoa pitk\u00E4kestoisena prosessina: roskaa sis\u00E4\u00E4n, roskaa ulos.<span class=\"aside\">// Suosittelee vahvasti muillekin t\u00E4t\u00E4 el\u00E4m\u00E4ntapaa</span>",
+            "offclock.geo.title": "Kartat, raha ja valta",
+            "offclock.geo.desc": "Kiehtoutunut geopoliittisista muutoksista, historiasta, maantieteest\u00E4 ja taloustrendeist\u00E4. Rakastaa yhdist\u00E4\u00E4 rajojen siirtymisi\u00E4 markkinoiden suuntaan.<span class=\"aside\">// K\u00E4\u00E4nt\u00E4\u00E4 mink\u00E4 tahansa illalliskeskustelun makroteesiksi</span>",
+            "offclock.travel.title": "Passileimoja",
+            "offclock.travel.desc": "On ker\u00E4nnyt auringonpolttamia Kaakkois-Aasiasta ja muualta. Uskoo, ett\u00E4 paras virheenkorjaus tapahtuu 35 000 jalan korkeudessa.",
+            "offclock.photo.title": "Valokuvaus",
+            "offclock.photo.desc": "Nauttii hetkien tallentamisesta, etenkin matkustaessa. Puhelimen tallennustila on 80 % kuvia, 15 % Xcode-v\u00E4limuistia, 5 % vapaata tilaa.",
+            "offclock.ideas.title": "Ideat ja rakentaminen",
+            "offclock.ideas.desc": "Haaveilee jatkuvasti rakennettavista tuotteista. Muistiinpanosovellus on t\u00E4ynn\u00E4 \"miljoonaideoita\" -- yhden toimittaminen olisi mukavaa.<span class=\"aside\">// TODO: toimita oikeasti yksi n\u00E4ist\u00E4</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Yhteys",
+            "contact.heading": "Rakennetaan jotain",
+            "contact.sub": "Avoin keskusteluille iOS:st\u00E4, teko\u00E4lyst\u00E4, tuoteideoista tai yhteisest\u00E4 rakentamisesta.",
+            "contact.alllinks": "Kaikki linkit",
+
+            /* ── Footer ── */
+            "footer.text": "Suunnitellut ja rakentanut Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Ammatillinen",
+            "lo.portfolio": "Portfolio",
+            "lo.scan": "Skannaa &middot; Jaa"
         }
     };
 
