@@ -1775,6 +1775,119 @@
             "lo.professional": "Profesional",
             "lo.portfolio": "Portofolio",
             "lo.scan": "Pindai &middot; Bagikan"
+        },
+        pl: {
+            /* ── Nav ── */
+            "nav.about": "O\u00a0mnie",
+            "nav.experience": "Do\u015Bwiadczenie",
+            "nav.projects": "Projekty",
+            "nav.skills": "Umiej\u0119tno\u015Bci",
+            "nav.contact": "Kontakt",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>In\u017Cynier i\u00a0tw\u00F3rca.</strong> Tworzy aplikacje na iOS za dnia,<br>a\u00a0nocami eksperymentuje z\u00a0AI i\u00a0pomys\u0142ami produktowymi.",
+            "hero.location": "Bengaluru, Indie",
+            "hero.builder": "Tw\u00F3rca wspierany przez AI",
+            "hero.cta": "Skontaktuj si\u0119",
+
+            /* ── About ── */
+            "about.label": "O\u00a0mnie",
+            "about.heading": "Rzemios\u0142o, ciekawo\u015B\u0107<br>i\u00a0kod",
+            "about.p1": "Vishal jest <strong>G\u0142\u00F3wnym In\u017Cynierem iOS</strong>, kt\u00F3ry uwielbia tworzy\u0107 rzeczy od zera. Wypu\u015Bci\u0142 produkcyjne aplikacje z\u00a0dziedzin <strong>fintech, health-tech, medi\u00F3w spo\u0142eczno\u015Bciowych i\u00a0e-commerce</strong> \u2013 za ka\u017Cdym razem projektuj\u0105c architektur\u0119, kt\u00F3ra si\u0119 skaluje i\u00a0pozostaje \u0142atwa w\u00a0utrzymaniu.",
+            "about.p2": "Poci\u0105ga go faza \u201Eod zera do jedynki\u201D: wyznaczanie granic modu\u0142\u00F3w, automatyzacja \u017Cmudnych zada\u0144 skryptami Swift i\u00a0mentoring zespo\u0142\u00F3w. <strong>Czysty kod i\u00a0komponenty wielokrotnego u\u017Cytku</strong> s\u0105 niepodlegaj\u0105ce negocjacjom.",
+            "about.p3": "Obecnie eksploruje pogranicze <strong>AI i\u00a0urz\u0105dze\u0144 mobilnych</strong> \u2013 uczy si\u0119 orkiestracji LLM-\u00F3w, agent\u00F3w i\u00a0narz\u0119dzi AI, aby zwielokrotni\u0107 produktywno\u015B\u0107. D\u0142ugoterminowym celem jest <strong>szybsze dostarczanie produkt\u00F3w</strong> \u0142\u0105cz\u0105c rzemios\u0142o in\u017Cynierskie z\u00a0procesami wspomaganymi przez AI, nieustannie ucz\u0105c si\u0119 od innych.",
+            "about.stat.apps": "Wydane aplikacje",
+            "about.stat.domains": "Domeny",
+            "about.stat.scratch": "Zbudowane od zera",
+            "about.stat.curiosity": "Ciekawo\u015B\u0107",
+
+            /* ── Career ── */
+            "career.label": "Kariera",
+            "career.heading": "Dotychczasowa droga",
+            "career.current": "obecnie",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Cz\u0142onek za\u0142o\u017Cycielskiego zespo\u0142u in\u017Cynierskiego, buduj\u0105cy aplikacj\u0119 od zera.</li><li>Wsp\u00F3\u0142pracuje mi\u0119dzyfunkcyjnie z\u00a0zespo\u0142ami produktu, designu, wzrostu i\u00a0in\u017Cynierii nad kluczowymi funkcjami: onboarding, feed, tworzenie tre\u015Bci, powiadomienia i\u00a0przetwarzanie obraz\u00F3w.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>Zbudowa\u0142 aplikacj\u0119 towarzysz\u0105c\u0105 na iOS od zera dla robotycznego urz\u0105dzenia medycznego mierz\u0105cego przep\u0142yw krwi w\u00a0m\u00F3zgu.</li><li>Architektura nastawiona na skalowalno\u015B\u0107: komponenty UI wielokrotnego u\u017Cytku, design testowalno\u015Bci, pipeline CI/CD Xcode Cloud.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>Jeden z\u00a0senior\u00F3w in\u017Cynier\u00F3w w\u00a013\u201316-osobowym zespole iOS dla wysoko ocenianej aplikacji fintech (4,3 gwiazdki).</li><li>Odnowi\u0142 ekran g\u0142\u00F3wny i\u00a0modu\u0142 funduszy wzajemnych. Mentorowa\u0142 in\u017Cynier\u00F3w i\u00a0prowadzi\u0142 przegl\u0105dy kodu.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>Kierowa\u0142 architektur\u0105 platformy SaaS white-label (Gwynnie Bee, Haverdash) obs\u0142uguj\u0105cej wypo\u017Cyczanie odzie\u017Cy w\u00a0USA.</li><li>Zaprojektowa\u0142 dynamiczny system motyw\u00F3w zautomatyzowany za pomoc\u0105 arkuszy kalkulacyjnych i\u00a0w\u0142asnych skrypt\u00F3w Swift.</li><li>Wdro\u017Cy\u0142 framework test\u00F3w jednostkowych i\u00a0pipeline CI/CD. Mentorowa\u0142 zesp\u00F3\u0142 i\u00a0przekazywa\u0142 wiedz\u0119 architektoniczn\u0105.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Wypu\u015Bci\u0142 wiele aplikacji jednocze\u015Bnie w\u00a0domenach korporacyjnych i\u00a0kreatywnych (Apache Industrial, Duet App, PropCube).</li><li>Awansowa\u0142 od juniorskiego programisty do lidera 2-osobowego zespo\u0142u iOS i\u00a0mentora 4\u00a0nowych pracownik\u00F3w.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Prace",
+            "projects.heading": "Wydane aplikacje",
+            "projects.domain.social": "Spo\u0142eczno\u015Bciowe",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Moda / SaaS",
+            "projects.domain.enterprise": "Korporacja",
+            "projects.domain.side": "Projekt w\u0142asny",
+            "projects.turnip.desc": "Aplikacja spo\u0142eczno\u015Bciowa zbudowana od zera \u2013 onboarding, feed, tworzenie tre\u015Bci, powiadomienia i\u00a0przetwarzanie obraz\u00F3w. Wsp\u00F3\u0142praca mi\u0119dzyfunkcyjna od pierwszego dnia.",
+            "projects.novasignal.desc": "Aplikacja towarzysz\u0105ca na iOS dla robotycznego urz\u0105dzenia medycznego. Umo\u017Cliwia szpitalom dost\u0119p do przetworzonych przez AI danych o\u00a0przep\u0142ywie krwi w\u00a0m\u00F3zgu w\u00a0celu profilaktyki udar\u00F3w.",
+            "projects.paytm.desc": "Jedna z\u00a0najwy\u017Cej ocenianych aplikacji inwestycyjnych w\u00a0Indiach. Akcje, fundusze wzajemne, IPO, F&O. Odnowiony ekran g\u0142\u00F3wny i\u00a0modu\u0142 funduszy obs\u0142uguj\u0105cy miliony u\u017Cytkownik\u00F3w.",
+            "projects.caastle.desc": "Platforma white-label do wypo\u017Cyczania odzie\u017Cy na rynku ameryka\u0144skim. Zaprojektowana modularna, tematyczna architektura SaaS obs\u0142uguj\u0105ca wiele marek.",
+            "projects.enterprise.desc": "Korporacyjna aplikacja do zarz\u0105dzania i\u00a0monitorowania personelu dla Apache Industrial Services, u\u017Cywana w\u00a0operacjach w\u00a0USA.",
+            "projects.xo3.desc": "Gra w\u00a0k\u00F3\u0142ko i\u00a0krzy\u017Cyk eksploruj\u0105ca SwiftUI, Combine i\u00a0MultipeerConnectivity. Zbudowana z\u00a0iOS\u00a026+ i\u00a0Swift\u00a06.",
+            "projects.appstore": "Zobacz w\u00a0App Store",
+            "projects.github": "Zobacz na GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Narz\u0119dzia",
+            "skills.heading": "Technologie i\u00a0umiej\u0119tno\u015Bci",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Architektura",
+            "skills.ai": "AI i\u00a0eksploracja",
+            "skills.tooling": "Narz\u0119dzia i\u00a0procesy",
+            "skills.leadership": "Przyw\u00F3dztwo",
+
+            /* ── Open Source ── */
+            "oss.label": "Open Source",
+            "oss.heading": "Na GitHubie",
+            "oss.timbaktoe": "Gra w\u00a0k\u00F3\u0142ko i\u00a0krzy\u017Cyk do nauki podstaw SwiftUI, Combine i\u00a0MultipeerConnectivity.",
+            "oss.school": "Aplikacja startowa do poznania wzorc\u00F3w SwiftUI i\u00a0Combine.",
+            "oss.openpr": "Narz\u0119dzie CLI do tworzenia pull request\u00F3w, zbudowane przy u\u017Cyciu Swift Package Manager.",
+            "oss.math": "Biblioteka narz\u0119dzi matematycznych. 4\u00a0forki na GitHubie.",
+            "oss.geo": "Lekki wrapper nad frameworkiem iOS CoreLocation.",
+            "oss.setup": "Lista kontrolna do konfiguracji nowych maszyn deweloperskich.",
+
+            /* ── Education ── */
+            "edu.label": "Edukacja",
+            "edu.heading": "Wykszta\u0142cenie",
+            "edu.degree": "In\u017Cynier, Informatyka",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Po godzinach",
+            "offclock.heading": "Poza in\u017Cynieri\u0105",
+            "offclock.sports.title": "Pi\u0142ka no\u017Cna, szlaki i\u00a0kilometry",
+            "offclock.sports.desc": "Pi\u0142ka no\u017Cna w\u00a0weekendy, g\u00F3ry kiedy wzywaj\u0105, bieganie kiedy nie. Traktuje cia\u0142o jak kod produkcyjny \u2013 bez skr\u00F3t\u00F3w, bez d\u0142ugu technicznego.<span class=\"aside\">// Dzie\u0144 n\u00F3g nie ma strategii cofania</span>",
+            "offclock.fuel.title": "Tylko czyste paliwo",
+            "offclock.fuel.desc": "Je czysto \u2013 nie \u201Eg\u0142\u00F3wnie\u201D, naprawd\u0119 czysto. Bez alkoholu, bez palenia, bez cheat meali. Traktuje cia\u0142o jak d\u0142ugotrwa\u0142y proces: \u015Bmieci na wej\u015Bciu \u2013 \u015Bmieci na wyj\u015Bciu.<span class=\"aside\">// Gor\u0105co poleca innym ten styl \u017Cycia</span>",
+            "offclock.geo.title": "Mapy, pieni\u0105dze i\u00a0w\u0142adza",
+            "offclock.geo.desc": "Fascynuj\u0105 go zmiany geopolityczne, historia, geografia i\u00a0trendy ekonomiczne. Lubi \u0142\u0105czy\u0107 przesuwanie granic z\u00a0kierunkami rynk\u00F3w.<span class=\"aside\">// Zamieni ka\u017Cd\u0105 kolacj\u0119 w\u00a0makroekonomiczn\u0105 tez\u0119</span>",
+            "offclock.travel.title": "Stemple w\u00a0paszporcie",
+            "offclock.travel.desc": "Zbiera\u0142 oparzenia s\u0142oneczne w\u00a0Azji Po\u0142udniowo-Wschodniej i\u00a0nie tylko. Wierzy, \u017Ce najlepsze debugowanie odbywa si\u0119 na wysoko\u015Bci 35\u00a0000 st\u00F3p.",
+            "offclock.photo.title": "Fotografia",
+            "offclock.photo.desc": "Lubi uwiecznia\u0107 chwile, zw\u0142aszcza w\u00a0podr\u00F3\u017Cach. Pami\u0119\u0107 telefonu: 80% zdj\u0119\u0107, 15% cache Xcode, 5% wolnego miejsca.",
+            "offclock.ideas.title": "Pomys\u0142y i\u00a0tworzenie",
+            "offclock.ideas.desc": "Ci\u0105gle marzy o\u00a0produktach do zbudowania. Notatki pe\u0142ne \u201Epomys\u0142\u00F3w za milion\u201D \u2013 wypu\u015Bcienie cho\u0107 jednego by\u0142oby mi\u0142e.<span class=\"aside\">// TODO: naprawd\u0119 wypu\u015Bci\u0107 kt\u00F3ry\u015B z\u00a0nich</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Kontakt",
+            "contact.heading": "Zbudujmy co\u015B razem",
+            "contact.sub": "Otwarty na rozmowy o\u00a0iOS, AI, pomys\u0142ach produktowych lub wsp\u00F3lnym tworzeniu.",
+            "contact.alllinks": "Wszystkie linki",
+
+            /* ── Footer ── */
+            "footer.text": "Zaprojektowane i\u00a0zbudowane przez Vishala Singha",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesjonalne",
+            "lo.portfolio": "Portfolio",
+            "lo.scan": "Skanuj &middot; Udost\u0119pnij"
         }
     };
 
