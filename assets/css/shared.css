@@ -206,6 +206,7 @@ body {
     margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.75rem;
 }
 .section-label::before { content: ''; width: 24px; height: 1px; background: var(--accent); }
+[dir="rtl"] .section-label { flex-direction: row-reverse; }
 
 /* ── Reveal Animation ── */
 .reveal {
