@@ -2227,6 +2227,119 @@
             "lo.professional": "Chuy\u00EAn nghi\u1EC7p",
             "lo.portfolio": "Danh m\u1EE5c \u0111\u1EA7u t\u01B0",
             "lo.scan": "Qu\u00E9t &middot; Chia s\u1EBB"
+        },
+        sv: {
+            /* ── Nav ── */
+            "nav.about": "Om",
+            "nav.experience": "Erfarenhet",
+            "nav.projects": "Projekt",
+            "nav.skills": "F\u00E4rdigheter",
+            "nav.contact": "Kontakt",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Ingenj\u00F6r &amp; byggare.</strong> Levererar iOS-appar p\u00E5 dagarna,<br>experimenterar med AI och produktid\u00E9er p\u00E5 kv\u00E4llarna.",
+            "hero.location": "Bengaluru, Indien",
+            "hero.builder": "AI-f\u00F6rst\u00E4rkt byggare",
+            "hero.cta": "H\u00F6r av dig",
+
+            /* ── About ── */
+            "about.label": "Om",
+            "about.heading": "Hantverk, nyfikenhet<br>och kod",
+            "about.p1": "Vishal \u00E4r en <strong>Principal iOS-ingenj\u00F6r</strong> som \u00E4lskar att bygga saker fr\u00E5n grunden. Han har levererat produktionsappar inom <strong>fintech, h\u00E4lsoteknik, sociala medier och e-handel</strong> \u2013 varje g\u00E5ng med en arkitektur som skalar och f\u00F6rblir underh\u00E5llbar.",
+            "about.p2": "Han dras till produkters \"noll till ett\"-fas: att rita modulavgr\u00E4nsningar, automatisera tr\u00E5kiga arbetsfl\u00F6den med Swift-skript och handleda team att arbeta med sj\u00E4lvf\u00F6rtroende. <strong>Ren kod och \u00E5teranv\u00E4ndbara komponenter</strong> \u00E4r icke-f\u00F6rhandlingsbara.",
+            "about.p3": "Utforskar f\u00F6r n\u00E4rvarande sk\u00E4rningspunkten mellan <strong>AI och mobil</strong> \u2013 l\u00E4r sig orkestrera LLM:er, agenter och AI-verktyg f\u00F6r att multiplicera produktiviteten. Det l\u00E5ngsiktiga m\u00E5let \u00E4r att <strong>leverera produkter snabbare</strong> genom att blanda ingenj\u00F6rshantverk med AI-f\u00F6rst\u00E4rkta arbetsfl\u00F6den, alltid l\u00E4rande fr\u00E5n andra.",
+            "about.stat.apps": "Levererade appar",
+            "about.stat.domains": "Dom\u00E4ner",
+            "about.stat.scratch": "Byggt fr\u00E5n grunden",
+            "about.stat.curiosity": "Nyfikenhet",
+
+            /* ── Career ── */
+            "career.label": "Karri\u00E4r",
+            "career.heading": "Resan hittills",
+            "career.current": "nuvarande",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Del av det grundande ingenj\u00F6rsteamet, byggde appen fr\u00E5n grunden.</li><li>Arbetar tv\u00E4rfunktionellt med produkt, design, tillv\u00E4xt och teknik p\u00E5 k\u00E4rnfunktioner: onboarding, fl\u00F6de, skapande, notifieringar och bildbehandling.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>Byggde iOS-kompanjonappen fr\u00E5n grunden f\u00F6r en robotmedicinsk enhet som m\u00E4ter cerebralt blodfl\u00F6de.</li><li>Arkitekterade f\u00F6r skalbarhet: \u00E5teranv\u00E4ndbara UI-komponenter, testbarhet-f\u00F6rst-design, Xcode Cloud CI/CD-pipeline.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>En av senioringenj\u00F6rerna i ett iOS-team p\u00E5 13\u201316 personer f\u00F6r en topprankad fintech-app (4,3 stj\u00E4rnor).</li><li>F\u00F6rnyade hemsk\u00E4rmen och fondmodulen. Handledde ingenj\u00F6rer och ledde kodgranskningar.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>Ledde arkitekturen f\u00F6r en white-label SaaS-plattform (Gwynnie Bee, Haverdash) som drev kl\u00E4duthyrning i USA.</li><li>Designade ett dynamiskt temasystem automatiserat via kalkylblad och interna Swift-skript.</li><li>Satte upp ramverket f\u00F6r enhetstester och CI/CD-pipeline. Handledde teamet och \u00F6verf\u00F6rde arkitekturkunskap.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>Levererade flera appar samtidigt inom f\u00F6retags- och kreativa dom\u00E4ner (Apache Industrial, Duet App, PropCube).</li><li>V\u00E4xte fr\u00E5n nyb\u00F6rjare till att leda ett 2-personers iOS-team och handleda 4 nyanst\u00E4llda.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Arbete",
+            "projects.heading": "Levererade appar",
+            "projects.domain.social": "Socialt",
+            "projects.domain.health": "H\u00E4lsoteknik",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Mode / SaaS",
+            "projects.domain.enterprise": "F\u00F6retag",
+            "projects.domain.side": "Sidoprojekt",
+            "projects.turnip.desc": "Social app byggd fr\u00E5n grunden \u2013 onboarding, fl\u00F6de, inneh\u00E5llsskapande, notifieringar och bildbehandling. Tv\u00E4rfunktionellt samarbete fr\u00E5n dag ett.",
+            "projects.novasignal.desc": "iOS-kompanjon f\u00F6r en robotmedicinsk enhet. G\u00F6r det m\u00F6jligt f\u00F6r sjukhus att f\u00E5 tillg\u00E5ng till AI-bearbetad data om cerebralt blodfl\u00F6de f\u00F6r strokeprevention.",
+            "projects.paytm.desc": "En av Indiens topprankade investeringsappar. Aktier, fonder, b\u00F6rsintroduktioner, F&O. F\u00F6rnyade hemsk\u00E4rmen och fondmodulen som betj\u00E4nar miljontals anv\u00E4ndare.",
+            "projects.caastle.desc": "White-label kl\u00E4duthyrningsplattform f\u00F6r den amerikanska marknaden. Arkitekterade det modul\u00E4ra, temabara SaaS-ramverket som driver flera varum\u00E4rkesappar.",
+            "projects.enterprise.desc": "F\u00F6retagsapp f\u00F6r personalhantering och \u00F6vervakning f\u00F6r Apache Industrial Services, anv\u00E4nd \u00F6ver hela verksamheten i USA.",
+            "projects.xo3.desc": "Ett luffarschack-spel som utforskar SwiftUI, Combine och MultipeerConnectivity. Byggt med iOS 26+ och Swift 6.",
+            "projects.appstore": "Visa p\u00E5 App Store",
+            "projects.github": "Visa p\u00E5 GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Verktyg",
+            "skills.heading": "Teknologier &amp; f\u00E4rdigheter",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arkitektur",
+            "skills.ai": "AI &amp; utforskning",
+            "skills.tooling": "Verktyg &amp; process",
+            "skills.leadership": "Ledarskap",
+
+            /* ── Open Source ── */
+            "oss.label": "\u00D6ppen k\u00E4llkod",
+            "oss.heading": "P\u00E5 GitHub",
+            "oss.timbaktoe": "Ett luffarschack-spel f\u00F6r att l\u00E4ra sig grunderna i SwiftUI, Combine och MultipeerConnectivity.",
+            "oss.school": "Startapp f\u00F6r att f\u00F6rst\u00E5 SwiftUI- och Combine-m\u00F6nster.",
+            "oss.openpr": "CLI-verktyg f\u00F6r att skapa pull requests, byggt med Swift Package Manager.",
+            "oss.math": "Matematiskt verktygsbibliotek. 4 forkar p\u00E5 GitHub.",
+            "oss.geo": "L\u00E4ttviktsomslag \u00F6ver iOS CoreLocation-ramverket.",
+            "oss.setup": "En checklista f\u00F6r att konfigurera nya utvecklingsmaskiner.",
+
+            /* ── Education ── */
+            "edu.label": "Utbildning",
+            "edu.heading": "Bakgrund",
+            "edu.degree": "Civilingenj\u00F6r, datavetenskap &amp; datateknik",
+
+            /* ── Off the clock ── */
+            "offclock.label": "Utanf\u00F6r jobbet",
+            "offclock.heading": "Det icke-tekniska",
+            "offclock.sports.title": "Fotboll, stigar &amp; mil",
+            "offclock.sports.desc": "Fotboll p\u00E5 helgerna, vandring n\u00E4r bergen kallar, l\u00F6pning n\u00E4r de inte g\u00F6r det. Behandlar kroppen som produktionskod \u2013 inga genv\u00E4gar, ingen teknisk skuld.<span class=\"aside\">// Bendag har ingen \u00E5terrullningsstrategi</span>",
+            "offclock.fuel.title": "Bara rent br\u00E4nsle",
+            "offclock.fuel.desc": "\u00C4ter rent \u2013 inte \"mestadels\", faktiskt rent. Ingen alkohol, ingen r\u00F6kning, inga fuskm\u00E5ltider. Ser kroppen som en l\u00E5ngk\u00F6rande process: skr\u00E4p in, skr\u00E4p ut.<span class=\"aside\">// Rekommenderar starkt att andra ocks\u00E5 anammar denna livsstil</span>",
+            "offclock.geo.title": "Kartor, pengar &amp; makt",
+            "offclock.geo.desc": "Fascinerad av geopolitiska skiften, historia, geografi och ekonomiska trender. \u00C4lskar att koppla ihop prickarna mellan varf\u00F6r gr\u00E4nser flyttades och vart marknaderna \u00E4r p\u00E5 v\u00E4g.<span class=\"aside\">// Kommer sp\u00E5ra ur vilken middagskonversation som helst till en makrotes</span>",
+            "offclock.travel.title": "Passstj\u00E4rnor",
+            "offclock.travel.desc": "Har samlat solbr\u00E4nnor \u00F6ver Sydostasien och bortom. Tror att den b\u00E4sta fels\u00F6kningen sker p\u00E5 10 000 meters h\u00F6jd.",
+            "offclock.photo.title": "Fotografi",
+            "offclock.photo.desc": "Tycker om att f\u00E5nga \u00F6gonblick, fr\u00E4mst n\u00E4r han reser. Telefonlagringen \u00E4r 80% foton, 15% Xcode-cache, 5% faktiskt ledigt utrymme.",
+            "offclock.ideas.title": "Id\u00E9er &amp; byggande",
+            "offclock.ideas.desc": "Dagdr\u00F6mmer st\u00E4ndigt om produkter att bygga. Har en anteckningsapp full av \"miljonid\u00E9er\" \u2013 att leverera en vore trevligt.<span class=\"aside\">// TODO: faktiskt leverera en av dessa</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Kontakt",
+            "contact.heading": "L\u00E5t oss bygga n\u00E5got",
+            "contact.sub": "\u00D6ppen f\u00F6r samtal om iOS, AI, produktid\u00E9er eller att bygga saker tillsammans.",
+            "contact.alllinks": "Alla l\u00E4nkar",
+
+            /* ── Footer ── */
+            "footer.text": "Designad &amp; byggd av Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Professionellt",
+            "lo.portfolio": "Portf\u00F6lj",
+            "lo.scan": "Skanna &middot; Dela"
         }
     };
 
