@@ -2340,6 +2340,119 @@
             "lo.professional": "Professionellt",
             "lo.portfolio": "Portf\u00F6lj",
             "lo.scan": "Skanna &middot; Dela"
+        },
+        ro: {
+            /* ── Nav ── */
+            "nav.about": "Despre",
+            "nav.experience": "Experien\u021B\u0103",
+            "nav.projects": "Proiecte",
+            "nav.skills": "Competen\u021Be",
+            "nav.contact": "Contact",
+
+            /* ── Hero ── */
+            "hero.title": "<strong>Inginer \u0219i creator.</strong> Livreaz\u0103 aplica\u021Bii iOS ziua,<br>experimenteaz\u0103 cu AI \u0219i idei de produs noaptea.",
+            "hero.location": "Bengaluru, India",
+            "hero.builder": "Creator augmentat de AI",
+            "hero.cta": "Ia leg\u0103tura",
+
+            /* ── About ── */
+            "about.label": "Despre",
+            "about.heading": "Me\u0219te\u0219ug, curiozitate<br>\u0219i cod",
+            "about.p1": "Vishal este un <strong>Principal iOS Engineer</strong> c\u0103ruia \u00EEi place s\u0103 construiasc\u0103 lucruri de la zero. A livrat aplica\u021Bii \u00EEn produc\u021Bie \u00EEn <strong>fintech, health-tech, social media \u0219i e-commerce</strong> -- de fiecare dat\u0103 proiect\u00E2nd o arhitectur\u0103 scalabil\u0103 \u0219i u\u0219or de \u00EEntre\u021Binut.",
+            "about.p2": "Este atras de faza \u201Ede la zero la unu\u201D a produselor: definirea limitelor modulelor, automatizarea fluxurilor cu scripturi Swift \u0219i mentoratul echipelor. <strong>Codul curat \u0219i componentele reutilizabile</strong> sunt non-negociabile.",
+            "about.p3": "\u00CEn prezent exploreaz\u0103 intersec\u021Bia dintre <strong>AI \u0219i mobile</strong> -- \u00EEnv\u0103\u021B\u00E2nd s\u0103 orchestreze LLM-uri, agen\u021Bi \u0219i instrumente AI pentru a multiplica productivitatea. Obiectivul pe termen lung este s\u0103 <strong>livreze produse mai rapid</strong>, combin\u00E2nd me\u0219te\u0219ugul ingineresc cu fluxuri augmentate de AI, \u00EEnv\u0103\u021B\u00E2nd mereu de la al\u021Bii.",
+            "about.stat.apps": "Aplica\u021Bii livrate",
+            "about.stat.domains": "Domenii",
+            "about.stat.scratch": "Construit de la zero",
+            "about.stat.curiosity": "Curiozitate",
+
+            /* ── Career ── */
+            "career.label": "Carier\u0103",
+            "career.heading": "Drumul parcurs",
+            "career.current": "prezent",
+
+            /* Turnip */
+            "career.turnip.desc": "<ul><li>Parte din echipa fondatoare de inginerie, construind aplica\u021Bia de la zero.</li><li>Colaborare cross-func\u021Bional\u0103 cu produsul, designul, cre\u0219terea \u0219i ingineria pe func\u021Bionalit\u0103\u021Bi cheie: onboarding, feed, crea\u021Bie, notific\u0103ri \u0219i procesare de imagini.</li></ul>",
+            /* NovaSignal */
+            "career.novasignal.desc": "<ul><li>A construit aplica\u021Bia companion iOS de la zero pentru un dispozitiv medical robotic care m\u0103soar\u0103 fluxul sanguin cerebral.</li><li>Arhitectur\u0103 proiectat\u0103 pentru scalabilitate: componente UI reutilizabile, design test-first, pipeline CI/CD cu Xcode Cloud.</li></ul>",
+            /* Paytm Money */
+            "career.paytm.desc": "<ul><li>Unul dintre inginerii seniori \u00EEntr-o echip\u0103 iOS de 13-16 persoane pentru o aplica\u021Bie fintech de top (4,3 stele).</li><li>A reproiectat ecranul principal \u0219i modulul de fonduri mutuale. A mentorat ingineri \u0219i a condus recenzii de cod.</li></ul>",
+            /* CaaStle */
+            "career.caastle.desc": "<ul><li>A condus arhitectura unei platforme SaaS white-label (Gwynnie Bee, Haverdash) pentru \u00EEnchirierea de haine \u00EEn SUA.</li><li>A proiectat un sistem dinamic de tematizare automatizat prin foi de calcul \u0219i scripturi Swift interne.</li><li>A configurat framework-ul de testare unitar\u0103 \u0219i pipeline-ul CI/CD. A mentorat echipa \u0219i a transferat cuno\u0219tin\u021Bele de arhitectur\u0103.</li></ul>",
+            /* moldedbits */
+            "career.moldedbits.desc": "<ul><li>A livrat simultan mai multe aplica\u021Bii \u00EEn domenii enterprise \u0219i creative (Apache Industrial, Duet App, PropCube).</li><li>A crescut de la junior la lider al unei echipe iOS de 2 persoane \u0219i mentor pentru 4 angaja\u021Bi noi.</li></ul>",
+
+            /* ── Projects ── */
+            "projects.label": "Lucr\u0103ri",
+            "projects.heading": "Aplica\u021Bii livrate",
+            "projects.domain.social": "Social",
+            "projects.domain.health": "Health-Tech",
+            "projects.domain.fintech": "Fintech",
+            "projects.domain.fashion": "Mod\u0103 / SaaS",
+            "projects.domain.enterprise": "Enterprise",
+            "projects.domain.side": "Proiect personal",
+            "projects.turnip.desc": "Aplica\u021Bie social\u0103 construit\u0103 de la zero -- onboarding, feed, creare de con\u021Binut, notific\u0103ri \u0219i procesare de imagini. Colaborare cross-func\u021Bional\u0103 din prima zi.",
+            "projects.novasignal.desc": "Companion iOS pentru un dispozitiv medical robotic. Permite spitalelor s\u0103 acceseze date despre fluxul sanguin cerebral procesate de AI pentru prevenirea accidentului vascular cerebral.",
+            "projects.paytm.desc": "Una dintre cele mai bine cotate aplica\u021Bii de investi\u021Bii din India. Ac\u021Biuni, fonduri mutuale, IPO-uri, F&O. Ecranul principal \u0219i modulul de fonduri reproiectate pentru milioane de utilizatori.",
+            "projects.caastle.desc": "Platform\u0103 white-label de \u00EEnchiriere haine pentru pia\u021Ba din SUA. A proiectat framework-ul SaaS modular \u0219i tematizabil care alimenteaz\u0103 mai multe aplica\u021Bii de brand.",
+            "projects.enterprise.desc": "Aplica\u021Bie enterprise de gestionare \u0219i monitorizare a for\u021Bei de munc\u0103 pentru Apache Industrial Services, utilizat\u0103 \u00EEn opera\u021Biunile din SUA.",
+            "projects.xo3.desc": "Un joc X \u0219i O pentru explorarea SwiftUI, Combine \u0219i MultipeerConnectivity. Construit cu iOS 26+ \u0219i Swift 6.",
+            "projects.appstore": "Vezi pe App Store",
+            "projects.github": "Vezi pe GitHub",
+
+            /* ── Skills ── */
+            "skills.label": "Instrumente",
+            "skills.heading": "Tehnologii \u0219i competen\u021Be",
+            "skills.ios": "iOS / Apple",
+            "skills.architecture": "Arhitectur\u0103",
+            "skills.ai": "AI \u0219i explorare",
+            "skills.tooling": "Instrumente \u0219i procese",
+            "skills.leadership": "Leadership",
+
+            /* ── Open Source ── */
+            "oss.label": "Open Source",
+            "oss.heading": "Pe GitHub",
+            "oss.timbaktoe": "Un joc X \u0219i O pentru a \u00EEnv\u0103\u021Ba bazele SwiftUI, Combine \u0219i MultipeerConnectivity.",
+            "oss.school": "Aplica\u021Bie de start pentru \u00EEn\u021Belegerea pattern-urilor SwiftUI \u0219i Combine.",
+            "oss.openpr": "Instrument CLI pentru crearea de pull request-uri, construit cu Swift Package Manager.",
+            "oss.math": "Bibliotec\u0103 de utilit\u0103\u021Bi matematice. 4 fork-uri pe GitHub.",
+            "oss.geo": "Wrapper u\u0219or peste framework-ul iOS CoreLocation.",
+            "oss.setup": "O list\u0103 de verificare pentru configurarea ma\u0219inilor noi de dezvoltare.",
+
+            /* ── Education ── */
+            "edu.label": "Educa\u021Bie",
+            "edu.heading": "Parcurs academic",
+            "edu.degree": "Licen\u021B\u0103 \u00EEn Informatic\u0103 \u0219i Ingineria Calculatoarelor",
+
+            /* ── Off the clock ── */
+            "offclock.label": "\u00CEn afara programului",
+            "offclock.heading": "Dincolo de inginerie",
+            "offclock.sports.title": "Fotbal, trasee \u0219i kilometri",
+            "offclock.sports.desc": "Fotbal \u00EEn weekend, drumetii c\u00E2nd mun\u021Bii cheam\u0103, alergare c\u00E2nd nu cheam\u0103. Trateaz\u0103 corpul ca pe codul de produc\u021Bie -- f\u0103r\u0103 scurt\u0103turi, f\u0103r\u0103 datorie tehnic\u0103.<span class=\"aside\">// Ziua picioarelor nu are strategie de rollback</span>",
+            "offclock.fuel.title": "Doar combustibil curat",
+            "offclock.fuel.desc": "M\u0103n\u00E2nc\u0103 curat -- nu \u201E\u00EEn mare parte\u201D, ci chiar curat. F\u0103r\u0103 alcool, f\u0103r\u0103 fumat, f\u0103r\u0103 abateri. Consider\u0103 corpul un proces de lung\u0103 durat\u0103: gunoi la intrare, gunoi la ie\u0219ire.<span class=\"aside\">// Recomand\u0103 insistent \u0219i altora acela\u0219i stil de via\u021B\u0103</span>",
+            "offclock.geo.title": "H\u0103r\u021Bi, bani \u0219i putere",
+            "offclock.geo.desc": "Fascinat de schimb\u0103rile geopolitice, istorie, geografie \u0219i tendintele economice. \u00CEi place s\u0103 conecteze punctele \u00EEntre de ce s-au mutat grani\u021Bele \u0219i \u00EEncotro se \u00EEndreapt\u0103 pie\u021Bele.<span class=\"aside\">// Va deturna orice cin\u0103 \u00EEntr-o tez\u0103 macroeconomic\u0103</span>",
+            "offclock.travel.title": "\u0218tampile \u00EEn pa\u0219aport",
+            "offclock.travel.desc": "A colec\u021Bionat arsuri solare \u00EEn Asia de Sud-Est \u0219i nu numai. Crede c\u0103 cel mai bun debugging se face la 35.000 de picioare altitudine.",
+            "offclock.photo.title": "Fotografie",
+            "offclock.photo.desc": "\u00CEi place s\u0103 surprind\u0103 momente, mai ales c\u00E2nd c\u0103l\u0103tore\u0219te. Memoria telefonului: 80% fotografii, 15% cache Xcode, 5% spa\u021Biu liber.",
+            "offclock.ideas.title": "Idei \u0219i construc\u021Bie",
+            "offclock.ideas.desc": "Viseaz\u0103 constant la produse de construit. Are o aplica\u021Bie de noti\u021Be plin\u0103 de \u201Eidei de un milion\u201D -- ar fi frumos s\u0103 livreze una.<span class=\"aside\">// TODO: chiar s\u0103 livreze una dintre ele</span>",
+
+            /* ── Contact ── */
+            "contact.label": "Contact",
+            "contact.heading": "Hai s\u0103 construim ceva",
+            "contact.sub": "Deschis la conversa\u021Bii despre iOS, AI, idei de produs sau construc\u021Bie \u00EEmpreun\u0103.",
+            "contact.alllinks": "Toate linkurile",
+
+            /* ── Footer ── */
+            "footer.text": "Proiectat \u0219i construit de Vishal Singh",
+
+            /* ── Links Overlay ── */
+            "lo.professional": "Profesional",
+            "lo.portfolio": "Portofoliu",
+            "lo.scan": "Scaneaz\u0103 &middot; Distribuie"
         }
     };
 
