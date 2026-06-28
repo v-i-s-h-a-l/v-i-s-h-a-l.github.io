@@ -52,7 +52,9 @@
     }
 
     // ── Tilt Card Mouse Tracking ──
-    document.querySelectorAll('.tilt-card').forEach(card => {
+    function initTiltCard(card) {
+        if (card.dataset.tiltInit) return;
+        card.dataset.tiltInit = '1';
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
@@ -67,7 +69,13 @@
         card.addEventListener('mouseleave', () => {
             card.style.transform = '';
         });
-    });
+    }
+
+    document.querySelectorAll('.tilt-card').forEach(initTiltCard);
+
+    window.reinitTiltCards = function () {
+        document.querySelectorAll('.tilt-card:not([data-tilt-init])').forEach(initTiltCard);
+    };
 
     // ── Scroll Reveal ──
     const observer = new IntersectionObserver((entries) => {

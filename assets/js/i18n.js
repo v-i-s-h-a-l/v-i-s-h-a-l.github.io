@@ -12,7 +12,7 @@
             "nav.contact": "Contact",
 
             /* ── Hero ── */
-            "hero.title": "<strong>Engineer &amp; builder.</strong> Ships iOS apps by day,<br>tinkers with AI and product ideas by night.",
+            "hero.title": "<strong>Software &amp; AI applied engineer.</strong> Builds systems,<br>orchestrates agents, and ships products end to end.",
             "hero.location": "Bengaluru, India",
             "hero.builder": "AI-augmented builder",
             "hero.cta": "Get in touch",
@@ -20,9 +20,9 @@
             /* ── About ── */
             "about.label": "About",
             "about.heading": "Craft, curiosity,<br>and code",
-            "about.p1": "Vishal is a <strong>Principal iOS Engineer</strong> who loves building things from scratch. He has shipped production apps across <strong>fintech, health-tech, social media, and e-commerce</strong> -- each time designing architecture that scales and stays maintainable.",
-            "about.p2": "He's drawn to the \"zero to one\" phase of products: laying out module boundaries, automating tedious workflows with Swift scripts, and mentoring teams to move with confidence. <strong>Clean code and reusable components</strong> are non-negotiable.",
-            "about.p3": "Currently exploring the intersection of <strong>AI and mobile</strong> -- learning to orchestrate LLMs, agents, and AI tools to multiply productivity. The long-term goal is to <strong>ship products faster</strong> by blending engineering craft with AI-augmented workflows, always learning from others along the way.",
+            "about.p1": "Vishal is a <strong>software engineer and AI applied engineer</strong> who loves building things from scratch. After years of shipping production iOS apps across <strong>fintech, health-tech, social media, and e-commerce</strong>, his recent work has zoomed out to the layer above: orchestrating AI agents, LLMs, and tools into working systems.",
+            "about.p2": "He's drawn to the \"zero to one\" phase of products and infrastructure: wiring up agentic workflows, automating tedious pipelines, and designing modular systems that stay maintainable. <strong>Clean code, reusable components, and fast feedback loops</strong> are non-negotiable.",
+            "about.p3": "These days he spends most of his time on <strong>AI orchestration</strong> -- connecting models, data sources, and services to ship products end to end. The goal is simple: <strong>turn ideas into running systems faster</strong>, while keeping the craft that made the iOS work reliable.",
             "about.stat.apps": "Apps shipped",
             "about.stat.domains": "Domains",
             "about.stat.scratch": "Built from scratch",
@@ -34,7 +34,7 @@
             "career.current": "current",
 
             /* Turnip */
-            "career.turnip.desc": "<ul><li>Part of the founding engineering team, building the app from scratch.</li><li>Works cross-functionally with product, design, growth, and engineering on core features: onboarding, feed, creation, notifications, and image processing.</li></ul>",
+            "career.turnip.desc": "<ul><li>Part of the founding engineering team, building the social app from scratch.</li><li>Shipped core features end to end: onboarding, feed, content creation, notifications, and image processing.</li><li>In recent months, shifted focus toward AI tooling and orchestration: automating workflows, integrating LLMs, and prototyping agentic features.</li></ul>",
             /* NovaSignal */
             "career.novasignal.desc": "<ul><li>Built the iOS companion app from scratch for a robotic medical device measuring cerebral blood flow.</li><li>Architected for scale: reusable UI components, testability-first design, Xcode Cloud CI/CD pipeline.</li></ul>",
             /* Paytm Money */
@@ -53,7 +53,8 @@
             "projects.domain.fashion": "Fashion / SaaS",
             "projects.domain.enterprise": "Enterprise",
             "projects.domain.side": "Side Project",
-            "projects.turnip.desc": "Social app built from scratch -- onboarding, feed, content creation, notifications, and image processing. Cross-functional collaboration from day one.",
+            "projects.turnip.desc": "Turnip's original social app, built from scratch -- onboarding, feed, content creation, notifications, and image processing. Later engineering effort moved to Zaps, the company's main AI-powered content creation product.",
+            "projects.zaps.desc": "The main product worked on at Turnip. AI-powered content creation app for social media -- collages, reels, seamless carousels, story templates, AI photo filters, and face swap.",
             "projects.novasignal.desc": "iOS companion for a robotic medical device. Enables hospitals to access AI-processed cerebral blood flow data for stroke prevention.",
             "projects.paytm.desc": "One of India's top-rated investment apps. Stocks, mutual funds, IPOs, F&O. Revamped the home screen and mutual fund module serving millions of users.",
             "projects.caastle.desc": "White-label garment rental platform for the US market. Architected the modular, themeable SaaS framework powering multiple brand apps.",
@@ -65,15 +66,15 @@
             /* ── Skills ── */
             "skills.label": "Toolkit",
             "skills.heading": "Technologies & skills",
+            "skills.ai": "AI & Orchestration",
+            "skills.software": "Software Engineering",
             "skills.ios": "iOS / Apple",
             "skills.architecture": "Architecture",
-            "skills.ai": "AI & Exploration",
-            "skills.tooling": "Tooling & Process",
             "skills.leadership": "Leadership",
 
             /* ── Open Source ── */
             "oss.label": "Open Source",
-            "oss.heading": "On GitHub",
+            "oss.heading": "Featured repos",
             "oss.timbaktoe": "A tic-tac-toe game to learn SwiftUI, Combine, and MultipeerConnectivity basics.",
             "oss.school": "Starter app to understand SwiftUI and Combine patterns.",
             "oss.openpr": "CLI tool for creating pull requests, built with Swift Package Manager.",
@@ -102,10 +103,20 @@
             "offclock.ideas.title": "Ideas & building",
             "offclock.ideas.desc": "Constantly daydreaming about products to build. Has a notes app full of \"million dollar ideas\" -- shipping one would be nice.<span class=\"aside\">// TODO: actually ship one of these</span>",
 
+            /* ── GitHub Activity ── */
+            "github.label": "Activity",
+            "github.heading": "On GitHub",
+            "github.public": "Public commits & repos only",
+            "github.graphFallback": "Public contribution graph",
+            "github.loading": "Loading public repositories...",
+            "github.stat.repos": "Public repos",
+            "github.stat.stars": "Total stars",
+            "github.stat.langs": "Languages",
+
             /* ── Contact ── */
             "contact.label": "Connect",
             "contact.heading": "Let's build something",
-            "contact.sub": "Open to conversations about iOS, AI, product ideas, or building things together.",
+            "contact.sub": "Open to conversations about AI, orchestration, product engineering, or building things together.",
             "contact.alllinks": "All Links",
 
             /* ── Footer ── */
@@ -126,7 +137,7 @@
             "nav.contact": "\u0938\u0902\u092A\u0930\u094D\u0915",
 
             /* ── Hero ── */
-            "hero.title": "<strong>\u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930 \u0914\u0930 \u092C\u093F\u0932\u094D\u0921\u0930\u0964</strong> \u0926\u093F\u0928 \u092E\u0947\u0902 iOS \u0910\u092A\u094D\u0938 \u092C\u0928\u093E\u0924\u093E \u0939\u0942\u0901,<br>\u0930\u093E\u0924 \u092E\u0947\u0902 AI \u0914\u0930 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F \u0906\u0907\u0921\u093F\u092F\u093E\u091C\u093C \u092A\u0930 \u0915\u093E\u092E \u0915\u0930\u0924\u093E \u0939\u0942\u0901\u0964",
+            "hero.title": "<strong>\u0938\u0949\u092B\u094D\u091F\u0935\u0947\u092F\u0930 \u0914\u0930 AI \u0905\u092A\u094D\u0932\u093E\u0907\u0921 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930\u0964</strong> \u0938\u093F\u0938\u094D\u091F\u092E \u092C\u0928\u093E\u0924\u093E \u0939\u0942\u0901,<br>\u090F\u091C\u0947\u0902\u091F\u094D\u0938 \u0915\u094B \u0911\u0930\u094D\u0915\u0947\u0938\u094D\u091F\u094D\u0930\u0947\u091F \u0915\u0930\u0924\u093E \u0939\u0942\u0901, \u0914\u0930 \u090F\u0902\u0921-\u091F\u0942-\u090F\u0902\u0921 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F \u0936\u093F\u092A \u0915\u0930\u0924\u093E \u0939\u0942\u0901\u0964",
             "hero.location": "\u092C\u0947\u0902\u0917\u0932\u0941\u0930\u0941, \u092D\u093E\u0930\u0924",
             "hero.builder": "AI-\u0938\u0902\u0935\u0930\u094D\u0927\u093F\u0924 \u092C\u093F\u0932\u094D\u0921\u0930",
             "hero.cta": "\u0938\u0902\u092A\u0930\u094D\u0915 \u0915\u0930\u0947\u0902",
@@ -134,9 +145,9 @@
             /* ── About ── */
             "about.label": "\u092A\u0930\u093F\u091A\u092F",
             "about.heading": "\u0936\u093F\u0932\u094D\u092A, \u091C\u093F\u091C\u094D\u091E\u093E\u0938\u093E<br>\u0914\u0930 \u0915\u094B\u0921",
-            "about.p1": "\u0935\u093F\u0936\u093E\u0932 \u090F\u0915 <strong>Principal iOS \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930</strong> \u0939\u0948\u0902 \u091C\u093F\u0928\u094D\u0939\u0947\u0902 \u0936\u0941\u0930\u0942 \u0938\u0947 \u091A\u0940\u091C\u093C\u0947\u0902 \u092C\u0928\u093E\u0928\u093E \u092A\u0938\u0902\u0926 \u0939\u0948\u0964 \u0909\u0928\u094D\u0939\u094B\u0902\u0928\u0947 <strong>\u092B\u093F\u0928\u091F\u0947\u0915, \u0939\u0947\u0932\u094D\u0925-\u091F\u0947\u0915, \u0938\u094B\u0936\u0932 \u092E\u0940\u0921\u093F\u092F\u093E \u0914\u0930 \u0908-\u0915\u0949\u092E\u0930\u094D\u0938</strong> \u092E\u0947\u0902 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u0936\u0928 \u0910\u092A\u094D\u0938 \u0936\u093F\u092A \u0915\u093F\u090F \u0939\u0948\u0902 -- \u0939\u0930 \u092C\u093E\u0930 \u0938\u094D\u0915\u0947\u0932\u0947\u092C\u0932 \u0914\u0930 \u092E\u0947\u0902\u091F\u0947\u0928\u0947\u092C\u0932 \u0906\u0930\u094D\u0915\u093F\u091F\u0947\u0915\u094D\u091A\u0930 \u0921\u093F\u091C\u093C\u093E\u0907\u0928 \u0915\u0930\u0924\u0947 \u0939\u0941\u090F\u0964",
-            "about.p2": "\u0935\u0947 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F\u094D\u0938 \u0915\u0947 \"\u091C\u093C\u0940\u0930\u094B \u091F\u0942 \u0935\u0928\" \u092B\u0947\u091C\u093C \u0915\u0940 \u0924\u0930\u092B \u0906\u0915\u0930\u094D\u0937\u093F\u0924 \u0939\u094B\u0924\u0947 \u0939\u0948\u0902: \u092E\u0949\u0921\u094D\u092F\u0942\u0932 \u092C\u093E\u0909\u0902\u0921\u094D\u0930\u0940\u091C\u093C \u0924\u092F \u0915\u0930\u0928\u093E, Swift \u0938\u094D\u0915\u094D\u0930\u093F\u092A\u094D\u091F\u094D\u0938 \u0938\u0947 \u0935\u0930\u094D\u0915\u092B\u093C\u094D\u0932\u094B \u0911\u091F\u094B\u092E\u0947\u091F \u0915\u0930\u0928\u093E, \u0914\u0930 \u091F\u0940\u092E \u0915\u094B \u0906\u0924\u094D\u092E\u0935\u093F\u0936\u094D\u0935\u093E\u0938 \u0938\u0947 \u0915\u093E\u092E \u0915\u0930\u0928\u0947 \u0915\u0940 \u092E\u0947\u0902\u091F\u0930\u093F\u0902\u0917\u0964 <strong>\u0915\u094D\u0932\u0940\u0928 \u0915\u094B\u0921 \u0914\u0930 \u0930\u0940\u092F\u0942\u091C\u093C\u0947\u092C\u0932 \u0915\u0902\u092A\u094B\u0928\u0947\u0902\u091F\u094D\u0938</strong> \u092A\u0930 \u0915\u094B\u0908 \u0938\u092E\u091D\u094C\u0924\u093E \u0928\u0939\u0940\u0902\u0964",
-            "about.p3": "\u0907\u0938 \u0938\u092E\u092F <strong>AI \u0914\u0930 \u092E\u094B\u092C\u093E\u0907\u0932</strong> \u0915\u0947 \u0907\u0902\u091F\u0930\u0938\u0947\u0915\u094D\u0936\u0928 \u0915\u094B \u090F\u0915\u094D\u0938\u092A\u094D\u0932\u094B\u0930 \u0915\u0930 \u0930\u0939\u0947 \u0939\u0948\u0902 -- LLMs, \u090F\u091C\u0947\u0902\u091F\u094D\u0938, \u0914\u0930 AI \u091F\u0942\u0932\u094D\u0938 \u0915\u094B \u0911\u0930\u094D\u0915\u0947\u0938\u094D\u091F\u094D\u0930\u0947\u091F \u0915\u0930\u0928\u093E \u0938\u0940\u0916 \u0930\u0939\u0947 \u0939\u0948\u0902\u0964 \u0932\u0902\u092C\u0947 \u0938\u092E\u092F \u0915\u093E \u0932\u0915\u094D\u0937\u094D\u092F \u0939\u0948 AI-\u0938\u0902\u0935\u0930\u094D\u0927\u093F\u0924 \u0935\u0930\u094D\u0915\u092B\u093C\u094D\u0932\u094B \u0915\u0947 \u0938\u093E\u0925 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930\u093F\u0902\u0917 \u0915\u094D\u0930\u093E\u092B\u093C\u094D\u091F \u0915\u094B \u092E\u093F\u0932\u093E\u0915\u0930 <strong>\u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F\u094D\u0938 \u0924\u0947\u091C\u093C\u0940 \u0938\u0947 \u0936\u093F\u092A \u0915\u0930\u0928\u093E</strong>, \u0914\u0930 \u0926\u0942\u0938\u0930\u094B\u0902 \u0938\u0947 \u0939\u092E\u0947\u0936\u093E \u0938\u0940\u0916\u0924\u0947 \u0930\u0939\u0928\u093E\u0964",
+            "about.p1": "\u0935\u093F\u0936\u093E\u0932 \u090F\u0915 <strong>\u0938\u0949\u092B\u094D\u091F\u0935\u0947\u092F\u0930 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930 \u0914\u0930 AI \u0905\u092A\u094D\u0932\u093E\u0907\u0921 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930</strong> \u0939\u0948\u0902 \u091C\u093F\u0928\u094D\u0939\u0947\u0902 \u0936\u0941\u0930\u0942 \u0938\u0947 \u091A\u0940\u091C\u093C\u0947\u0902 \u092C\u0928\u093E\u0928\u093E \u092A\u0938\u0902\u0926 \u0939\u0948\u0964 <strong>\u092B\u093F\u0928\u091F\u0947\u0915, \u0939\u0947\u0932\u094D\u0925-\u091F\u0947\u0915, \u0938\u094B\u0936\u0932 \u092E\u0940\u0921\u093F\u092F\u093E \u0914\u0930 \u0908-\u0915\u0949\u092E\u0930\u094D\u0938</strong> \u092E\u0947\u0902 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u0936\u0928 iOS \u0910\u092A\u094D\u0938 \u0936\u093F\u092A \u0915\u0930\u0928\u0947 \u0915\u0947 \u092C\u093E\u0926, \u0909\u0928\u0915\u093E \u0939\u093E\u0932\u093F\u092F\u093E \u0915\u093E\u092E \u090F\u0915 \u0938\u094D\u0924\u0930 \u0909\u092A\u0930 \u0915\u0940 \u0924\u0930\u092B \u091C\u093E\u0928\u0947 \u0932\u0917\u093E \u0939\u0948: AI \u090F\u091C\u0947\u0902\u091F\u094D\u0938, LLMs, \u0914\u0930 \u091F\u0942\u0932\u094D\u0938 \u0915\u094B \u0911\u0930\u094D\u0915\u0947\u0938\u094D\u091F\u094D\u0930\u0947\u091F \u0915\u0930\u0915\u0947 \u0915\u093E\u092E \u0915\u0930\u0924\u0947 \u0939\u0941\u090F \u0938\u093F\u0938\u094D\u091F\u092E \u092C\u0928\u093E\u0928\u093E\u0964",
+            "about.p2": "\u0935\u0947 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F\u094D\u0938 \u0914\u0930 \u0907\u0902\u092B\u094D\u0930\u093E\u0938\u094D\u091F\u094D\u0930\u0915\u094D\u091A\u0930 \u0915\u0947 \"\u091C\u093C\u0940\u0930\u094B \u091F\u0942 \u0935\u0928\" \u092B\u0947\u091C\u093C \u0915\u0940 \u0924\u0930\u092B \u0906\u0915\u0930\u094D\u0937\u093F\u0924 \u0939\u094B\u0924\u0947 \u0939\u0948\u0902: \u090F\u091C\u0947\u0902\u091F\u093F\u0915 \u0935\u0930\u094D\u0915\u092B\u093C\u094D\u0932\u094B \u0915\u094B \u091C\u094B\u0921\u093C\u0928\u093E, \u0928\u0940\u0930\u0938 \u092A\u093E\u0907\u092A\u0932\u093E\u0907\u0928\u094B\u0902 \u0915\u094B \u0911\u091F\u094B\u092E\u0947\u091F \u0915\u0930\u0928\u093E, \u0914\u0930 \u0938\u093F\u0902\u0917\u0932 \u092E\u0949\u0921\u094D\u092F\u0942\u0932\u0930 \u0938\u093F\u0938\u094D\u091F\u092E \u0921\u093F\u091C\u093C\u093E\u0907\u0928 \u0915\u0930\u0928\u093E \u091C\u094B \u092E\u0947\u0902\u091F\u0947\u0928\u0947\u092C\u0932 \u0930\u0939\u0947\u0964 <strong>\u0915\u094D\u0932\u0940\u0928 \u0915\u094B\u0921, \u0930\u0940\u092F\u0942\u091C\u093C\u0947\u092C\u0932 \u0915\u0902\u092A\u094B\u0928\u0947\u0902\u091F\u094D\u0938, \u0914\u0930 \u0924\u0947\u091C\u093C \u092B\u0940\u0921\u092C\u0948\u0915 \u0932\u0942\u092A\u094D\u0938</strong> \u092A\u0930 \u0915\u094B\u0908 \u0938\u092E\u091D\u094C\u0924\u093E \u0928\u0939\u0940\u0902\u0964",
+            "about.p3": "\u0906\u091C\u0915\u0932 \u0935\u0939 \u0905\u092A\u0928\u093E \u091C\u094D\u092F\u093E\u0926\u093E \u0938\u092E\u092F <strong>AI \u0911\u0930\u094D\u0915\u0947\u0938\u094D\u091F\u094D\u0930\u0947\u0936\u0928</strong> \u092A\u0930 \u0939\u0940 \u0926\u0947\u0924\u0947 \u0939\u0948\u0902 -- \u092E\u094B\u0921\u0932\u094D\u0938, \u0921\u0947\u091F\u093E \u0938\u094D\u0930\u094B\u0924\u0938, \u0914\u0930 \u0938\u0930\u094D\u0935\u093F\u0938\u0947\u0915\u094B\u0902 \u0915\u094B \u091C\u094B\u0921\u093C\u0915\u0930 \u090F\u0902\u0921-\u091F\u0942-\u090F\u0902\u0921 \u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F \u0936\u093F\u092A \u0915\u0930\u0928\u093E\u0964 \u0932\u0915\u094D\u0937\u094D\u092F \u0938\u0930\u0932 \u0939\u0948: iOS \u0915\u093E\u092E \u0915\u094B \u092D\u0930\u094B\u0938\u0947 \u0930\u0916\u0924\u0947 \u0939\u0941\u090F <strong>\u0906\u0907\u0921\u093F\u092F\u093E\u091C\u093C \u0915\u094B \u091C\u0932\u094D\u0926\u0940 \u091A\u0932\u0924\u0947 \u0938\u093F\u0938\u094D\u091F\u092E\u094B\u0902 \u092E\u0947\u0902 \u092C\u0926\u0932\u0928\u093E</strong>\u0964",
             "about.stat.apps": "\u0910\u092A\u094D\u0938 \u0936\u093F\u092A \u0915\u093F\u090F",
             "about.stat.domains": "\u0921\u094B\u092E\u0947\u0928",
             "about.stat.scratch": "\u0936\u0941\u0930\u0942 \u0938\u0947 \u092C\u0928\u093E\u090F",
@@ -147,7 +158,7 @@
             "career.heading": "\u0905\u092C \u0924\u0915 \u0915\u093E \u0938\u092B\u093C\u0930",
             "career.current": "\u0935\u0930\u094D\u0924\u092E\u093E\u0928",
 
-            "career.turnip.desc": "<ul><li>\u092B\u093E\u0909\u0902\u0921\u093F\u0902\u0917 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930\u093F\u0902\u0917 \u091F\u0940\u092E \u0915\u093E \u0939\u093F\u0938\u094D\u0938\u093E, \u0910\u092A \u0915\u094B \u0936\u0941\u0930\u0942 \u0938\u0947 \u092C\u0928\u093E\u092F\u093E\u0964</li><li>\u092A\u094D\u0930\u094B\u0921\u0915\u094D\u091F, \u0921\u093F\u091C\u093C\u093E\u0907\u0928, \u0917\u094D\u0930\u094B\u0925 \u0914\u0930 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930\u093F\u0902\u0917 \u0915\u0947 \u0938\u093E\u0925 \u0915\u094D\u0930\u0949\u0938-\u092B\u0902\u0915\u094D\u0936\u0928\u0932 \u0915\u093E\u092E: \u0911\u0928\u092C\u094B\u0930\u094D\u0921\u093F\u0902\u0917, \u092B\u0940\u0921, \u0915\u094D\u0930\u093F\u090F\u0936\u0928, \u0928\u094B\u091F\u093F\u092B\u093F\u0915\u0947\u0936\u0928 \u0914\u0930 \u0907\u092E\u0947\u091C \u092A\u094D\u0930\u094B\u0938\u0947\u0938\u093F\u0902\u0917\u0964</li></ul>",
+            "career.turnip.desc": "<ul><li>फाउंडिंग इंजीनियरिंग टीम का हिस्सा, सोशल ऐप को शुरू से बनाया।</li><li>ऑनबोर्डिंग, फीड, कंटेंट क्रिएशन, नोटिफिकेशन, और इमेज प्रोसेसिंग को एंड-टू-एंड शिप किया।</li><li>पिछले महीनों में AI टूलिंग और ऑर्केस्ट्रेशन की ओर काम किया: वर्कफ़्लोज़ ऑटोमेट करना, LLMs को इंटीग्रेट करना, और एजेंटिक फीचर्स का प्रोटोटाइप बनाना।</li></ul>",
             "career.novasignal.desc": "<ul><li>\u0930\u094B\u092C\u094B\u091F\u093F\u0915 \u092E\u0947\u0921\u093F\u0915\u0932 \u0921\u093F\u0935\u093E\u0907\u0938 \u0915\u0947 \u0932\u093F\u090F iOS \u0915\u0902\u092A\u0947\u0928\u093F\u092F\u0928 \u0910\u092A \u0936\u0941\u0930\u0942 \u0938\u0947 \u092C\u0928\u093E\u092F\u093E \u091C\u094B \u0938\u0947\u0930\u0947\u092C\u094D\u0930\u0932 \u092C\u094D\u0932\u0921 \u092B\u093C\u094D\u0932\u094B \u092E\u093E\u092A\u0924\u093E \u0939\u0948\u0964</li><li>\u0938\u094D\u0915\u0947\u0932 \u0915\u0947 \u0932\u093F\u090F \u0906\u0930\u094D\u0915\u093F\u091F\u0947\u0915\u094D\u091F \u0915\u093F\u092F\u093E: \u0930\u0940\u092F\u0942\u091C\u093C\u0947\u092C\u0932 UI \u0915\u0902\u092A\u094B\u0928\u0947\u0902\u091F\u094D\u0938, \u091F\u0947\u0938\u094D\u091F\u0947\u092C\u093F\u0932\u093F\u091F\u0940-\u092B\u0930\u094D\u0938\u094D\u091F \u0921\u093F\u091C\u093C\u093E\u0907\u0928, Xcode Cloud CI/CD \u092A\u093E\u0907\u092A\u0932\u093E\u0907\u0928\u0964</li></ul>",
             "career.paytm.desc": "<ul><li>13-16 \u0932\u094B\u0917\u094B\u0902 \u0915\u0940 iOS \u091F\u0940\u092E \u092E\u0947\u0902 \u0938\u0940\u0928\u093F\u092F\u0930 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930 \u2014 \u091F\u0949\u092A-\u0930\u0947\u091F\u0947\u0921 \u092B\u093F\u0928\u091F\u0947\u0915 \u0910\u092A (4.3 \u0938\u094D\u091F\u093E\u0930\u094D\u0938)\u0964</li><li>\u0939\u094B\u092E \u0938\u094D\u0915\u094D\u0930\u0940\u0928 \u0914\u0930 \u092E\u094D\u092F\u0942\u091A\u0941\u0905\u0932 \u092B\u0902\u0921\u094D\u0938 \u092E\u0949\u0921\u094D\u092F\u0942\u0932 \u0915\u094B \u0930\u093F\u0935\u0948\u092E\u094D\u092A \u0915\u093F\u092F\u093E\u0964 \u0907\u0902\u091C\u0940\u0928\u093F\u092F\u0930\u094D\u0938 \u0915\u094B \u092E\u0947\u0902\u091F\u0930 \u0915\u093F\u092F\u093E \u0914\u0930 \u0915\u094B\u0921 \u0930\u093F\u0935\u094D\u092F\u0942 \u0915\u093E \u0928\u0947\u0924\u0943\u0924\u094D\u0935 \u0915\u093F\u092F\u093E\u0964</li></ul>",
             "career.caastle.desc": "<ul><li>US \u092E\u0947\u0902 \u0917\u093E\u0930\u092E\u0947\u0902\u091F \u0930\u0947\u0902\u091F\u0932 \u0915\u0947 \u0932\u093F\u090F \u0935\u094D\u0939\u093E\u0907\u091F-\u0932\u0947\u092C\u0932 SaaS \u092A\u094D\u0932\u0947\u091F\u092B\u093C\u0949\u0930\u094D\u092E (Gwynnie Bee, Haverdash) \u0915\u0940 \u0906\u0930\u094D\u0915\u093F\u091F\u0947\u0915\u094D\u091A\u0930 \u0932\u0940\u0921 \u0915\u0940\u0964</li><li>\u0938\u094D\u092A\u094D\u0930\u0947\u0921\u0936\u0940\u091F\u094D\u0938 \u0914\u0930 \u0907\u0928-\u0939\u093E\u0909\u0938 Swift \u0938\u094D\u0915\u094D\u0930\u093F\u092A\u094D\u091F\u093F\u0902\u0917 \u0938\u0947 \u0911\u091F\u094B\u092E\u0947\u091F\u0947\u0921 \u0921\u093E\u092F\u0928\u093E\u092E\u093F\u0915 \u0925\u0940\u092E\u093F\u0902\u0917 \u0938\u093F\u0938\u094D\u091F\u092E \u0921\u093F\u091C\u093C\u093E\u0907\u0928 \u0915\u093F\u092F\u093E\u0964</li><li>\u092F\u0942\u0928\u093F\u091F \u091F\u0947\u0938\u094D\u091F\u093F\u0902\u0917 \u092B\u094D\u0930\u0947\u092E\u0935\u0930\u094D\u0915 \u0914\u0930 CI/CD \u092A\u093E\u0907\u092A\u0932\u093E\u0907\u0928 \u0938\u0947\u091F\u0905\u092A \u0915\u093F\u092F\u093E\u0964 \u091F\u0940\u092E \u0915\u094B \u092E\u0947\u0902\u091F\u0930 \u0915\u093F\u092F\u093E \u0914\u0930 \u0906\u0930\u094D\u0915\u093F\u091F\u0947\u0915\u094D\u091A\u0930 \u0928\u0949\u0932\u0947\u091C \u091F\u094D\u0930\u093E\u0902\u0938\u092B\u093C\u0930 \u0915\u093F\u092F\u093E\u0964</li></ul>",
@@ -3328,6 +3339,9 @@
     /* ── RTL Languages ── */
     const RTL_LANGS = ['ar', 'he'];
 
+    /* ── Temporarily only English is active while translations are reviewed ── */
+    const ACTIVE_LANGS = ['en'];
+
     /* ── Language Display Labels ── */
     const LANG_DISPLAY = {
         en: 'EN', hi: '\u0939\u093F', ar: '\u0639\u0631',
@@ -3347,14 +3361,15 @@
 
     function detectLang() {
         const saved = localStorage.getItem(STORAGE_KEY);
-        if (saved && translations[saved]) return saved;
+        if (saved && ACTIVE_LANGS.includes(saved)) return saved;
         const nav = (navigator.language || '').toLowerCase();
         const prefix = nav.split('-')[0];
-        if (translations[prefix]) return prefix;
+        if (ACTIVE_LANGS.includes(prefix)) return prefix;
         return 'en';
     }
 
     function applyLang(lang) {
+        if (!ACTIVE_LANGS.includes(lang)) lang = 'en';
         const isRTL = RTL_LANGS.includes(lang);
         document.documentElement.lang = lang;
         document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
