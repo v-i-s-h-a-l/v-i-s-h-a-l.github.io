@@ -345,32 +345,40 @@
         .btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
         .btn-ghost svg { width: 16px; height: 16px; }
 
-        /* ── Terminal Card ── */
-        .terminal {
+        /* ── Workflow Terminal Card ── */
+        .workflow-terminal {
             margin-top: 4rem; background: var(--bg-secondary);
             border: 1px solid var(--border); border-radius: var(--radius);
             overflow: hidden; max-width: 620px;
             box-shadow: var(--shadow-card);
         }
-        .terminal-header {
+        .workflow-terminal-header {
             display: flex; align-items: center; gap: 8px;
             padding: 12px 16px; background: var(--bg-card);
             border-bottom: 1px solid var(--border);
         }
-        .terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
-        .terminal-dot.red { background: #ff5f57; }
-        .terminal-dot.yellow { background: #febc2e; }
-        .terminal-dot.green { background: #28c840; }
-        .terminal-title {
+        .workflow-terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
+        .workflow-terminal-dot.red { background: #ff5f57; }
+        .workflow-terminal-dot.yellow { background: #febc2e; }
+        .workflow-terminal-dot.green { background: #28c840; }
+        .workflow-terminal-title {
             font-family: var(--mono); font-size: 0.7rem; color: var(--text-muted);
             margin-left: auto;
         }
-        .terminal-body { padding: 1.2rem 1.5rem; font-family: var(--mono); font-size: 0.82rem; line-height: 2; }
-        .terminal-line .prompt { color: var(--green); }
-        .terminal-line .cmd { color: var(--text-primary); }
-        .terminal-line .flag { color: var(--orange); }
-        .terminal-line .string { color: var(--accent); }
-        .terminal-line .comment { color: var(--text-muted); }
+        .workflow-terminal-body {
+            padding: 1.2rem 1.5rem; font-family: var(--mono);
+            font-size: 0.78rem; line-height: 1.85;
+        }
+        .workflow-line { display: block; }
+        .workflow-line .prompt { color: var(--green); }
+        .workflow-line .cmd { color: var(--text-primary); }
+        .workflow-line .flag { color: var(--orange); }
+        .workflow-line .string { color: var(--accent); }
+        .workflow-line .comment { color: var(--text-muted); }
+        .workflow-line .success { color: var(--green); }
+        .workflow-line .output { color: var(--text-secondary); }
+        .workflow-line .branch { color: var(--purple); }
+        .workflow-line .user-cmd { color: var(--text-primary); }
 
         /* ── About ── */
         #about { padding: 8rem 0; }
@@ -578,6 +586,34 @@
         }
         .github-username:hover { text-decoration: underline; }
         .github-username svg { width: 16px; height: 16px; fill: currentColor; }
+        .github-orgs {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 1.2rem; margin-bottom: 1.5rem;
+        }
+        .github-orgs-label {
+            font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted);
+            margin-bottom: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .github-orgs-list {
+            display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+        }
+        .github-org {
+            display: inline-flex; align-items: center; gap: 0.6rem;
+            text-decoration: none; color: var(--text-primary);
+            padding: 0.5rem 0.85rem; border: 1px solid var(--border); border-radius: 8px;
+            background: var(--bg-secondary);
+            transition: all var(--transition);
+        }
+        .github-org:hover { border-color: var(--accent); transform: translateY(-2px); }
+        .github-org img {
+            width: 24px; height: 24px; border-radius: 6px;
+        }
+        .github-org span {
+            font-family: var(--mono); font-size: 0.75rem; font-weight: 600;
+        }
+        .github-orgs-loading, .github-orgs-empty {
+            font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted);
+        }
         .github-graph {
             background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
             padding: 1.2rem; overflow-x: auto; margin-bottom: 2rem;
@@ -595,6 +631,55 @@
         }
         .github-graph img[src=""] + .github-graph-fallback,
         .github-graph img.error + .github-graph-fallback { display: block; }
+        .github-commit-graph {
+            background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius);
+            padding: 1.2rem; margin-bottom: 2rem;
+        }
+        .commit-graph-header {
+            display: flex; justify-content: space-between; align-items: center;
+            font-family: var(--mono); font-size: 0.75rem;
+            color: var(--text-muted); margin-bottom: 1rem;
+            text-transform: uppercase; letter-spacing: 0.5px;
+        }
+        .commit-graph-total { color: var(--accent); font-weight: 600; }
+        .commit-chart {
+            width: 100%; height: 220px;
+            font-family: var(--mono);
+        }
+        .commit-chart svg {
+            width: 100%; height: 100%;
+            overflow: visible;
+        }
+        .commit-chart-grid {
+            stroke: var(--border); stroke-width: 1; stroke-dasharray: 4 4;
+        }
+        .commit-chart-line {
+            fill: none; stroke: var(--accent); stroke-width: 2.5;
+            stroke-linecap: round; stroke-linejoin: round;
+            stroke-dasharray: 3000; stroke-dashoffset: 3000;
+            animation: draw-line 1.2s ease forwards;
+        }
+        @keyframes draw-line {
+            to { stroke-dashoffset: 0; }
+        }
+        .commit-chart-area {
+            fill: url(#commitGradient); opacity: 0.25;
+        }
+        .commit-chart-dot {
+            fill: var(--accent); r: 2.5;
+            opacity: 0; animation: fade-dot 0.4s ease forwards;
+        }
+        @keyframes fade-dot {
+            to { opacity: 1; }
+        }
+        .commit-chart-label {
+            fill: var(--text-muted); font-size: 10px;
+            text-anchor: middle;
+        }
+        .commit-chart-value {
+            fill: var(--text-muted); font-size: 10px;
+            text-anchor: end;
+        }
         .github-stats {
             display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 1rem;
             margin-bottom: 2rem;
@@ -677,8 +762,8 @@
             .hero-name-row { flex-direction: column; align-items: flex-start; gap: 1rem; }
             .hero-qr canvas { width: 100px; height: 100px; }
             .hero-name { letter-spacing: -1.5px; }
-            .terminal { margin-top: 2.5rem; }
-            .terminal-body { padding: 1rem; font-size: 0.75rem; }
+            .workflow-terminal { margin-top: 2.5rem; }
+            .workflow-terminal-body { padding: 1rem; font-size: 0.7rem; line-height: 1.75; }
             .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
             .about-photo-wrapper { order: -1; }
             .about-photo { width: 200px; height: 200px; }
@@ -686,7 +771,9 @@
             .oss-grid { grid-template-columns: 1fr; }
             .skills-grid { grid-template-columns: 1fr; }
             .github-repos-grid { grid-template-columns: 1fr; }
-            .github-graph { padding: 0.8rem; }
+            .github-orgs, .github-graph, .github-commit-graph { padding: 1rem; }
+            .commit-chart { height: 180px; }
+            .github-org span { font-size: 0.7rem; }
             .container { padding: 0 1.2rem; }
             .timeline-item { padding-left: 2rem; }
         }
@@ -843,19 +930,30 @@
                         LinkedIn
                     </a>
                 </div>
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="terminal-dot red"></span>
-                        <span class="terminal-dot yellow"></span>
-                        <span class="terminal-dot green"></span>
-                        <span class="terminal-title">vishal@macbook ~ </span>
+                <div class="workflow-terminal">
+                    <div class="workflow-terminal-header">
+                        <span class="workflow-terminal-dot red"></span>
+                        <span class="workflow-terminal-dot yellow"></span>
+                        <span class="workflow-terminal-dot green"></span>
+                        <span class="workflow-terminal-title">vishal@macbook ~/projects</span>
                     </div>
-                    <div class="terminal-body">
-                        <div class="terminal-line"><span class="prompt">$</span> <span class="cmd">python</span> <span class="flag">orchestrate</span> <span class="string">--config</span> <span class="cmd">career.yaml</span></div>
-                        <div class="terminal-line"><span class="comment">// AI systems, agents, and LLM orchestration</span></div>
-                        <div class="terminal-line"><span class="comment">// iOS / Swift / Python / TypeScript / cloud tooling</span></div>
-                        <div class="terminal-line"><span class="comment">// Goal: turn ideas into running systems faster</span></div>
-                        <div class="terminal-line"><span class="prompt">$</span> <span class="string">Build complete.</span></div>
+                    <div class="workflow-terminal-body">
+                        <span class="workflow-line"><span class="prompt">$</span> <span class="cmd">claude</span></span>
+                        <span class="workflow-line"><span class="prompt">></span> <span class="user-cmd">create a 6-week plan to launch the new website</span></span>
+                        <span class="workflow-line"><span class="comment">I'll build a timeline with milestones and tasks.</span></span>
+                        <span class="workflow-line output">[Research] reviewed similar launches and team capacity</span>
+                        <span class="workflow-line"><span class="flag">[Plan]</span> <span class="string">Website launch — 6 weeks</span></span>
+                        <span class="workflow-line output">Week 1 — Content brief & design direction</span>
+                        <span class="workflow-line output">Week 2 — Wireframes, copy, and assets</span>
+                        <span class="workflow-line output">Week 3–4 — Build and integrate</span>
+                        <span class="workflow-line output">Week 5 — Testing, feedback, and fixes</span>
+                        <span class="workflow-line output">Week 6 — Launch and monitor</span>
+                        <span class="workflow-line"><span class="prompt">></span> <span class="user-cmd">add tasks and assign owners</span></span>
+                        <span class="workflow-line success">✓ 18 tasks added to tracker</span>
+                        <span class="workflow-line success">✓ Owners assigned by skill area</span>
+                        <span class="workflow-line"><span class="prompt">></span> <span class="user-cmd">export as markdown and exit</span></span>
+                        <span class="workflow-line success">✓ Saved website-launch-plan.md</span>
+                        <span class="workflow-line"><span class="prompt">$</span> <span class="comment">_</span></span>
                     </div>
                 </div>
             </div>
@@ -1414,9 +1512,26 @@
                 <span style="font-family: var(--mono); font-size: 0.75rem; color: var(--text-muted);" data-i18n="github.public">Public commits & repos only</span>
             </div>
 
+            <div class="github-orgs reveal" id="ghOrgs">
+                <div class="github-orgs-label">Organizations</div>
+                <div class="github-orgs-list" id="ghOrgsList">
+                    <span class="github-orgs-loading">Loading organizations...</span>
+                </div>
+            </div>
+
             <div class="github-graph reveal">
                 <img id="ghChart" src="https://ghchart.rshah.org/v-i-s-h-a-l" alt="GitHub contribution graph" onerror="this.classList.add('error')">
                 <div class="github-graph-fallback" data-i18n="github.graphFallback">Public contribution graph</div>
+            </div>
+
+            <div class="github-commit-graph">
+                <div class="commit-graph-header">
+                    <span>Commit frequency · last 90 days</span>
+                    <span class="commit-graph-total" id="commitTotal">-- commits</span>
+                </div>
+                <div class="commit-chart" id="commitChart">
+                    <div class="github-loading">Loading activity...</div>
+                </div>
             </div>
 
             <div class="github-stats reveal">
@@ -1643,12 +1758,18 @@
         // ── GitHub Activity ──
         (function loadGitHubActivity() {
             const GH_USER = 'v-i-s-h-a-l';
-            const CACHE_KEY = 'gh_repos_v1';
-            const CACHE_TTL = 60 * 60 * 1000; // 1 hour
+            const REPOS_CACHE_KEY = 'gh_repos_v1';
+            const ORGS_CACHE_KEY = 'gh_orgs_v1';
+            const REPOS_TTL = 60 * 60 * 1000;
+            const ORGS_TTL = 24 * 60 * 60 * 1000;
+
             const reposContainer = document.getElementById('ghRepos');
             const repoCountEl = document.getElementById('ghRepoCount');
             const starCountEl = document.getElementById('ghStarCount');
             const langCountEl = document.getElementById('ghLangCount');
+            const orgsListEl = document.getElementById('ghOrgsList');
+            const commitChartEl = document.getElementById('commitChart');
+            const commitTotalEl = document.getElementById('commitTotal');
 
             function formatDate(iso) {
                 if (!iso) return '';
@@ -1660,12 +1781,65 @@
                 return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
             }
 
+                        function getCached(key) {
+                try {
+                    const cached = localStorage.getItem(key);
+                    if (cached) {
+                        const { ts, data } = JSON.parse(cached);
+                        let ttl = REPOS_TTL;
+                        if (key === ORGS_CACHE_KEY) ttl = ORGS_TTL;
+                        if (Date.now() - ts < ttl) return data;
+                    }
+                } catch (e) { /* ignore */ }
+                return null;
+            }
+
+            function setCached(key, data) {
+                try { localStorage.setItem(key, JSON.stringify({ ts: Date.now(), data })); } catch (e) { /* ignore */ }
+            }
+
+            function fetchWithCache(url, key, renderFn, renderError, silentOnError) {
+                const cached = getCached(key);
+                if (cached) {
+                    renderFn(cached);
+                    fetchFresh(url, key, renderFn, renderError, true);
+                } else {
+                    fetchFresh(url, key, renderFn, renderError, false);
+                }
+            }
+
+            function fetchFresh(url, key, renderFn, renderError, silent) {
+                fetch(url)
+                    .then(r => {
+                        if (r.status === 403) throw new Error('GitHub API rate limit reached.');
+                        if (!r.ok) throw new Error('Unable to load GitHub data.');
+                        return r.json();
+                    })
+                    .then(data => {
+                        setCached(key, data);
+                        renderFn(data);
+                    })
+                    .catch(err => {
+                        if (!silent && renderError) renderError(err.message || 'Failed to load data.');
+                    });
+            }
+
+            // Repos
+            const SIGNIFICANT_REPOS = [
+                'agentic-research-router',
+                'runnerctl',
+                'Tim-Bak-Toe',
+                'School',
+                'Logo-Quiz-Phonepe',
+                'knowledge',
+                'v-i-s-h-a-l.github.io'
+            ];
+
             function renderRepos(repos) {
                 if (!repos || !repos.length) {
                     reposContainer.innerHTML = '<div class="github-error">No public repositories found.</div>';
                     return;
                 }
-                // Sort by updated_at desc
                 repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
 
                 const nonForks = repos.filter(r => !r.fork);
@@ -1676,7 +1850,13 @@
                 if (starCountEl) starCountEl.textContent = totalStars;
                 if (langCountEl) langCountEl.textContent = languages.size;
 
-                reposContainer.innerHTML = nonForks.map(repo => `
+                const displayRepos = nonForks.filter(r => SIGNIFICANT_REPOS.includes(r.name));
+                if (!displayRepos.length) {
+                    reposContainer.innerHTML = '<div class="github-error">No selected repositories to display.</div>';
+                    return;
+                }
+
+                reposContainer.innerHTML = displayRepos.map(repo => `
                     <a href="${escapeHtml(repo.html_url)}" class="github-repo tilt-card" target="_blank" rel="noopener">
                         <div class="github-repo-header">
                             <span class="github-repo-name">${escapeHtml(repo.name)}</span>
@@ -1693,45 +1873,143 @@
                     </a>
                 `).join('');
 
-                // Re-attach tilt listeners for newly injected cards
                 if (window.reinitTiltCards) window.reinitTiltCards();
             }
 
-            function renderError(msg) {
+            function renderReposError(msg) {
                 reposContainer.innerHTML = `<div class="github-error">${escapeHtml(msg)}</div>`;
             }
 
-            // Try cache first
-            try {
-                const cached = localStorage.getItem(CACHE_KEY);
-                if (cached) {
-                    const { ts, data } = JSON.parse(cached);
-                    if (Date.now() - ts < CACHE_TTL) {
-                        renderRepos(data);
-                        // Still refresh in background silently
-                        fetchFresh(true);
-                        return;
+            // Organizations
+            const EXTRA_ORGS = [
+                { login: 'aura-knowledge', html_url: 'https://github.com/aura-knowledge', avatar_url: 'https://avatars.githubusercontent.com/u/294371743?v=4' }
+            ];
+
+            function renderOrgs(orgs) {
+                const seen = new Set();
+                const merged = [];
+                [...(orgs || []), ...EXTRA_ORGS].forEach(org => {
+                    if (!seen.has(org.login)) {
+                        seen.add(org.login);
+                        merged.push(org);
                     }
+                });
+
+                if (!merged.length) {
+                    orgsListEl.innerHTML = '<span class="github-orgs-empty">No public organizations</span>';
+                    return;
                 }
-            } catch (e) { /* ignore cache errors */ }
-
-            fetchFresh(false);
-
-            function fetchFresh(silent) {
-                fetch(`https://api.github.com/users/${GH_USER}/repos?type=owner&sort=updated&per_page=100`)
-                    .then(r => {
-                        if (r.status === 403) throw new Error('GitHub API rate limit reached. Try again later.');
-                        if (!r.ok) throw new Error('Unable to load GitHub repositories.');
-                        return r.json();
-                    })
-                    .then(data => {
-                        try { localStorage.setItem(CACHE_KEY, JSON.stringify({ ts: Date.now(), data })); } catch (e) {}
-                        renderRepos(data);
-                    })
-                    .catch(err => {
-                        if (!silent) renderError(err.message || 'Failed to load repositories.');
-                    });
+                orgsListEl.innerHTML = merged.map(org => `
+                    <a href="${escapeHtml(org.html_url)}" class="github-org" target="_blank" rel="noopener">
+                        <img src="${escapeHtml(org.avatar_url)}" alt="${escapeHtml(org.login)}" loading="lazy">
+                        <span>${escapeHtml(org.login)}</span>
+                    </a>
+                `).join('');
             }
+
+            function renderOrgsError(msg) {
+                orgsListEl.innerHTML = `<span class="github-orgs-empty">${escapeHtml(msg)}</span>`;
+            }
+
+            // Commit frequency line chart (last 90 days)
+            function renderCommitGraph(days) {
+                if (!days || !days.length) {
+                    renderCommitError('No contribution data available.');
+                    return;
+                }
+
+                const values = days.map(d => d.count || 0);
+                const labels = days.map(d => {
+                    const [y, m, day] = d.date.split('-').map(Number);
+                    const date = new Date(y, m - 1, day);
+                    return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+                });
+                const totalCommits = values.reduce((a, b) => a + b, 0);
+                const maxCount = Math.max(...values, 1);
+                const maxIndex = values.indexOf(maxCount);
+                const count = values.length;
+
+                const width = 900;
+                const height = 220;
+                const padding = { top: 24, right: 24, bottom: 36, left: 40 };
+                const chartW = width - padding.left - padding.right;
+                const chartH = height - padding.top - padding.bottom;
+
+                const xFor = i => padding.left + (i / (count - 1)) * chartW;
+                const yFor = v => padding.top + chartH - (v / maxCount) * chartH;
+
+                const linePoints = values.map((v, i) => `${xFor(i)},${yFor(v)}`).join(' ');
+                const areaPoints = `${xFor(0)},${yFor(0)} ${linePoints} ${xFor(count - 1)},${yFor(0)}`;
+
+                const yTicks = 4;
+                const gridLines = [];
+                const yLabels = [];
+                for (let i = 0; i <= yTicks; i++) {
+                    const v = Math.round((maxCount / yTicks) * i);
+                    const y = yFor(v);
+                    gridLines.push(`<line x1="${padding.left}" y1="${y}" x2="${width - padding.right}" y2="${y}" class="commit-chart-grid"/>`);
+                    yLabels.push(`<text x="${padding.left - 8}" y="${y + 3}" class="commit-chart-value">${v}</text>`);
+                }
+
+                const xLabels = [];
+                const labelStep = 15;
+                for (let i = 0; i < count; i += labelStep) {
+                    xLabels.push(`<text x="${xFor(i)}" y="${height - 12}" class="commit-chart-label">${labels[i]}</text>`);
+                }
+
+                const dots = values.map((v, i) => {
+                    const isMax = i === maxIndex && v > 0;
+                    return `<circle cx="${xFor(i)}" cy="${yFor(v)}" class="commit-chart-dot" style="animation-delay: ${i * 0.005}s" ${isMax ? 'r="4"' : ''}/>`;
+                }).join('');
+
+                commitChartEl.innerHTML = `
+                    <svg viewBox="0 0 ${width} ${height}" preserveAspectRatio="xMidYMid meet">
+                        <defs>
+                            <linearGradient id="commitGradient" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.5"/>
+                                <stop offset="100%" stop-color="var(--accent)" stop-opacity="0"/>
+                            </linearGradient>
+                        </defs>
+                        ${gridLines.join('')}
+                        ${yLabels.join('')}
+                        <polyline points="${areaPoints}" class="commit-chart-area"/>
+                        <polyline points="${linePoints}" class="commit-chart-line"/>
+                        ${dots}
+                        ${xLabels.join('')}
+                    </svg>
+                `;
+
+                if (commitTotalEl) commitTotalEl.textContent = `${totalCommits} commit${totalCommits !== 1 ? 's' : ''}`;
+            }
+
+            function renderCommitError(msg) {
+                commitChartEl.innerHTML = `<div class="github-error">${escapeHtml(msg)}</div>`;
+            }
+
+            // Initialize data sources
+            fetchWithCache(
+                `https://api.github.com/users/${GH_USER}/repos?type=owner&sort=updated&per_page=100`,
+                REPOS_CACHE_KEY,
+                renderRepos,
+                renderReposError
+            );
+
+            fetchWithCache(
+                `https://api.github.com/users/${GH_USER}/orgs`,
+                ORGS_CACHE_KEY,
+                renderOrgs,
+                renderOrgsError
+            );
+
+            // Load local contribution data generated by the scheduled workflow
+            fetch('assets/data/contributions.json')
+                .then(r => {
+                    if (!r.ok) throw new Error('Contribution data not available yet.');
+                    return r.json();
+                })
+                .then(data => renderCommitGraph(data))
+                .catch(err => renderCommitError(err.message || 'Failed to load contribution data.'));
+
         })();
     })();
     </script>
